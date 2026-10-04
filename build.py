@@ -2,7 +2,7 @@
 import json, os, base64, re
 R = os.path.dirname(os.path.abspath(__file__)); os.chdir(R)
 def j(o): return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
-data = json.load(open('verses.json', encoding='utf-8')); gram = json.load(open('grammar.json', encoding='utf-8')); narr = json.load(open('narration.json', encoding='utf-8'))
+data = json.load(open('verses.json', encoding='utf-8')); gram = json.load(open('grammar.json', encoding='utf-8')); anv = json.load(open('anvaya.json', encoding='utf-8')); narr = json.load(open('narration.json', encoding='utf-8'))
 def uri(p): return 'data:audio/mpeg;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
 A, VA = {}, {}
 for f in sorted(os.listdir('audio')):
@@ -29,7 +29,7 @@ body = '''<div id="intro"><div class="box"><div class="om" aria-hidden="true">ре
 <p style="text-align:center;font-size:.8rem;color:var(--ink2);padding:0 16px 24px">Source texts are public-domain scripture. Transcript cleaned from YouTube auto-captions. Where a verse could not be matched to a source, the page says so.</p>
 '''
 head = open('src/head.html', encoding='utf-8').read()
-html = (head + body + '<script>\nconst DATA=' + j(data) + ';\nconst GRAMMAR=' + j(gram) + ';\nconst NARR=' + j(narr) + ';\nconst AUDIO=' + j(A) + ';\nconst VAUDIO=' + j(VA) + ';\n</script>\n<script>\n' +
+html = (head + body + '<script>\nconst DATA=' + j(data) + ';\nconst GRAMMAR=' + j(gram) + ';\nconst ANV=' + j(anv) + ';\nconst NARR=' + j(narr) + ';\nconst AUDIO=' + j(A) + ';\nconst VAUDIO=' + j(VA) + ';\n</script>\n<script>\n' +
         open('src/engine.js', encoding='utf-8').read() + '\n</script>\n<script>\n' + open('src/guide.js', encoding='utf-8').read() + '\n</script>\n<script>\n' + open('src/scenes.js', encoding='utf-8').read() + '\n</script>\n</body></html>')
 os.makedirs('dist', exist_ok=True); os.makedirs('docs', exist_ok=True)
 for p in ('dist/shastra-ai-explainer.html', 'docs/index.html'): open(p, 'w', encoding='utf-8').write(html)

@@ -86,7 +86,8 @@ function toDev(src){
     else if(t==='V')out.push(VMAP[v][0]); else out.push(v);}
   return out.join('');
 }
-function cellHtml(txt){ if(txt==='—')return '—'; return txt.split(' / ').map(f=>`<span class="fi">${esc(f)}</span><span class="fd">${esc(toDev(f))}</span>`).join(' / '); }
+function cellHtml(txt){ if(txt==='—')return '—'; return txt.split(' / ').map(f=>`<span class="af"><span class="fd">${esc(toDev(f))}</span><span class="fi">${esc(f)}</span></span>`).join('<span class="sep"> / </span>'); }
+const NUMD=['एकवचन','द्विवचन','बहुवचन'], PERSD=['प्रथम','मध्यम','उत्तम'];
 const CN={nom:['1','Nominative','prathamā','the doer'],acc:['2','Accusative','dvitīyā','the object / goal'],ins:['3','Instrumental','tṛtīyā','by, with'],dat:['4','Dative','caturthī','to, for'],abl:['5','Ablative','pañcamī','from (source)'],gen:['6','Genitive','ṣaṣṭhī','of'],loc:['7','Locative','saptamī','in, on, at'],voc:['8','Vocative','sambodhana','O …!']};
 function gtable(pdId,hit,alt,gk,opts){
   opts=opts||{}; const P=G.paradigms[pdId]; if(!P)return ''; const keys=Object.keys(P.forms); gk=keys.includes(gk)?gk:keys[0];
@@ -95,13 +96,13 @@ function gtable(pdId,hit,alt,gk,opts){
   if(keys.length>1){h+=`<div class="gtabs" role="group" aria-label="Gender">`+keys.map(k=>`<button class="btn small" data-gtgk="${k}" aria-pressed="${k===gk}">${{m:'Masculine',n:'Neuter',f:'Feminine'}[k]}</button>`).join('')+`</div>`;}
   const rows=P.forms[gk];
   if(P.kind==='noun'){
-    h+=`<table class="gtab"><caption>${esc(P.stem)} · ${esc(P.pattern)}${keys.length===1&&{m:1,f:1,n:1}[P.gender]?' · '+{m:'masculine',f:'feminine',n:'neuter'}[P.gender]:''}</caption><thead><tr><th scope="col">Case</th>${NUMN.map(n=>`<th scope="col">${n}</th>`).join('')}</tr></thead><tbody>`;
-    CASEKEYS.forEach((c,r)=>{const m=CN[c];h+=`<tr data-c="${c}"><th scope="row"><span class="cn">${m[0]} ${m[1]}</span><span class="cs">${m[2]} · ${m[3]}</span></th>`;
+    h+=`<table class="gtab"><caption>${esc(P.stem)} <span class="dev">(${esc(toDev(P.stem))})</span> · ${esc(P.pattern)}${keys.length===1&&{m:1,f:1,n:1}[P.gender]?' · '+{m:'masculine',f:'feminine',n:'neuter'}[P.gender]:''}</caption><thead><tr><th scope="col">Case · <span class="dev">विभक्ति</span></th>${NUMN.map((n,i)=>`<th scope="col">${n}<span class="cs dev">${NUMD[i]}</span></th>`).join('')}</tr></thead><tbody>`;
+    CASEKEYS.forEach((c,r)=>{const m=CN[c];h+=`<tr data-c="${c}"><th scope="row"><span class="cn">${m[0]} ${m[1]} · <span class="dev">${esc(G.cases[r].sktd)}</span></span><span class="cs">${m[2]} · ${m[3]}</span></th>`;
       for(let n=0;n<3;n++){const k=r+','+n;h+=`<td data-r="${r}" data-n="${n}" class="${hs.has(k)?'hit':as.has(k)?'alt':''}" tabindex="0">${cellHtml(rows[r][n])}</td>`;}h+='</tr>';});
     h+='</tbody></table>';
   } else {
-    h+=`<table class="gtab"><caption>${esc(P.root)} (${esc(P.meaning)}) · ${esc(P.tense)} · ${esc(P.voice)} · ${esc(P.gana)}</caption><thead><tr><th scope="col">Person</th>${NUMN.map(n=>`<th scope="col">${n}</th>`).join('')}</tr></thead><tbody>`;
-    ['prathama · 3rd (he, they)','madhyama · 2nd (you)','uttama · 1st (I, we)'].forEach((p,r)=>{h+=`<tr data-c="verb"><th scope="row"><span class="cn">${p}</span></th>`;
+    h+=`<table class="gtab"><caption>${esc(P.root)} <span class="dev">(${esc(toDev(P.root))})</span> (${esc(P.meaning)}) · ${esc(P.tense)} <span class="dev">${esc(toDev(P.tense.split(' (')[0]))}</span> · ${esc(P.voice)} <span class="dev">${esc(toDev(P.voice))}</span> · ${esc(P.gana)}</caption><thead><tr><th scope="col">Person · <span class="dev">पुरुष</span></th>${NUMN.map((n,i)=>`<th scope="col">${n}<span class="cs dev">${NUMD[i]}</span></th>`).join('')}</tr></thead><tbody>`;
+    ['prathama · 3rd (he, they)','madhyama · 2nd (you)','uttama · 1st (I, we)'].forEach((p,r)=>{h+=`<tr data-c="verb"><th scope="row"><span class="cn"><span class="dev">${PERSD[r]}</span> · ${p}</span></th>`;
       for(let n=0;n<3;n++){const k=r+','+n;h+=`<td data-r="${r}" data-n="${n}" class="${hs.has(k)?'hit':''}" tabindex="0">${cellHtml(rows[r][n])}</td>`;}h+='</tr>';});
     h+='</tbody></table>';
   }
@@ -139,6 +140,58 @@ function wordGram(ent,open){
 }
 const NUMS=n=>({sg:0,du:1,pl:2}[n]||0);
 
+
+/* ---------- anvaya: prose order, animated ---------- */
+const ANVS={};
+function anvChip(t,i,sup){return `<div class="achip${sup?' sup':''}" role="listitem" data-c="${esc(t.c||'')}" data-i="${sup?'s':i}" title="${esc(t.m)}"><span class="an"></span><span class="ad">${esc(t.d)}</span><span class="at">${esc(t.t)}</span><span class="am">${esc(t.m)}</span>${t.tag&&!sup?`<span class="ag">${esc(t.tag)}</span>`:''}${sup?'<span class="ag">supplied</span>':''}</div>`;}
+function anvayaHtml(vid){
+  const A=ANV[vid]; if(!A)return '';
+  return `<div class="anv" data-anv="${esc(vid)}" data-state="verse"><div class="sec">Anvaya: prose order</div>
+  <p class="gnote">A poet arranges words for rhythm and sound. Case endings tell us each word's job, so the order can change without changing the meaning. <b>Anvaya</b> (<i>anu</i> + <i>√i</i>, “to go along”) puts them back in plain prose order. Tap to watch the words move.</p>
+  <div class="row2"><button class="btn small primary" data-anvgo="${esc(vid)}" aria-pressed="false">⇄ Rearrange into anvaya</button><button class="btn small" data-anvslow="${esc(vid)}">▶ Slow motion</button></div>
+  <div class="arow" role="list" aria-label="Words of ${esc(vid)}">${A.tokens.map((t,i)=>anvChip(t,i,false)).join('')}</div>
+  <p class="anvsent" aria-live="polite"></p><p class="gnote anvnote" hidden>${esc(A.note)}</p></div>`;
+}
+function anvNumbers(box,toAnv){
+  const A=ANV[box.dataset.anv]; const chips=$$('.achip',box); let n=0;
+  chips.forEach((c,k)=>{const nn=$('.an',c);nn.textContent=toAnv?(++n):(c.classList.contains('sup')?'':(+c.dataset.i+1));});
+  const sent=$('.anvsent',box);
+  if(toAnv){const toks=chips.map(c=>({d:$('.ad',c).textContent,t:$('.at',c).textContent}));sent.innerHTML=`<span class="dev">${esc(toks.map(x=>x.d).join(' '))}</span><br><span class="iast">${esc(toks.map(x=>x.t).join(' '))}</span>`;}
+  else sent.textContent='';
+  $('.anvnote',box).hidden=!toAnv;
+}
+function flipMove(row,mutate,opts){
+  opts=opts||{}; const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const before=new Map($$('.achip',row).map(c=>[c,c.getBoundingClientRect()]));
+  mutate();
+  const dur=reduce?0:(opts.dur||750), gap=reduce?0:(opts.gap||40);
+  $$('.achip',row).forEach((c,k)=>{
+    const f=before.get(c);
+    if(!f){ if(dur)c.animate([{opacity:0,transform:'scale(.6)'},{opacity:1,transform:'none'}],{duration:dur*.7,delay:k*gap,easing:'ease-out',fill:'backwards'}); return; }
+    const l=c.getBoundingClientRect(), dx=f.left-l.left, dy=f.top-l.top;
+    if(dur&&(dx||dy))c.animate([{transform:`translate(${dx}px,${dy}px)`,zIndex:5},{transform:'none',zIndex:5}],{duration:dur,delay:k*gap,easing:'cubic-bezier(.2,.8,.2,1)',fill:'backwards'});
+  });
+  return new Promise(r=>setTimeout(r,dur+gap*row.children.length+30));
+}
+async function anvayaToggle(box,slow){
+  if(!box||box.dataset.busy)return; box.dataset.busy='1'; const vid=box.dataset.anv;
+  const A=ANV[vid], row=$('.arow',box), toAnv=box.dataset.state==='verse'; const byI=new Map($$('.achip',row).map(c=>[c.dataset.i,c]));
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const o={dur:slow?1500:750,gap:slow?220:40};
+  if(toAnv){
+    await flipMove(row,()=>{A.order.forEach(x=>{ if(typeof x==='number')row.appendChild(byI.get(String(x))); else {const d=document.createElement('div');d.innerHTML=anvChip(x.add,0,true);row.appendChild(d.firstElementChild);} });anvNumbers(box,true);},o);
+    box.dataset.state='anvaya'; EX.react('That is the anvaya: subject … object … verb last.','happy');
+  } else {
+    const sups=$$('.achip.sup',row); if(sups.length&&!reduce){sups.forEach(c=>c.animate([{opacity:1},{opacity:0}],{duration:250,fill:'forwards'}));await new Promise(r=>setTimeout(r,260));}
+    await flipMove(row,()=>{sups.forEach(c=>c.remove());A.tokens.forEach((t,i)=>row.appendChild(byI.get(String(i))));anvNumbers(box,false);},o);
+    box.dataset.state='verse'; EX.react('Back to the poet’s order.','neutral');
+  }
+  const b=$('[data-anvgo]',box); b.textContent=box.dataset.state==='verse'?'⇄ Rearrange into anvaya':'⇄ Back to verse order'; b.setAttribute('aria-pressed',box.dataset.state==='anvaya');
+  delete box.dataset.busy;
+}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.anvgo)anvayaToggle(b.closest('.anv'),false);else if(b.dataset.anvslow)anvayaToggle(b.closest('.anv'),true);});
+document.addEventListener('DOMContentLoaded',()=>{});
+
 /* ---------- decode cards ---------- */
 const CONF={ok:['●','Verified against a source'],mid:['◐','Recognised verse; wording may differ'],low:['○','Not matched to a source']};
 function decodeCard(vid){
@@ -152,6 +205,7 @@ function decodeCard(vid){
   });
   h+=`<div class="wdetail" aria-live="polite">Tap any word to unpack its meaning and root.</div>`;
   h+=`<div class="row2"><button class="btn small" data-playall="${v.id}">▶ Play whole verse</button></div>`;
+  h+=anvayaHtml(v.id);
   h+=`<details class="tbl"><summary>Word-by-word table</summary><table class="wt"><tr><th>Word</th><th>Meaning</th><th>Grammar</th><th>Root / build</th></tr>`;
   v.lines.forEach((l,li)=>l.words.forEach((w,wi)=>{const g=G.words[`${v.id}:${li}:${wi}`];const gl=g?(g.pos==='composite'?g.multi.map(p=>p.label||p.pos).join(' + '):(g.label||g.pos)+(g.pos&&g.label&&g.pos!==g.label&&!/^(indecl)/.test(g.label)?' ('+g.pos+')':'')):'—';h+=`<tr><td>${esc(w.d)}<br><span class="iast" style="font-size:.8rem">${esc(w.t)}</span></td><td>${esc(w.m)}</td><td>${esc(gl)}</td><td>${esc(w.r||'—')}</td></tr>`;}));
   h+=`</table></details>`;
@@ -245,7 +299,9 @@ function boot(){
   $('#replay').onclick=()=>speak(SCENES[S.idx].id); $('#stop').onclick=stopAll;
   $('#mute').onclick=e=>{S.muted=!S.muted;e.currentTarget.setAttribute('aria-pressed',S.muted);if(S.muted)stopAll();};
   $('#auto').onclick=e=>{S.auto=!S.auto;e.currentTarget.setAttribute('aria-pressed',S.auto);};
-  $('#devf').onclick=e=>{const on=document.body.classList.toggle('show-dev');e.currentTarget.setAttribute('aria-pressed',on);};
+  const MODES=[['','देव + Aa','Table forms: Devanagari and Roman'],['mode-dev','देव','Table forms: Devanagari only'],['mode-iast','Aa','Table forms: Roman only']];let mi=0;
+  const setMode=()=>{document.body.classList.remove('mode-dev','mode-iast');if(MODES[mi][0])document.body.classList.add(MODES[mi][0]);const b=$('#devf');b.textContent=MODES[mi][1];b.setAttribute('aria-label',MODES[mi][2]+'. Tap to change.');b.title=MODES[mi][2];};
+  $('#devf').onclick=()=>{mi=(mi+1)%3;setMode();};setMode();
   $('#guideBtn').onclick=()=>window.EX.openGuide&&window.EX.openGuide('cases');
   $('#fx').onclick=e=>{const off=document.body.classList.toggle('fx-off');e.currentTarget.setAttribute('aria-pressed',off);};
   $('#theme').onclick=()=>{const d=document.documentElement;const dark=d.dataset.theme==='dark'||(d.dataset.theme!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches);d.dataset.theme=dark?'light':'dark';};
@@ -254,5 +310,5 @@ function boot(){
   blink(); mouthLoop();
 }
 window.addEventListener('DOMContentLoaded',()=>{boot();});
-window.EX={gtable,toDev,cellHtml,CN,CASEKEYS,NUMN,G,decodeCard,termCard,quiz,react,setMood,toast,esc,V,T,go,S,SCENES,playVerse,playClip};
+window.EX={anvayaHtml,anvayaToggle,gtable,toDev,cellHtml,CN,CASEKEYS,NUMN,G,decodeCard,termCard,quiz,react,setMood,toast,esc,V,T,go,S,SCENES,playVerse,playClip};
 })();

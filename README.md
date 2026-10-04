@@ -12,7 +12,10 @@ An animated, narrated, interactive explainer of a 17-minute talk by Dr. Pratosh 
 Each verse carries a confidence badge: ● matches a source, ◐ recognised but wording may differ, ○ reconstructed from audio and not matched to any source. Four passages (V2, V4, V5, V11) could not be matched online and are labelled as such.
 
 ## Grammar for every word
-Tap any word in a verse to see its word type (noun, pronoun, adjective, verb, participle, gerund, indeclinable), its case, number and gender (or person, tense and voice for verbs), its stem or root, how it is used in the verse, and the **full declension or conjugation table with the exact form highlighted**. A Devanagari toggle switches the forms. The **Grammar guide** (top right) has a case wheel (the eight vibhaktis as roles around the action), a sentence builder showing why eight cases are enough, number and gender, word types, notation (√, +, ←), a sound guide, and a gallery of 26 paradigm tables with a "hide the forms" self-test mode.
+Tap any word in a verse to see its word type (noun, pronoun, adjective, verb, participle, gerund, indeclinable), its case, number and gender (or person, tense and voice for verbs), its stem or root, how it is used in the verse, and the **full declension or conjugation table with the exact form highlighted**. Tables show every form in Devanagari with the Roman transliteration beneath, plus Sanskrit labels for case, number and person; a header button cycles Devanagari + Roman / Devanagari only / Roman only.
+
+## Anvaya (prose order)
+Every verse card has an **Anvaya** section: tap *Rearrange into anvaya* and the words glide into plain prose order (subject … object … verb last), with numbered positions, dashed chips for words the verse leaves out (like *asti*), and the re-ordered sentence in Devanagari and Roman. *Slow motion* shows it word by word. The orders live in `gen_anvaya.py`, which checks every word is used exactly once. The **Grammar guide** (top right) has a case wheel (the eight vibhaktis as roles around the action), a sentence builder showing why eight cases are enough, number and gender, word types, notation (√, +, ←), a sound guide, and a gallery of 26 paradigm tables with a "hide the forms" self-test mode.
 
 All 96 word annotations are checked by `gen_grammar.py`: each word's form must appear in the table cell it claims, or the build fails.
 
@@ -20,6 +23,7 @@ All 96 word annotations are checked by `gen_grammar.py`: each word's form must a
 ```
 ~/.cache/edge-tts-venv/bin/python tts.py   # Microsoft neural voices via edge-tts (needs: pip install edge-tts)
 python3 gen_grammar.py                      # regenerates grammar.json (verifies every word against its table)
+python3 gen_anvaya.py                       # regenerates anvaya.json (prose order for each verse)
 python3 build.py                            # writes dist/shastra-ai-explainer.html and docs/index.html
 ~/.cache/pw-venv/bin/python walk.py         # optional: headless walkthrough (needs Playwright + Chrome)
 ```

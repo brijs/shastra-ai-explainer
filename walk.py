@@ -56,6 +56,19 @@ async def run(width, height, tag):
                 if await pg.locator('.card[data-v] .gblock').count() == 0: errs.append(f'NO GRAMMAR BLOCK {sid} chip {k}')
                 bad = await pg.evaluate("Array.from(document.querySelectorAll('.card .gt')).filter(t=>t.dataset.hit!=='[]'&&!t.querySelector('td.hit')).length")
                 if bad: errs.append(f'NO HIT CELL {sid} chip {k}')
+            # anvaya: every verse card on this scene rearranges to the expected order and back
+            for k in range(await pg.locator('.anv').count()):
+                box = pg.locator('.anv').nth(k); vid = await box.get_attribute('data-anv')
+                before = await box.locator('.achip .at').all_inner_texts()
+                await box.locator('[data-anvgo]').click(); await pg.wait_for_timeout(2000)
+                after = await box.locator('.achip .at').all_inner_texts()
+                exp = await pg.evaluate("(v)=>ANV[v].order.map(o=>typeof o==='number'?ANV[v].tokens[o].t:o.add.t)", vid)
+                if after != exp: errs.append(f'ANVAYA ORDER {vid}: {after} != {exp}')
+                if await box.get_attribute('data-state') != 'anvaya': errs.append('anvaya state ' + vid)
+                if await box.locator('.anvsent').inner_text() == '': errs.append('anvaya sentence empty ' + vid)
+                await box.locator('[data-anvgo]').click(); await pg.wait_for_timeout(2000)
+                back = await box.locator('.achip .at').all_inner_texts()
+                if back != before: errs.append(f'ANVAYA RESET {vid}')
             if sid == 's14':
                 await pg.click('#rg button >> nth=0')
                 await pg.click('.tabs button[data-t="para"]'); assert await pg.locator('#pg2 .gt').count() == 1
@@ -72,7 +85,7 @@ async def run(width, height, tag):
             if sid in ('sg', 's3', 's7', 's10', 's14') : await pg.screenshot(path=f'shots/{tag}_{sid}.png', full_page=True)
         # guide overlay: all tabs
         await pg.click('#guideBtn'); assert await pg.locator('#gg:not([hidden])').count() == 1
-        for t in ['cases','numgen','types','notation','sounds','para']:
+        for t in ['cases','anvaya','numgen','types','notation','sounds','para']:
             await pg.locator(f'#ggtabs button[data-t="{t}"]').click(); await pg.wait_for_timeout(80)
             if await pg.inner_text('#ggbody') == '': errs.append('EMPTY TAB ' + t)
         await pg.locator('#ggtabs button[data-t="notation"]').click(); await pg.locator('[data-id="exchips"] .wchip').nth(5).click()
@@ -85,9 +98,13 @@ async def run(width, height, tag):
         await pg.screenshot(path=f'shots/{tag}_guide.png')
         await pg.keyboard.press('Escape'); assert await pg.locator('#gg[hidden]').count() == 1
         # devanagari toggle
-        await pg.evaluate('EX.go(3)'); await pg.locator('.wchip[data-vw]').first.click(); await pg.click('#devf')
-        vis = await pg.locator('.gt .fd >> nth=0').is_visible(); 
-        if not vis: errs.append('devanagari forms not visible')
+        await pg.evaluate('EX.go(3)'); await pg.locator('.wchip[data-vw]').first.click()
+        if not (await pg.locator('.gt .fd >> nth=0').is_visible() and await pg.locator('.gt .fi >> nth=0').is_visible()): errs.append('table should show Devanagari + Roman by default')
+        await pg.click('#devf'); 
+        if await pg.locator('.gt .fi >> nth=0').is_visible(): errs.append('mode-dev should hide Roman')
+        await pg.click('#devf')
+        if await pg.locator('.gt .fd >> nth=0').is_visible(): errs.append('mode-iast should hide Devanagari')
+        await pg.click('#devf')
         await pg.screenshot(path=f'shots/{tag}_dev.png', full_page=True)
         await b.close()
     print(tag, 'errors:', errs if errs else 'none'); return errs

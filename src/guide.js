@@ -52,7 +52,7 @@ function casesTab(root,pick){
   show(pick||'abl');
   sentence(root);
   let t=`<div class="sec">All eight at a glance</div><div class="tscroll"><table class="wt"><tr><th>#</th><th>Case</th><th>Role</th><th>Ask</th><th>English</th><th>Ending (a-stem)</th></tr>`;
-  G.cases.forEach(m=>{t+=`<tr><td>${m.n}</td><td><span class="pill c" data-c="${m.id}">${esc(m.en)}</span><br><span class="iast">${esc(m.skt)}</span></td><td>${esc(m.role)}</td><td>${esc(m.q)}</td><td>${esc(m.prep)}</td><td><code>${esc(m.end)}</code></td></tr>`;});
+  G.cases.forEach(m=>{t+=`<tr><td>${m.n}</td><td><span class="pill c" data-c="${m.id}">${esc(m.en)}</span><br><span class="iast">${esc(m.skt)}</span> <span class="dev">${esc(m.sktd)}</span></td><td>${esc(m.role)}</td><td>${esc(m.q)}</td><td>${esc(m.prep)}</td><td><code>${esc(m.end)}</code></td></tr>`;});
   root.insertAdjacentHTML('beforeend',t+'</table></div>');
 }
 function numgenTab(root){
@@ -96,16 +96,26 @@ function soundsTab(root){
   root.innerHTML=`<p class="lead">A rough guide for English speakers. A dot under a consonant means the tongue is curled back; a bar over a vowel means hold it longer.</p><table class="wt"><tr><th>Letter</th><th>Sounds like</th><th>Example</th></tr>${R.map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</table>`;
 }
 const GAL=[['a_m:veda','veda · a-stem masc.'],['a_n:phala','phala · a-stem neut.'],['aa_f:āśā','āśā · ā-stem fem.'],['i_f:mukti','mukti · i-stem fem.'],['ii_f:pṛthivī','pṛthivī · ī-stem fem.'],['n_m:agrajanman','janman · n-stem'],['pron_a:sarva','sarva · pronominal adj.'],['tad','tad · that'],['yad','yad · who/which'],['kim','kim · what?'],['idam','idam · this'],['etad','etad · this here'],['asmad','asmad · I / we'],['tvad','tvad · you'],['mahat','mahat · great'],['ahan','ahan · day'],['kr_pres','√kṛ present'],['kr_opt','√kṛ optative'],['vac_fut','√vac future'],['gam_pres','√gam present'],['is_pres','√iṣ present'],['bhu_pres','√bhū present'],['as_pres','√as present'],['as_opt','√as optative'],['as_imp','√as imperative'],['siks_opt','√śikṣ optative (ātm.)']];
+function devLabel(id){const P=G.paradigms[id];return P.kind==='noun'?toDev(P.stem):toDev(P.root)+' '+toDev(P.tense.split(' (')[0]);}
 function galleryTab(root,pick){
-  root.innerHTML=`<p class="lead">Every table from the talk. Pick one, tap any cell for its meaning, or hide the forms and test yourself.</p><div class="rootgrid galgrid" data-id="gal">${GAL.map(([id,t])=>`<button data-pd="${esc(id)}" aria-pressed="false"><span>${esc(t)}</span></button>`).join('')}</div>
+  root.innerHTML=`<p class="lead">Every table from the talk. Pick one, tap any cell for its meaning, or hide the forms and test yourself.</p><div class="rootgrid galgrid" data-id="gal">${GAL.map(([id,t])=>`<button data-pd="${esc(id)}" aria-pressed="false"><span class="dev" style="font-size:1.2rem;display:block">${esc(devLabel(id))}</span><span>${esc(t)}</span></button>`).join('')}</div>
   <div class="row2"><label><input type="checkbox" data-id="cover"> Hide the forms (tap a cell to reveal it)</label></div><div data-id="galtab"></div>`;
   const show=id=>{$$('[data-id="gal"] button',root).forEach(b=>b.setAttribute('aria-pressed',b.dataset.pd===id));$('[data-id="galtab"]',root).innerHTML=gtable(id,[],[],null);$('.gt',root).classList.toggle('covered',$('[data-id="cover"]',root).checked);};
   $$('[data-id="gal"] button',root).forEach(b=>b.onclick=()=>show(b.dataset.pd));
   $('[data-id="cover"]',root).onchange=e=>{const gt=$('.gt',root);if(gt){gt.classList.toggle('covered',e.target.checked);$$('td.revealed',gt).forEach(x=>x.classList.remove('revealed'));}};
   show(GAL.some(g=>g[0]===pick)?pick:'a_m:veda');
 }
-const TABS=[['cases','Cases'],['numgen','Number & gender'],['types','Word types'],['notation','Notation'],['sounds','Sounds'],['para','Paradigms']];
-const FN={cases:casesTab,numgen:numgenTab,types:typesTab,notation:notationTab,sounds:soundsTab,para:galleryTab};
+
+
+function anvayaTab(root){
+  root.innerHTML=`<p class="lead"><b>Anvaya</b> (<span class="dev">अन्वय</span>, from <i>anu</i> + <i>√i</i> “to go along”) is the order of words in a plain prose sentence. Verses are written in <i>chandas</i> (metre), so the poet puts words where the rhythm needs them. Because every word carries its case ending, the meaning survives any order. To read a verse, you first re-order it.</p>
+  <div class="sec">The usual recipe</div>
+  <ol class="sandhi"><li><b>Connectors and calls</b>: yadyapi, tasmāt, he … (vocative)</li><li><b>Subject</b> (nominative) with its describing words</li><li><b>Time, place, means</b>: locative, instrumental, ablative words</li><li><b>Indirect object</b> (dative)</li><li><b>Object</b> (accusative) with its describing words</li><li><b>Gerund “having …”</b> just before the main verb</li><li><b>The main verb, last</b></li></ol>
+  <p class="gnote">That is why case endings are so useful: <i>vittena</i> is “by wealth” wherever it stands. Words in a dashed box are ones I had to supply, because verse often leaves out “is”.</p>
+  <div class="sec">Try it on the Yakṣa verse</div>${EX.anvayaHtml('V10')}`;
+}
+const TABS=[['cases','Cases'],['anvaya','Anvaya'],['numgen','Number & gender'],['types','Word types'],['notation','Notation'],['sounds','Sounds'],['para','Paradigms']];
+const FN={anvaya:anvayaTab,cases:casesTab,numgen:numgenTab,types:typesTab,notation:notationTab,sounds:soundsTab,para:galleryTab};
 let last=null;
 function openGuide(spec){
   const [tab,arg]=String(spec||'cases').split(':'); const g=$('#gg'); last=document.activeElement; g.hidden=false; document.body.style.overflow='hidden';

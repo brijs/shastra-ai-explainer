@@ -1,0 +1,1125 @@
+{
+"V1": {
+"tokens": [
+{
+"key": "V1:0:0",
+"d": "यद्यपि",
+"t": "yadyapi",
+"m": "although",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V1:0:1",
+"d": "सर्वत्र",
+"t": "sarvatra",
+"m": "everywhere",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V1:0:2",
+"d": "भारतवर्षे",
+"t": "bhāratavarṣe",
+"m": "in Bharatavarsha (India)",
+"tag": "Loc. sg. n.",
+"c": "loc"
+},
+{
+"key": "V1:0:3",
+"d": "अस्माभिः",
+"t": "asmābhiḥ",
+"m": "by us",
+"tag": "Instr. pl.",
+"c": "ins"
+},
+{
+"key": "V1:0:4",
+"d": "सर्वदा",
+"t": "sarvadā",
+"m": "always",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V1:0:5",
+"d": "गीर्वाणभाषया",
+"t": "gīrvāṇabhāṣayā",
+"m": "by the language of the gods (Sanskrit)",
+"tag": "Instr. sg. f.",
+"c": "ins"
+},
+{
+"key": "V1:0:6",
+"d": "व्यवहारादिकम्",
+"t": "vyavahārādikam",
+"m": "dealings and so on",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V1:0:7",
+"d": "कर्तव्यम्",
+"t": "kartavyam",
+"m": "ought to be done",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V1:1:0",
+"d": "तस्मात्",
+"t": "tasmāt",
+"m": "therefore",
+"tag": "Abl. sg. n.",
+"c": "abl"
+},
+{
+"key": "V1:1:1",
+"d": "अहम्",
+"t": "aham",
+"m": "I",
+"tag": "Nom. sg.",
+"c": "nom"
+},
+{
+"key": "V1:1:2",
+"d": "इदानीम्",
+"t": "idānīm",
+"m": "now",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V1:1:3",
+"d": "वाग्व्यापारम्",
+"t": "vāgvyāpāram",
+"m": "the work of speech, i.e. speaking",
+"tag": "Acc. sg. m.",
+"c": "acc"
+},
+{
+"key": "V1:1:4",
+"d": "म्लेच्छभाषया",
+"t": "mlecchabhāṣayā",
+"m": "in a 'mleccha' tongue",
+"tag": "Instr. sg. f.",
+"c": "ins"
+},
+{
+"key": "V1:1:5",
+"d": "करोमि",
+"t": "karomi",
+"m": "I do",
+"tag": "laṭ 1sg.",
+"c": "verb"
+},
+{
+"key": "V1:2:0",
+"d": "क्षमाम्",
+"t": "kṣamām",
+"m": "forgiveness, pardon",
+"tag": "Acc. sg. f.",
+"c": "acc"
+},
+{
+"key": "V1:2:1",
+"d": "याचित्वा",
+"t": "yācitvā",
+"m": "having begged",
+"tag": "gerund",
+"c": ""
+}
+],
+"order": [
+0,
+3,
+2,
+1,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+14,
+15,
+12,
+11,
+13
+],
+"note": "Two sentences. In the second, the gerund yācitvā (“having begged”) and its object kṣamām move up so the main verb karomi comes last."
+},
+"V2": {
+"tokens": [
+{
+"key": "V2:0:0",
+"d": "पुण्यतमाः",
+"t": "puṇyatamāḥ",
+"m": "most meritorious",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V2:0:1",
+"d": "महाभागाः",
+"t": "mahābhāgāḥ",
+"m": "greatly fortunate",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V2:0:2",
+"d": "महेशसदृशाः",
+"t": "maheśasadṛśāḥ",
+"m": "like Maheśa (Śiva)",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V2:0:3",
+"d": "ये",
+"t": "ye",
+"m": "who",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V2:0:4",
+"d": "वेदम्",
+"t": "vedam",
+"m": "the Veda",
+"tag": "Acc. sg. m.",
+"c": "acc"
+}
+],
+"order": [
+{
+"add": {
+"d": "ते",
+"t": "te",
+"m": "those"
+}
+},
+0,
+1,
+2,
+{
+"add": {
+"d": "सन्ति",
+"t": "santi",
+"m": "are"
+}
+},
+3,
+4,
+{
+"add": {
+"d": "…",
+"t": "…",
+"m": "rest unclear"
+}
+}
+],
+"note": "Already close to prose order. I add “te … santi” (those … are) to complete the sentence; the rest of the line was unclear in the recording."
+},
+"V3": {
+"tokens": [
+{
+"key": "V3:0:0",
+"d": "एतद्",
+"t": "etad",
+"m": "this",
+"tag": "pronoun",
+"c": ""
+},
+{
+"key": "V3:0:1",
+"d": "देश",
+"t": "deśa",
+"m": "region, land",
+"tag": "noun",
+"c": ""
+},
+{
+"key": "V3:0:2",
+"d": "प्रसूतस्य",
+"t": "prasūtasya",
+"m": "of one born",
+"tag": "Gen. sg. m.",
+"c": "gen"
+},
+{
+"key": "V3:0:3",
+"d": "सकाशात्",
+"t": "sakāśāt",
+"m": "from the presence of",
+"tag": "Abl. sg. m.",
+"c": "abl"
+},
+{
+"key": "V3:0:4",
+"d": "अग्रजन्मनः",
+"t": "agrajanmanaḥ",
+"m": "of the foremost-born (the eldest, the leading teacher)",
+"tag": "Gen. sg. m.",
+"c": "gen"
+},
+{
+"key": "V3:1:0",
+"d": "स्वं स्वम्",
+"t": "svaṁ svam",
+"m": "each their own",
+"tag": "Acc. sg. n.",
+"c": "acc"
+},
+{
+"key": "V3:1:1",
+"d": "चरित्रम्",
+"t": "caritram",
+"m": "conduct, character",
+"tag": "Acc. sg. n.",
+"c": "acc"
+},
+{
+"key": "V3:1:2",
+"d": "शिक्षेरन्",
+"t": "śikṣeran",
+"m": "should learn",
+"tag": "vidhiliṅ 3pl.",
+"c": "verb"
+},
+{
+"key": "V3:1:3",
+"d": "पृथिव्याम्",
+"t": "pṛthivyām",
+"m": "on the earth",
+"tag": "Loc. sg. f.",
+"c": "loc"
+},
+{
+"key": "V3:1:4",
+"d": "सर्वमानवाः",
+"t": "sarvamānavāḥ",
+"m": "all humans",
+"tag": "Nom. pl. m.",
+"c": "nom"
+}
+],
+"order": [
+9,
+8,
+0,
+1,
+2,
+4,
+3,
+5,
+6,
+7
+],
+"note": "The subject sarvamānavāḥ moves to the front. The compound etad-deśa-prasūta stays together just before agrajanmanaḥ, which it describes. The verb śikṣeran closes the sentence."
+},
+"V4": {
+"tokens": [
+{
+"key": "V4:0:0",
+"d": "सर्वेषाम्",
+"t": "sarveṣām",
+"m": "of all",
+"tag": "Gen. pl. m.",
+"c": "gen"
+},
+{
+"key": "V4:0:1",
+"d": "शब्दानाम्",
+"t": "śabdānām",
+"m": "of words",
+"tag": "Gen. pl. m.",
+"c": "gen"
+},
+{
+"key": "V4:0:2",
+"d": "स्वार्थे",
+"t": "svārthe",
+"m": "in their own meaning",
+"tag": "Loc. sg. m.",
+"c": "loc"
+},
+{
+"key": "V4:0:3",
+"d": "शक्तिः",
+"t": "śaktiḥ",
+"m": "power, capacity",
+"tag": "Nom. sg. f.",
+"c": "nom"
+}
+],
+"order": [
+0,
+1,
+3,
+2,
+{
+"add": {
+"d": "अस्ति",
+"t": "asti",
+"m": "is"
+}
+}
+],
+"note": "The subject śaktiḥ (“power”) moves ahead of svārthe (“in its own meaning”). The verse leaves out “is”, so I add asti."
+},
+"V5": {
+"tokens": [
+{
+"key": "V5:0:0",
+"d": "लभ्यम्",
+"t": "labhyam",
+"m": "obtainable",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V5:0:1",
+"d": "अपि",
+"t": "api",
+"m": "even",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V5:0:2",
+"d": "न",
+"t": "na",
+"m": "not",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V5:0:2",
+"d": "अस्य",
+"t": "asya",
+"m": "of this",
+"tag": "Gen. sg. n.",
+"c": "gen"
+},
+{
+"key": "V5:0:3",
+"d": "फलम्",
+"t": "phalam",
+"m": "fruit, result",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V5:0:4",
+"d": "भवति",
+"t": "bhavati",
+"m": "is, becomes",
+"tag": "laṭ 3sg.",
+"c": "verb"
+},
+{
+"key": "V5:1:0",
+"d": "कृषि",
+"t": "kṛṣi",
+"m": "farming",
+"tag": "noun",
+"c": ""
+},
+{
+"key": "V5:1:1",
+"d": "पलाल",
+"t": "palāla",
+"m": "straw, chaff",
+"tag": "compound member",
+"c": ""
+}
+],
+"order": [
+0,
+1,
+3,
+4,
+2,
+5,
+6,
+7
+],
+"note": "The negative na moves next to the verb: asya phalaṁ na bhavati, “is not its fruit”. This verse could not be matched to a source, so this order is a best reading."
+},
+"V6": {
+"tokens": [
+{
+"key": "V6:0:0",
+"d": "श्लोकार्धेन",
+"t": "ślokārdhena",
+"m": "with half a verse",
+"tag": "Instr. sg. n.",
+"c": "ins"
+},
+{
+"key": "V6:0:1",
+"d": "प्रवक्ष्यामि",
+"t": "pravakṣyāmi",
+"m": "I shall tell",
+"tag": "lṛṭ 1sg.",
+"c": "verb"
+},
+{
+"key": "V6:0:2",
+"d": "यद्",
+"t": "yad",
+"m": "what",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V6:0:3",
+"d": "उक्तम्",
+"t": "uktam",
+"m": "has been said",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V6:0:4",
+"d": "ग्रन्थकोटिभिः",
+"t": "granthakoṭibhiḥ",
+"m": "by crores of books",
+"tag": "Instr. pl. f.",
+"c": "ins"
+},
+{
+"key": "V6:1:0",
+"d": "परोपकारः",
+"t": "paropakāraḥ",
+"m": "helping others",
+"tag": "Nom. sg. m.",
+"c": "nom"
+},
+{
+"key": "V6:1:1",
+"d": "पुण्याय",
+"t": "puṇyāya",
+"m": "for merit",
+"tag": "Dat. sg. n.",
+"c": "dat"
+},
+{
+"key": "V6:1:2",
+"d": "पापाय",
+"t": "pāpāya",
+"m": "for sin",
+"tag": "Dat. sg. n.",
+"c": "dat"
+},
+{
+"key": "V6:1:3",
+"d": "परपीडनम्",
+"t": "parapīḍanam",
+"m": "tormenting others",
+"tag": "Nom. sg. n.",
+"c": "nom"
+}
+],
+"order": [
+{
+"add": {
+"d": "अहम्",
+"t": "aham",
+"m": "I"
+}
+},
+2,
+4,
+3,
+{
+"add": {
+"d": "तत्",
+"t": "tat",
+"m": "that"
+}
+},
+0,
+1,
+5,
+6,
+{
+"add": {
+"d": "भवति",
+"t": "bhavati",
+"m": "leads to"
+}
+},
+8,
+7,
+{
+"add": {
+"d": "भवति",
+"t": "bhavati",
+"m": "leads to"
+}
+}
+],
+"note": "Relative clause first: “what (yad) was said by crores of books (granthakoṭibhiḥ)”, then “that (tat) I shall tell in half a verse”. The second half drops “leads to”, so I add bhavati twice."
+},
+"V7": {
+"tokens": [
+{
+"key": "V7:0:0",
+"d": "मुक्तिः",
+"t": "muktiḥ",
+"m": "liberation",
+"tag": "Nom. sg. f.",
+"c": "nom"
+},
+{
+"key": "V7:0:1",
+"d": "हित्वा",
+"t": "hitvā",
+"m": "having abandoned",
+"tag": "gerund",
+"c": ""
+},
+{
+"key": "V7:0:2",
+"d": "अन्यथारूपम्",
+"t": "anyathārūpam",
+"m": "the other (non-self) forms",
+"tag": "Acc. sg. n.",
+"c": "acc"
+},
+{
+"key": "V7:0:3",
+"d": "स्वरूपेण",
+"t": "svarūpeṇa",
+"m": "in one's own form",
+"tag": "Instr. sg. n.",
+"c": "ins"
+},
+{
+"key": "V7:0:4",
+"d": "व्यवस्थितिः",
+"t": "vyavasthitiḥ",
+"m": "being established",
+"tag": "Nom. sg. f.",
+"c": "nom"
+}
+],
+"order": [
+0,
+2,
+1,
+3,
+4,
+{
+"add": {
+"d": "अस्ति",
+"t": "asti",
+"m": "is"
+}
+}
+],
+"note": "The object anyathārūpam moves before the gerund hitvā (“having abandoned”). The verse leaves out “is”, so I add asti."
+},
+"V8a": {
+"tokens": [
+{
+"key": "V8a:0:0",
+"d": "अमृतत्वस्य",
+"t": "amṛtatvasya",
+"m": "of immortality",
+"tag": "Gen. sg. n.",
+"c": "gen"
+},
+{
+"key": "V8a:0:1",
+"d": "तु",
+"t": "tu",
+"m": "but",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V8a:0:2",
+"d": "न",
+"t": "na",
+"m": "not",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V8a:0:2",
+"d": "आशा",
+"t": "āśā",
+"m": "hope",
+"tag": "Nom. sg. f.",
+"c": "nom"
+},
+{
+"key": "V8a:0:2",
+"d": "अस्ति",
+"t": "asti",
+"m": "there is",
+"tag": "laṭ 3sg.",
+"c": "verb"
+},
+{
+"key": "V8a:0:3",
+"d": "वित्तेन",
+"t": "vittena",
+"m": "through wealth",
+"tag": "Instr. sg. n.",
+"c": "ins"
+}
+],
+"order": [
+0,
+1,
+3,
+5,
+2,
+4
+],
+"note": "The negative na moves next to asti (“is not” → nāsti). The instrumental vittena (“by wealth”) comes before it."
+},
+"V8b": {
+"tokens": [
+{
+"key": "V8b:0:0",
+"d": "येन",
+"t": "yena",
+"m": "by which",
+"tag": "Instr. sg. n.",
+"c": "ins"
+},
+{
+"key": "V8b:0:1",
+"d": "अहम्",
+"t": "aham",
+"m": "I",
+"tag": "Nom. sg.",
+"c": "nom"
+},
+{
+"key": "V8b:0:2",
+"d": "न",
+"t": "na",
+"m": "not",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V8b:0:2",
+"d": "अमृता",
+"t": "amṛtā",
+"m": "immortal",
+"tag": "Nom. sg. f.",
+"c": "nom"
+},
+{
+"key": "V8b:0:3",
+"d": "स्याम्",
+"t": "syām",
+"m": "I should be",
+"tag": "vidhiliṅ 1sg.",
+"c": "verb"
+},
+{
+"key": "V8b:0:4",
+"d": "किम्",
+"t": "kim",
+"m": "what",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V8b:0:5",
+"d": "तेन",
+"t": "tena",
+"m": "with that",
+"tag": "Instr. sg. n.",
+"c": "ins"
+},
+{
+"key": "V8b:0:6",
+"d": "कुर्याम्",
+"t": "kuryām",
+"m": "should I do",
+"tag": "vidhiliṅ 1sg.",
+"c": "verb"
+}
+],
+"order": [
+0,
+1,
+3,
+2,
+4,
+6,
+{
+"add": {
+"d": "अहम्",
+"t": "aham",
+"m": "I"
+}
+},
+5,
+7
+],
+"note": "Two clauses: “by which I would not be immortal (yena … syām)” and “with that, what should I do (tena … kim kuryām)”. I add the second aham."
+},
+"V9": {
+"tokens": [
+{
+"key": "V9:0:0",
+"d": "अपि",
+"t": "api",
+"m": "even",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V9:0:1",
+"d": "सर्वम्",
+"t": "sarvam",
+"m": "all",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V9:0:2",
+"d": "जीवितम्",
+"t": "jīvitam",
+"m": "life",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V9:0:3",
+"d": "अल्पम्",
+"t": "alpam",
+"m": "little, short",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V9:0:4",
+"d": "एव",
+"t": "eva",
+"m": "indeed",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V9:1:0",
+"d": "तव",
+"t": "tava",
+"m": "yours",
+"tag": "Gen. sg.",
+"c": "gen"
+},
+{
+"key": "V9:1:0",
+"d": "एव",
+"t": "eva",
+"m": "only, alone",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V9:1:1",
+"d": "वाहाः",
+"t": "vāhāḥ",
+"m": "vehicles (horses, chariots)",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V9:1:2",
+"d": "तव",
+"t": "tava",
+"m": "your",
+"tag": "Gen. sg.",
+"c": "gen"
+},
+{
+"key": "V9:1:3",
+"d": "नृत्यगीते",
+"t": "nṛtyagīte",
+"m": "dance and song",
+"tag": "Nom. du. n.",
+"c": "nom"
+}
+],
+"order": [
+1,
+0,
+2,
+3,
+4,
+{
+"add": {
+"d": "अस्ति",
+"t": "asti",
+"m": "is"
+}
+},
+7,
+5,
+6,
+{
+"add": {
+"d": "सन्तु",
+"t": "santu",
+"m": "let them be"
+}
+},
+9,
+8,
+{
+"add": {
+"d": "स्तः",
+"t": "staḥ",
+"m": "are (two)"
+}
+}
+],
+"note": "First half: sarvam api jīvitam alpam eva. Second half: “the chariots are yours alone; the dance and song are yours”. The verse leaves out the verbs, so I add asti, santu and staḥ."
+},
+"V10": {
+"tokens": [
+{
+"key": "V10:0:0",
+"d": "अहनि अहनि",
+"t": "ahani ahani",
+"m": "day after day",
+"tag": "Loc. sg. n.",
+"c": "loc"
+},
+{
+"key": "V10:0:1",
+"d": "भूतानि",
+"t": "bhūtāni",
+"m": "beings",
+"tag": "Nom. pl. n.",
+"c": "nom"
+},
+{
+"key": "V10:0:2",
+"d": "गच्छन्ति",
+"t": "gacchanti",
+"m": "go",
+"tag": "laṭ 3pl.",
+"c": "verb"
+},
+{
+"key": "V10:0:3",
+"d": "इह",
+"t": "iha",
+"m": "here",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V10:0:4",
+"d": "यमालयम्",
+"t": "yamālayam",
+"m": "Yama's abode",
+"tag": "Acc. sg. m.",
+"c": "acc"
+},
+{
+"key": "V10:1:0",
+"d": "शेषाः",
+"t": "śeṣāḥ",
+"m": "the remaining ones",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V10:1:1",
+"d": "स्थावरम्",
+"t": "sthāvaram",
+"m": "the stationary, the permanent",
+"tag": "Acc. sg. m.",
+"c": "acc"
+},
+{
+"key": "V10:1:2",
+"d": "इच्छन्ति",
+"t": "icchanti",
+"m": "wish",
+"tag": "laṭ 3pl.",
+"c": "verb"
+},
+{
+"key": "V10:1:3",
+"d": "किम्",
+"t": "kim",
+"m": "what",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V10:1:4",
+"d": "आश्चर्यम्",
+"t": "āścaryam",
+"m": "a wonder",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V10:1:5",
+"d": "अतः",
+"t": "ataḥ",
+"m": "from this, therefore",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V10:1:5",
+"d": "परम्",
+"t": "param",
+"m": "beyond",
+"tag": "indeclinable",
+"c": ""
+}
+],
+"order": [
+3,
+1,
+0,
+4,
+2,
+5,
+6,
+7,
+10,
+11,
+8,
+9,
+{
+"add": {
+"d": "अस्ति",
+"t": "asti",
+"m": "is"
+}
+}
+],
+"note": "First half: “beings go here to Yama’s abode, day after day”. Second half: the rest wish to be permanent. The question “kim āścaryam ataḥ param” moves into the usual order (ataḥ param first), with asti added."
+},
+"V11": {
+"tokens": [
+{
+"key": "V11:0:0",
+"d": "महता",
+"t": "mahatā",
+"m": "by great",
+"tag": "Instr. sg. n.",
+"c": "ins"
+},
+{
+"key": "V11:0:1",
+"d": "भाग्येन",
+"t": "bhāgyena",
+"m": "by fortune",
+"tag": "Instr. sg. n.",
+"c": "ins"
+},
+{
+"key": "V11:0:2",
+"d": "ईदृशाः",
+"t": "īdṛśāḥ",
+"m": "such",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V11:0:3",
+"d": "पुरुषाः",
+"t": "puruṣāḥ",
+"m": "men, persons",
+"tag": "Nom. pl. m.",
+"c": "nom"
+},
+{
+"key": "V11:0:4",
+"d": "अद्य",
+"t": "adya",
+"m": "today",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V11:0:4",
+"d": "अपि",
+"t": "api",
+"m": "even",
+"tag": "indeclinable",
+"c": ""
+},
+{
+"key": "V11:0:5",
+"d": "सन्ति",
+"t": "santi",
+"m": "they are",
+"tag": "laṭ 3pl.",
+"c": "verb"
+}
+],
+"order": [
+2,
+3,
+4,
+5,
+0,
+1,
+6
+],
+"note": "Subject īdṛśāḥ puruṣāḥ first, then “even today” (adya api), then the cause “by great fortune”, then the verb santi. This verse could not be matched to a source, so this is a best reading."
+},
+"V12": {
+"tokens": [
+{
+"key": "V12:0:0",
+"d": "श्रीकृष्ण",
+"t": "śrīkṛṣṇa",
+"m": "Śrī Kṛṣṇa",
+"tag": "noun",
+"c": ""
+},
+{
+"key": "V12:0:1",
+"d": "अर्पणम्",
+"t": "arpaṇam",
+"m": "an offering",
+"tag": "Nom. sg. n.",
+"c": "nom"
+},
+{
+"key": "V12:0:2",
+"d": "अस्तु",
+"t": "astu",
+"m": "let it be",
+"tag": "loṭ 3sg.",
+"c": "verb"
+}
+],
+"order": [
+{
+"add": {
+"d": "इदम्",
+"t": "idam",
+"m": "this"
+}
+},
+0,
+1,
+2
+],
+"note": "Already in order. I add idam (“this”) so the sentence reads “let this be an offering to Śrī Kṛṣṇa”."
+}
+}
