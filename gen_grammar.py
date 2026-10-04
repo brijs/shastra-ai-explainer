@@ -268,10 +268,10 @@ KARAKA = {
  'sampradāna': {'dev':'सम्प्रदान','en':'recipient','sutra':{'dev':'कर्मणा यमभिप्रैति स सम्प्रदानम्','iast':'karmaṇā yam abhipraiti sa sampradānam','ref':'1.4.32','gloss':'The one whom the agent intends to reach through the object is the sampradāna.'}},
  'apādāna':    {'dev':'अपादान','en':'point of departure','sutra':{'dev':'ध्रुवमपायेऽपादानम्','iast':'dhruvam apāye \'pādānam','ref':'1.4.24','gloss':'The fixed point from which separation occurs is the apādāna.'}},
  'adhikaraṇa': {'dev':'अधिकरण','en':'locus','sutra':{'dev':'आधारोऽधिकरणम्','iast':'ādhāro \'dhikaraṇam','ref':'1.4.45','gloss':'The support or substrate is the adhikaraṇa.'}},
- 'sambandha':  {'dev':'सम्बन्ध','en':'relation','sutra':None},
- 'sambodhana': {'dev':'सम्बोधन','en':'address','sutra':None},
+ 'śeṣa':       {'dev':'शेष','en':'remainder (relation)','sutra':{'dev':'षष्ठी शेषे','iast':'ṣaṣṭhī śeṣe','ref':'2.3.50','gloss':'The sixth case is used for the remainder: any relation that is not a kāraka. Later grammarians call this sambandha, “relation”.'}},
+ 'sambodhana': {'dev':'सम्बोधन','en':'address','sutra':{'dev':'सम्बोधने च','iast':'sambodhane ca','ref':'2.3.47','gloss':'In addressing someone, the first-case affixes are used too. So for Pāṇini the vocative is a use of the first case, not an eighth case.'}},
 }
-CASE_KAR = {'nom':'kartṛ','acc':'karman','ins':'karaṇa','dat':'sampradāna','abl':'apādāna','gen':'sambandha','loc':'adhikaraṇa','voc':'sambodhana'}
+CASE_KAR = {'nom':'kartṛ','acc':'karman','ins':'karaṇa','dat':'sampradāna','abl':'apādāna','gen':'śeṣa','loc':'adhikaraṇa','voc':'sambodhana'}
 for c in CASEINFO:
     k = CASE_KAR[c['id']]; c['kn'] = k; c['kd'] = KARAKA[k]['dev']; c['ken'] = KARAKA[k]['en']
 SUP = {'nom':['su','au','jas'],'acc':['am','auṭ','śas'],'ins':['ṭā','bhyām','bhis'],'dat':['ṅe','bhyām','bhyas'],'abl':['ṅasi','bhyām','bhyas'],'gen':['ṅas','os','ām'],'loc':['ṅi','os','sup'],'voc':['su','au','jas']}
@@ -280,13 +280,13 @@ TING = {'parasmaipada':[['tip','tas','jhi'],['sip','thas','tha'],['mip','vas','m
 # role of each word in the ACTION (kāraka), only where it is clear. Case and kāraka usually match but not always.
 KAR = {
  'V1:0:2':'adhikaraṇa','V1:0:3':'kartṛ','V1:0:5':'karaṇa','V1:0:6':'karman','V1:1:1':'kartṛ','V1:1:3':'karman','V1:1:4':'karaṇa','V1:2:0':'karman',
- 'V3:0:3':'apādāna','V3:0:4':'sambandha','V3:0:2':'sambandha','V3:1:1':'karman','V3:1:3':'adhikaraṇa','V3:1:4':'kartṛ',
- 'V4:0:0':'sambandha','V4:0:1':'sambandha','V4:0:2':'adhikaraṇa',
- 'V5:0:2#1':'sambandha',
+ 'V3:0:3':'apādāna','V3:0:4':'śeṣa','V3:0:2':'śeṣa','V3:1:1':'karman','V3:1:3':'adhikaraṇa','V3:1:4':'kartṛ',
+ 'V4:0:0':'śeṣa','V4:0:1':'śeṣa','V4:0:2':'adhikaraṇa',
+ 'V5:0:2#1':'śeṣa',
  'V6:0:0':'karaṇa','V6:0:2':'karman','V6:0:4':'kartṛ',
  'V7:0:2':'karman',
- 'V8a:0:0':'sambandha','V8a:0:3':'karaṇa','V8b:0:0':'karaṇa','V8b:0:1':'kartṛ','V8b:0:5':'karman','V8b:0:6':'karaṇa',
- 'V9:1:0#0':'sambandha','V9:1:2':'sambandha',
+ 'V8a:0:0':'śeṣa','V8a:0:3':'karaṇa','V8b:0:0':'karaṇa','V8b:0:1':'kartṛ','V8b:0:5':'karman','V8b:0:6':'karaṇa',
+ 'V9:1:0#0':'śeṣa','V9:1:2':'śeṣa',
  'V10:0:0':'adhikaraṇa','V10:0:1':'kartṛ','V10:0:4':'karman','V10:1:0':'kartṛ','V10:1:1':'karman',
 }
 KAR_NOTE = {

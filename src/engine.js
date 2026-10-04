@@ -126,7 +126,7 @@ function wordGram(ent,open){
   h+=`<div class="gram">${posPill(ent)}`;
   if(ent.case)h+=`<span class="pill c" data-c="${ent.case}">${esc(CN[ent.case][1])} · ${esc(NUMN[NUMS(ent.num)].toLowerCase())}${ent.gen?' · '+({m:'masculine',f:'feminine',n:'neuter'}[ent.gen]):''}</span>`;
   if(ent.person)h+=`<span class="pill">${esc(G.paradigms[ent.pd].tense.split(' (')[0])} · ${{3:'3rd',2:'2nd',1:'1st'}[ent.person]} person · ${esc(NUMN[NUMS(ent.num)].toLowerCase())}</span>`;
-  if(ent.kar)h+=`<span class="pill kp" title="Pāṇini’s kāraka: this word’s role in the action">kāraka: ${esc(ent.kar)} <span class="dev">${esc((G.karaka[ent.kar]||{}).dev||'')}</span></span>`;
+  if(ent.kar)h+=ent.kar==='śeṣa'?`<span class="pill kp" title="Not a kāraka: a relation between two nouns">not a kāraka: śeṣa <span class="dev">शेष</span> (relation)</span>`:`<span class="pill kp" title="Pāṇini’s kāraka: this word’s role in the action">kāraka: ${esc(ent.kar)} <span class="dev">${esc((G.karaka[ent.kar]||{}).dev||'')}</span></span>`;
   if(ent.stem)h+=`<span class="pill">stem: ${esc(ent.stem)}</span>`;
   if(ent.root)h+=`<span class="pill">root: ${esc(ent.root)}</span>`;
   h+=`</div>`;

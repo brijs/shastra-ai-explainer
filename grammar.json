@@ -158,9 +158,9 @@
 "w": "tava",
 "en": "tava: “your” chariots, dance and song."
 },
-"kn": "sambandha",
-"kd": "सम्बन्ध",
-"ken": "relation"
+"kn": "śeṣa",
+"kd": "शेष",
+"ken": "remainder (relation)"
 },
 {
 "id": "loc",
@@ -278,15 +278,25 @@
 "gloss": "The support or substrate is the adhikaraṇa."
 }
 },
-"sambandha": {
-"dev": "सम्बन्ध",
-"en": "relation",
-"sutra": null
+"śeṣa": {
+"dev": "शेष",
+"en": "remainder (relation)",
+"sutra": {
+"dev": "षष्ठी शेषे",
+"iast": "ṣaṣṭhī śeṣe",
+"ref": "2.3.50",
+"gloss": "The sixth case is used for the remainder: any relation that is not a kāraka. Later grammarians call this sambandha, “relation”."
+}
 },
 "sambodhana": {
 "dev": "सम्बोधन",
 "en": "address",
-"sutra": null
+"sutra": {
+"dev": "सम्बोधने च",
+"iast": "sambodhane ca",
+"ref": "2.3.47",
+"gloss": "In addressing someone, the first-case affixes are used too. So for Pāṇini the vocative is a use of the first case, not an eighth case."
+}
 }
 },
 "sup": {
@@ -4755,7 +4765,7 @@
 "label": "Gen. sg. m.",
 "stem": "etaddeśaprasūta",
 "form": "etaddeśaprasūtasya",
-"kar": "sambandha"
+"kar": "śeṣa"
 },
 "V3:0:3": {
 "pos": "noun",
@@ -4803,7 +4813,7 @@
 "label": "Gen. sg. m.",
 "stem": "agrajanman",
 "form": "agrajanmanaḥ",
-"kar": "sambandha"
+"kar": "śeṣa"
 },
 "V3:1:0": {
 "pos": "pronoun",
@@ -4925,7 +4935,7 @@
 "label": "Gen. pl. m.",
 "stem": "sarva",
 "form": "sarveṣām",
-"kar": "sambandha"
+"kar": "śeṣa"
 },
 "V4:0:1": {
 "pos": "noun",
@@ -4946,7 +4956,7 @@
 "label": "Gen. pl. m.",
 "stem": "śabda",
 "form": "śabdānām",
-"kar": "sambandha"
+"kar": "śeṣa"
 },
 "V4:0:2": {
 "pos": "noun",
@@ -5052,7 +5062,7 @@
 "label": "Gen. sg. n.",
 "stem": "idam",
 "form": "asya",
-"kar": "sambandha"
+"kar": "śeṣa"
 }
 ],
 "use": "not of this",
@@ -5425,7 +5435,7 @@
 "label": "Gen. sg. n.",
 "stem": "amṛtatva",
 "form": "amṛtatvasya",
-"kar": "sambandha"
+"kar": "śeṣa"
 },
 "V8a:0:1": {
 "pos": "indeclinable",
@@ -5784,7 +5794,7 @@
 "label": "Gen. sg.",
 "stem": "tvad",
 "form": "tava",
-"kar": "sambandha"
+"kar": "śeṣa"
 },
 {
 "pos": "indeclinable",
@@ -5836,7 +5846,7 @@
 "label": "Gen. sg.",
 "stem": "tvad",
 "form": "tava",
-"kar": "sambandha"
+"kar": "śeṣa"
 },
 "V9:1:3": {
 "pos": "noun",
