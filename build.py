@@ -2,16 +2,17 @@
 import json, os, base64, re
 R = os.path.dirname(os.path.abspath(__file__)); os.chdir(R)
 def j(o): return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
-data = json.load(open('verses.json', encoding='utf-8')); gram = json.load(open('grammar.json', encoding='utf-8')); anv = json.load(open('anvaya.json', encoding='utf-8')); narr = json.load(open('narration.json', encoding='utf-8'))
+data = json.load(open('verses.json', encoding='utf-8')); gram = json.load(open('grammar.json', encoding='utf-8')); anv = json.load(open('anvaya.json', encoding='utf-8')); pani = json.load(open('pani.json', encoding='utf-8')); narr = json.load(open('narration.json', encoding='utf-8'))
 def uri(p): return 'data:audio/mpeg;base64,' + base64.b64encode(open(p, 'rb').read()).decode()
 A, VA = {}, {}
 for f in sorted(os.listdir('audio')):
     if not f.endswith('.mp3'): continue
-    m = re.match(r'(n|v|t)_(.+?)\.[0-9a-f]{8}\.mp3$', f)
+    m = re.match(r'(n|v|t|s)_(.+?)\.[0-9a-f]{8}\.mp3$', f)
     if not m: continue
     kind, name = m.groups()
     if kind == 'n': A[name] = uri('audio/' + f)
     elif kind == 'v': VA['v_' + name] = uri('audio/' + f)
+    elif kind == 's': VA['s_' + name] = uri('audio/' + f)
     else: VA['t_' + name] = uri('audio/' + f)
 body = '''<div id="intro"><div class="box"><div class="om" aria-hidden="true">‡•ê</div><h1>Why Shastras, in the Age of AI?</h1>
 <p>A guided, narrated decoding of a 17-minute talk: every Sanskrit verse, word by word and root by root, tied back to the speaker's argument.</p>
@@ -29,8 +30,8 @@ body = '''<div id="intro"><div class="box"><div class="om" aria-hidden="true">‡•
 <p style="text-align:center;font-size:.8rem;color:var(--ink2);padding:0 16px 24px">Source texts are public-domain scripture. Transcript cleaned from YouTube auto-captions. Where a verse could not be matched to a source, the page says so.</p>
 '''
 head = open('src/head.html', encoding='utf-8').read()
-html = (head + body + '<script>\nconst DATA=' + j(data) + ';\nconst GRAMMAR=' + j(gram) + ';\nconst ANV=' + j(anv) + ';\nconst NARR=' + j(narr) + ';\nconst AUDIO=' + j(A) + ';\nconst VAUDIO=' + j(VA) + ';\n</script>\n<script>\n' +
-        open('src/engine.js', encoding='utf-8').read() + '\n</script>\n<script>\n' + open('src/guide.js', encoding='utf-8').read() + '\n</script>\n<script>\n' + open('src/scenes.js', encoding='utf-8').read() + '\n</script>\n</body></html>')
+html = (head + body + '<script>\nconst DATA=' + j(data) + ';\nconst GRAMMAR=' + j(gram) + ';\nconst ANV=' + j(anv) + ';\nconst PANINI=' + j(pani) + ';\nconst NARR=' + j(narr) + ';\nconst AUDIO=' + j(A) + ';\nconst VAUDIO=' + j(VA) + ';\n</script>\n<script>\n' +
+        open('src/engine.js', encoding='utf-8').read() + '\n</script>\n<script>\n' + open('src/guide.js', encoding='utf-8').read() + '\n</script>\n<script>\n' + open('src/pani.js', encoding='utf-8').read() + '\n</script>\n<script>\n' + open('src/scenes.js', encoding='utf-8').read() + '\n</script>\n</body></html>')
 os.makedirs('dist', exist_ok=True); os.makedirs('docs', exist_ok=True)
 for p in ('dist/shastra-ai-explainer.html', 'docs/index.html'): open(p, 'w', encoding='utf-8').write(html)
 open('docs/.nojekyll', 'w').close()

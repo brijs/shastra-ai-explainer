@@ -1372,6 +1372,61 @@
    ],
    "a": 0,
    "e": "It copies the noun's case, number and gender. That is why puṇyatamāḥ and mahābhāgāḥ in V2 share one ending."
+  },
+  {
+   "q": "In vṛkṣāt patraṁ patati (“a leaf falls from the tree”), what is the tree's role?",
+   "o": [
+    "Agent (kartṛ)",
+    "Source (apādāna)",
+    "Locus (adhikaraṇa)",
+    "Instrument (karaṇa)"
+   ],
+   "a": 1,
+   "e": "The fixed point of separation is the apādāna (1.4.24)."
+  },
+  {
+   "q": "What does Pāṇini's rule tasya lopaḥ (1.3.9) say?",
+   "o": [
+    "A tag letter is deleted",
+    "A vowel is lengthened",
+    "A root is doubled",
+    "A case ending is added"
+   ],
+   "a": 0,
+   "e": "Tasya lopaḥ: “its deletion”. Once a letter is identified as a tag (it), it is deleted."
+  },
+  {
+   "q": "Which letters of lyuṭ are tags?",
+   "o": [
+    "l and ṭ",
+    "y and u",
+    "only ṭ",
+    "none of them"
+   ],
+   "a": 0,
+   "e": "ṭ is a final consonant (1.3.3) and l is an initial l of a suffix (1.3.8). What remains is yu, which becomes ana."
+  },
+  {
+   "q": "Why does kṛ + ktvā give kṛtvā with a short ṛ, not kartvā?",
+   "o": [
+    "The deleted k still blocks guṇa",
+    "The root is irregular",
+    "tvā is a prefix",
+    "Because of sandhi"
+   ],
+   "a": 0,
+   "e": "The k tag makes the suffix “kit”. Even after it is deleted, kṅiti ca (1.1.5) blocks guṇa and vṛddhi."
+  },
+  {
+   "q": "Why does kṛ + ṇvul give kāraka (kār-) while kṛ + lyuṭ gives karaṇa (kar-)?",
+   "o": [
+    "The deleted ṇ triggers the stronger vṛddhi",
+    "Ṇvul is a longer suffix",
+    "Lyuṭ is a prefix",
+    "It is a spelling accident"
+   ],
+   "a": 0,
+   "e": "A ṇ tag makes the suffix ṇit, so the root vowel grows to vṛddhi (7.2.115): ṛ → ār. Lyuṭ gives ordinary guṇa: ṛ → ar."
   }
  ]
 }

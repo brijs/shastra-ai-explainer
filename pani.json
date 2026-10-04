@@ -1,0 +1,2485 @@
+{
+"rules": {
+"1.1.5": {
+"dev": "क्ङिति च",
+"iast": "kṅiti ca",
+"plain": "No guṇa or vṛddhi vowel-strengthening happens before a suffix that has a k or ṅ tag (even after the tag is deleted)."
+},
+"1.3.2": {
+"dev": "उपदेशेऽजनुनासिक इत्",
+"iast": "upadeśe 'j-anunāsika it",
+"plain": "A nasalised vowel in the original text of a root or suffix is a tag."
+},
+"1.3.3": {
+"dev": "हलन्त्यम्",
+"iast": "halantyam",
+"plain": "A final consonant of a root or suffix is a tag."
+},
+"1.3.4": {
+"dev": "न विभक्तौ तुस्माः",
+"iast": "na vibhaktau tusmāḥ",
+"plain": "But the final t-class consonants, s and m of a case ending (vibhakti) are NOT tags. That is why jas, am and bhyām keep their last letter."
+},
+"1.3.5": {
+"dev": "आदिर्ञिटुडवः",
+"iast": "ādir ñiṭuḍavaḥ",
+"plain": "An initial ñi, ṭu or ḍu of a root is a tag. (ḍukṛñ → kṛ.)"
+},
+"1.3.6": {
+"dev": "षः प्रत्ययस्य",
+"iast": "ṣaḥ pratyayasya",
+"plain": "An initial ṣ of a suffix is a tag."
+},
+"1.3.7": {
+"dev": "चुटू",
+"iast": "cuṭū",
+"plain": "An initial c-class or ṭ-class consonant of a suffix is a tag. (ṇvul loses ṇ; jas loses j.)"
+},
+"1.3.8": {
+"dev": "लशक्वतद्धिते",
+"iast": "laśakv-ataddhite",
+"plain": "An initial l, ś or k-class consonant of a suffix, other than a taddhita suffix, is a tag. (lyuṭ loses l; ktvā loses k; ṅe loses ṅ.)"
+},
+"1.3.9": {
+"dev": "तस्य लोपः",
+"iast": "tasya lopaḥ",
+"plain": "A tag is deleted."
+},
+"1.4.24": {
+"dev": "ध्रुवमपायेऽपादानम्",
+"iast": "dhruvam apāye 'pādānam",
+"plain": "The fixed point from which separation occurs is the apādāna (source)."
+},
+"1.4.32": {
+"dev": "कर्मणा यमभिप्रैति स सम्प्रदानम्",
+"iast": "karmaṇā yam abhipraiti sa sampradānam",
+"plain": "The one whom the agent intends to reach through the object is the sampradāna (recipient)."
+},
+"1.4.42": {
+"dev": "साधकतमं करणम्",
+"iast": "sādhakatamaṁ karaṇam",
+"plain": "The most effective means is the karaṇa (instrument)."
+},
+"1.4.45": {
+"dev": "आधारोऽधिकरणम्",
+"iast": "ādhāro 'dhikaraṇam",
+"plain": "The support or substrate is the adhikaraṇa (locus)."
+},
+"1.4.49": {
+"dev": "कर्तुरीप्सिततमं कर्म",
+"iast": "kartur īpsitatamaṁ karma",
+"plain": "What the agent most wishes to reach is the karman (object)."
+},
+"1.4.54": {
+"dev": "स्वतन्त्रः कर्ता",
+"iast": "svatantraḥ kartā",
+"plain": "The independent one is the kartṛ (agent)."
+},
+"3.1.133": {
+"dev": "ण्वुल्तृचौ",
+"iast": "ṇvul-tṛcau",
+"plain": "The suffixes ṇvul and tṛc form agent nouns from a root: kṛ → kāraka, kartṛ."
+},
+"3.3.117": {
+"dev": "करणाधिकरणयोश्च",
+"iast": "karaṇādhikaraṇayoś ca",
+"plain": "The suffix lyuṭ forms nouns meaning the instrument or the locus of an action: kṛ → karaṇa."
+},
+"7.1.1": {
+"dev": "युवोरनाकौ",
+"iast": "yuvor anākau",
+"plain": "The suffix pieces yu and vu are replaced by ana and aka."
+},
+"7.1.24": {
+"dev": "अतोऽम्",
+"iast": "ato 'm",
+"plain": "After an a-ending neuter stem, the nominative and accusative singular ending is -am."
+},
+"7.2.115": {
+"dev": "अचो ञ्णिति",
+"iast": "aco ñṇiti",
+"plain": "Before a suffix with a ñ or ṇ tag, the final vowel of the root grows to vṛddhi (ṛ → ār)."
+},
+"7.3.84": {
+"dev": "सार्वधातुकार्धधातुकयोः",
+"iast": "sārvadhātuka-ārdhadhātukayoḥ",
+"plain": "Before most verbal and verb-derived suffixes, the root vowel strengthens to guṇa (ṛ → ar)."
+},
+"8.2.66": {
+"dev": "ससजुषोः रुः",
+"iast": "sasajuṣoḥ ruḥ",
+"plain": "A word-final s becomes r (and then, at the end of a sentence, a visarga)."
+},
+"8.3.15": {
+"dev": "खरवसानयोर्विसर्जनीयः",
+"iast": "kharavasānayor visarjanīyaḥ",
+"plain": "At the end of a word, r becomes a visarga (ḥ)."
+},
+"8.4.1": {
+"dev": "रषाभ्यां नो णः समानपदे",
+"iast": "raṣābhyāṁ no ṇaḥ samānapade",
+"plain": "In the same word, n becomes the retroflex ṇ after r or ṣ, if only vowels and certain consonants (h, y, v, r, k-class, p-class) lie between."
+}
+},
+"karakas": [
+{
+"id": "kartṛ",
+"dev": "कर्तृ",
+"en": "Agent",
+"vib": "usually 1st (prathamā, nominative)",
+"ref": "1.4.54",
+"meaning": "The independent one is the agent.",
+"fn": "The main instigator or doer of the action.",
+"ex": {
+"dev": "देवदत्तः पचति।",
+"iast": "devadattaḥ pacati",
+"en": "Devadatta cooks."
+}
+},
+{
+"id": "karman",
+"dev": "कर्म",
+"en": "Object",
+"vib": "usually 2nd (dvitīyā, accusative)",
+"ref": "1.4.49",
+"meaning": "What the agent desires most to achieve is the object.",
+"fn": "The entity most directly affected by the action.",
+"ex": {
+"dev": "देवदत्तः ओदनं पचति।",
+"iast": "devadattaḥ odanaṁ pacati",
+"en": "Devadatta cooks rice."
+}
+},
+{
+"id": "karaṇa",
+"dev": "करण",
+"en": "Instrument",
+"vib": "usually 3rd (tṛtīyā, instrumental)",
+"ref": "1.4.42",
+"meaning": "The most effective means or helper is the instrument.",
+"fn": "The tool or immediate instrument used to accomplish the action.",
+"ex": {
+"dev": "देवदत्तः स्थाल्या ओदनं पचति।",
+"iast": "devadattaḥ sthālyā odanaṁ pacati",
+"en": "Devadatta cooks rice with a pot."
+}
+},
+{
+"id": "sampradāna",
+"dev": "सम्प्रदान",
+"en": "Recipient",
+"vib": "usually 4th (caturthī, dative)",
+"ref": "1.4.32",
+"meaning": "Whom one intends to reach through the object given is the recipient.",
+"fn": "The person or thing for whom the action is performed (usually giving).",
+"ex": {
+"dev": "विप्राय गां ददाति।",
+"iast": "viprāya gāṁ dadāti",
+"en": "He gives a cow to the scholar."
+}
+},
+{
+"id": "apādāna",
+"dev": "अपादान",
+"en": "Source",
+"vib": "usually 5th (pañcamī, ablative)",
+"ref": "1.4.24",
+"meaning": "The fixed point during separation is the source.",
+"fn": "The starting point from which separation, movement or fear occurs.",
+"ex": {
+"dev": "वृक्षात् पत्रं पतति।",
+"iast": "vṛkṣāt patraṁ patati",
+"en": "A leaf falls from the tree."
+}
+},
+{
+"id": "adhikaraṇa",
+"dev": "अधिकरण",
+"en": "Locus",
+"vib": "usually 7th (saptamī, locative)",
+"ref": "1.4.45",
+"meaning": "The substratum or support of the action is the locus.",
+"fn": "The location, time or abstract domain where the action takes place.",
+"ex": {
+"dev": "देवदत्तः गृहे ओदनं पचति।",
+"iast": "devadattaḥ gṛhe odanaṁ pacati",
+"en": "Devadatta cooks rice in the house."
+}
+}
+],
+"sentences": [
+{
+"id": "cook",
+"en": "Devadatta cooks rice in the house with a pot.",
+"tokens": [
+{
+"d": "देवदत्तः",
+"t": "devadattaḥ",
+"en": "Devadatta",
+"role": "kartṛ",
+"gram": "nominative singular masculine",
+"note": "He is the independent doer: nobody else is acting through him."
+},
+{
+"d": "गृहे",
+"t": "gṛhe",
+"en": "in the house",
+"role": "adhikaraṇa",
+"gram": "locative singular neuter",
+"note": "The house is the support or setting of the cooking."
+},
+{
+"d": "स्थाल्या",
+"t": "sthālyā",
+"en": "with a pot",
+"role": "karaṇa",
+"gram": "instrumental singular feminine",
+"note": "The pot is the most effective means: without it the cooking does not happen."
+},
+{
+"d": "ओदनम्",
+"t": "odanam",
+"en": "rice",
+"role": "karman",
+"gram": "accusative singular masculine",
+"note": "Rice is what the cook most wishes to bring about: it is changed by the action."
+},
+{
+"d": "पचति",
+"t": "pacati",
+"en": "cooks",
+"role": "verb",
+"gram": "√pac, present, 3rd person singular",
+"note": "The verb ending -ti already tells us: one agent, third person."
+}
+]
+},
+{
+"id": "give",
+"en": "He gives a cow to the scholar.",
+"tokens": [
+{
+"d": "विप्राय",
+"t": "viprāya",
+"en": "to the scholar",
+"role": "sampradāna",
+"gram": "dative singular masculine",
+"note": "The scholar is whom the giver intends the cow to reach."
+},
+{
+"d": "गाम्",
+"t": "gām",
+"en": "a cow",
+"role": "karman",
+"gram": "accusative singular feminine",
+"note": "The cow is the thing given: the object."
+},
+{
+"d": "ददाति",
+"t": "dadāti",
+"en": "gives",
+"role": "verb",
+"gram": "√dā, present, 3rd person singular",
+"note": "The ending -ti supplies “he”."
+}
+]
+},
+{
+"id": "fall",
+"en": "A leaf falls from the tree.",
+"tokens": [
+{
+"d": "वृक्षात्",
+"t": "vṛkṣāt",
+"en": "from the tree",
+"role": "apādāna",
+"gram": "ablative singular masculine",
+"note": "The tree is the fixed point the leaf separates from."
+},
+{
+"d": "पत्रम्",
+"t": "patram",
+"en": "a leaf",
+"role": "kartṛ",
+"gram": "nominative singular neuter",
+"note": "The leaf is the one that falls, so it is the agent (kartṛ), not an object: roles come from the action, not from grammar labels."
+},
+{
+"d": "पतति",
+"t": "patati",
+"en": "falls",
+"role": "verb",
+"gram": "√pat, present, 3rd person singular",
+"note": "“Falling” is an action done by the leaf."
+}
+]
+}
+],
+"derivations": [
+{
+"id": "karana",
+"title": "karaṇa (“instrument”): kṛ + lyuṭ",
+"result": {
+"dev": "करणम्",
+"iast": "karaṇam",
+"en": "the instrument"
+},
+"ruleNote": "3.3.117",
+"states": [
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "l1",
+"t": "l",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "ṭ",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": null,
+"say": "Start with the root √kṛ (“to do”) and the raw suffix lyuṭ. By 3.3.117, lyuṭ forms words meaning the instrument or the locus of an action."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "l1",
+"t": "l",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "ṭ",
+"cls": "tag",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.3",
+"say": "The last consonant of a suffix is a tag (an “it” letter). ṭ is flagged."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "l1",
+"t": "l",
+"cls": "tag",
+"k": "suffix"
+},
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "ṭ",
+"cls": "tag",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.8",
+"say": "An initial l, ś or k-class letter of a suffix is also a tag. l is flagged."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.9",
+"say": "A tag is deleted. Only the working core “yu” remains."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "a2",
+"t": "a",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "n2",
+"t": "n",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "new",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "7.1.1",
+"say": "The core yu is replaced by ana."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "new",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "new",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "n2",
+"t": "n",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "7.3.84",
+"say": "The root vowel strengthens to guṇa: ṛ becomes ar. Nothing blocks it, because no k or ṅ tag is hiding here."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "n2",
+"t": "n",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": true,
+"rule": null,
+"say": "The pieces join: kar + ana."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "N2",
+"t": "ṇ",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": true,
+"rule": "8.4.1",
+"say": "The sound r is earlier in the same word with only vowels between, so the dental n turns into the retroflex ṇ."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "N2",
+"t": "ṇ",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "m1",
+"t": "m",
+"cls": "new",
+"k": "sup"
+}
+]
+}
+],
+"merged": true,
+"rule": "7.1.24",
+"say": "As a neuter a-stem noun, the nominative singular ending is -am. The word is complete."
+}
+]
+},
+{
+"id": "adhikarana",
+"title": "adhikaraṇa (“locus”): adhi + kṛ + lyuṭ",
+"result": {
+"dev": "अधिकरणम्",
+"iast": "adhikaraṇam",
+"en": "the locus"
+},
+"ruleNote": "3.3.117",
+"states": [
+{
+"segs": [
+{
+"k": "prefix",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+}
+]
+},
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "l1",
+"t": "l",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "ṭ",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": null,
+"say": "Start with the root √kṛ (“to do”) and the raw suffix lyuṭ. By 3.3.117, lyuṭ forms words meaning the instrument or the locus of an action."
+},
+{
+"segs": [
+{
+"k": "prefix",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+}
+]
+},
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "l1",
+"t": "l",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "ṭ",
+"cls": "tag",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.3",
+"say": "The last consonant of a suffix is a tag (an “it” letter). ṭ is flagged."
+},
+{
+"segs": [
+{
+"k": "prefix",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+}
+]
+},
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "l1",
+"t": "l",
+"cls": "tag",
+"k": "suffix"
+},
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "ṭ",
+"cls": "tag",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.8",
+"say": "An initial l, ś or k-class letter of a suffix is also a tag. l is flagged."
+},
+{
+"segs": [
+{
+"k": "prefix",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+}
+]
+},
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "y1",
+"t": "y",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.9",
+"say": "A tag is deleted. Only the working core “yu” remains."
+},
+{
+"segs": [
+{
+"k": "prefix",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+}
+]
+},
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "a2",
+"t": "a",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "n2",
+"t": "n",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "new",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "7.1.1",
+"say": "The core yu is replaced by ana."
+},
+{
+"segs": [
+{
+"k": "prefix",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+}
+]
+},
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "new",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "new",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "n2",
+"t": "n",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "7.3.84",
+"say": "The root vowel strengthens to guṇa: ṛ becomes ar. Nothing blocks it, because no k or ṅ tag is hiding here."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "n2",
+"t": "n",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": true,
+"rule": null,
+"say": "The pieces join: adhi + kar + ana."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "N2",
+"t": "ṇ",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": true,
+"rule": "8.4.1",
+"say": "The sound r is earlier in the same word with only vowels between, so the dental n turns into the retroflex ṇ."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "a0",
+"t": "a",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "dh0",
+"t": "dh",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "i0",
+"t": "i",
+"cls": "",
+"k": "prefix"
+},
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "N2",
+"t": "ṇ",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "m1",
+"t": "m",
+"cls": "new",
+"k": "sup"
+}
+]
+}
+],
+"merged": true,
+"rule": "7.1.24",
+"say": "As a neuter a-stem noun, the nominative singular ending is -am. The word is complete."
+}
+]
+},
+{
+"id": "karaka",
+"title": "kāraka (“doer”): kṛ + ṇvul",
+"result": {
+"dev": "कारकः",
+"iast": "kārakaḥ",
+"en": "the doer"
+},
+"ruleNote": "3.1.133",
+"states": [
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "n1",
+"t": "ṇ",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "l1",
+"t": "l",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": null,
+"say": "Start with √kṛ and the suffix ṇvul. By 3.1.133, ṇvul forms agent nouns (the doer)."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "n1",
+"t": "ṇ",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "l1",
+"t": "l",
+"cls": "tag",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.3",
+"say": "The last consonant of a suffix is a tag. l is flagged."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "n1",
+"t": "ṇ",
+"cls": "tag",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "l1",
+"t": "l",
+"cls": "tag",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.7",
+"say": "An initial c-class or ṭ-class consonant of a suffix is a tag. ṇ belongs to the ṭ-class, so it is flagged."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "n1",
+"t": "ṇ",
+"cls": "ghost",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "u1",
+"t": "u",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.9",
+"say": "Both tags are deleted. But look: the ṇ leaves a faint ghost. Pāṇini’s rules still “remember” that the suffix had a ṇ tag."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "n1",
+"t": "ṇ",
+"cls": "ghost",
+"k": "suffix"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "k2",
+"t": "k",
+"cls": "new",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "new",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "7.1.1",
+"say": "The core vu is replaced by aka."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "new",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "new",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "n1",
+"t": "ṇ",
+"cls": "ghost",
+"k": "suffix"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "k2",
+"t": "k",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "7.2.115",
+"say": "Because the suffix had a ṇ tag, the root vowel grows to its fullest strength, vṛddhi: ṛ becomes ār. The ghost has done its job."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "k2",
+"t": "k",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": true,
+"rule": null,
+"say": "The ghost vanishes and the pieces join: kār + aka."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a2",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "k2",
+"t": "k",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a3",
+"t": "a",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "h1",
+"t": "ḥ",
+"cls": "new",
+"k": "sup"
+}
+]
+}
+],
+"merged": true,
+"rule": "8.3.15",
+"say": "As a masculine noun, the nominative singular ends in s, which becomes r and then a visarga (8.2.66, 8.3.15): kārakaḥ."
+}
+]
+},
+{
+"id": "kartr",
+"title": "kartṛ (“doer”): kṛ + tṛc",
+"result": {
+"dev": "कर्तृ",
+"iast": "kartṛ",
+"en": "the doer (stem)"
+},
+"ruleNote": "3.1.133",
+"states": [
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "rr",
+"t": "ṛ",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "c1",
+"t": "c",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": null,
+"say": "Start with √kṛ and the other agent suffix, tṛc (also from 3.1.133)."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "rr",
+"t": "ṛ",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "c1",
+"t": "c",
+"cls": "tag",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.3",
+"say": "The last consonant of a suffix is a tag. c is flagged."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "rr",
+"t": "ṛ",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.9",
+"say": "The tag is deleted. The core tṛ remains."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "new",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "new",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "rr",
+"t": "ṛ",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "7.3.84",
+"say": "The root vowel strengthens to guṇa: ṛ becomes ar."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "a1",
+"t": "a",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r2",
+"t": "r",
+"cls": "",
+"k": "root"
+},
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "rr",
+"t": "ṛ",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": true,
+"rule": null,
+"say": "The pieces join: kar + tṛ = kartṛ. This is Pāṇini’s own word for the agent. Its nominative singular is kartā."
+}
+]
+},
+{
+"id": "krtva",
+"title": "kṛtvā (“having done”): kṛ + ktvā",
+"result": {
+"dev": "कृत्वा",
+"iast": "kṛtvā",
+"en": "having done"
+},
+"ruleNote": "1.1.5",
+"states": [
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "k2",
+"t": "k",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": null,
+"say": "Start with √kṛ and the gerund suffix ktvā (“having …”), like hitvā and yācitvā in the verses."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "k2",
+"t": "k",
+"cls": "tag",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.8",
+"say": "An initial k-class letter of a suffix is a tag. k is flagged."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "k2",
+"t": "k",
+"cls": "ghost",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.3.9",
+"say": "The tag is deleted, but it leaves a ghost: the suffix is still “kit” (it had a k tag)."
+},
+{
+"segs": [
+{
+"k": "root",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "protect",
+"k": "root"
+}
+]
+},
+{
+"k": "suffix",
+"u": [
+{
+"id": "k2",
+"t": "k",
+"cls": "ghost",
+"k": "suffix"
+},
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": false,
+"rule": "1.1.5",
+"say": "Because of the ghost k, guṇa and vṛddhi are blocked. The vowel stays a short ṛ. Compare the guṇa in kar-aṇa and the vṛddhi in kār-aka."
+},
+{
+"segs": [
+{
+"k": "word",
+"u": [
+{
+"id": "k1",
+"t": "k",
+"cls": "",
+"k": "root"
+},
+{
+"id": "r1",
+"t": "ṛ",
+"cls": "",
+"k": "root"
+},
+{
+"id": "t1",
+"t": "t",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "v1",
+"t": "v",
+"cls": "",
+"k": "suffix"
+},
+{
+"id": "a1",
+"t": "ā",
+"cls": "",
+"k": "suffix"
+}
+]
+}
+],
+"merged": true,
+"rule": null,
+"say": "The ghost vanishes and the pieces join: kṛ + tvā = kṛtvā. It is indeclinable, so no case ending is added."
+}
+]
+}
+],
+"game": [
+{
+"s": "lyuṭ",
+"letters": [
+"l",
+"y",
+"u",
+"ṭ"
+],
+"tags": {
+"l": "1.3.8",
+"ṭ": "1.3.3"
+},
+"protected": {},
+"core": "yu"
+},
+{
+"s": "ṇvul",
+"letters": [
+"ṇ",
+"v",
+"u",
+"l"
+],
+"tags": {
+"ṇ": "1.3.7",
+"l": "1.3.3"
+},
+"protected": {},
+"core": "vu"
+},
+{
+"s": "ktvā",
+"letters": [
+"k",
+"t",
+"v",
+"ā"
+],
+"tags": {
+"k": "1.3.8"
+},
+"protected": {},
+"core": "tvā"
+},
+{
+"s": "tṛc",
+"letters": [
+"t",
+"ṛ",
+"c"
+],
+"tags": {
+"c": "1.3.3"
+},
+"protected": {},
+"core": "tṛ"
+},
+{
+"s": "jas",
+"letters": [
+"j",
+"a",
+"s"
+],
+"tags": {
+"j": "1.3.7"
+},
+"protected": {
+"s": "1.3.4"
+},
+"core": "as"
+},
+{
+"s": "ṅe",
+"letters": [
+"ṅ",
+"e"
+],
+"tags": {
+"ṅ": "1.3.8"
+},
+"protected": {},
+"core": "e"
+}
+],
+"grades": {
+"rule": "Guṇa: a→a, i/ī→e, u/ū→o, ṛ/ṝ→ar. Vṛddhi: a→ā, i/ī→ai, u/ū→au, ṛ/ṝ→ār.",
+"rows": [
+{
+"root": "√kṛ",
+"basic": "kṛ",
+"guna": "kar",
+"vrddhi": "kār",
+"gw": "karaṇa, kartavya (V1)",
+"vw": "kāraka"
+},
+{
+"root": "√vid",
+"basic": "vid",
+"guna": "ved",
+"vrddhi": "vaid",
+"gw": "veda (V2)",
+"vw": "vaidya"
+},
+{
+"root": "√bhū",
+"basic": "bhū",
+"guna": "bho → bhav-",
+"vrddhi": "bhau → bhāv-",
+"gw": "bhavati (V5)",
+"vw": "bhāva"
+}
+]
+}
+}

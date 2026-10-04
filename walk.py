@@ -59,6 +59,41 @@ async def run(width, height, tag):
             if sid == 's12':
                 await pg.locator('.card[data-v="V10"] .wchip[data-vw="V10:0:4"]').click()
                 if 'kāraka: karman' not in await pg.inner_text('.card[data-v="V10"] .wdetail'): errs.append('V10 yamālayam missing kāraka karman')
+            if sid == 'sk':
+                for si in range(3):
+                    await pg.locator('.tabs button[data-s="%d"]' % si).click()
+                    for ti in range(await pg.locator('.stok').count()):
+                        await pg.locator('.stok').nth(ti).click()
+                        txt = await pg.inner_text('[data-id="kdet"]')
+                        if 'verb' not in txt and 'Core function' not in txt: errs.append(f'sk token detail {si}:{ti}')
+                await pg.locator('.tabs button[data-s="2"]').click(); await pg.locator('.stok').nth(1).click()
+                if 'independent' not in (await pg.inner_text('[data-id="kdet"]')).lower(): errs.append('leaf should show svatantra sutra')
+                await pg.locator('[data-id="kdet"] button[data-sutra]').first.click()
+                for a_ in [1,1,2,0]:
+                    await pg.locator('[data-id="kq"] .opt').nth(a_).click(); await pg.locator('[data-id="kq"] #qn').click()
+            if sid == 'sx':
+                exp = await pg.evaluate("PANINI.derivations.map(d=>d.result.iast)")
+                for di in range(len(exp)):
+                    await pg.locator('[data-id="dtabs"] button').nth(di).click(); await pg.wait_for_timeout(120)
+                    seen_ghost = False
+                    while await pg.locator('[data-id="mnext"]').is_enabled():
+                        await pg.locator('[data-id="mnext"]').click(); await pg.wait_for_timeout(750)
+                        if await pg.locator('.mstage .mu.ghost').count(): seen_ghost = True
+                    await pg.wait_for_timeout(600)
+                    fin = await pg.evaluate("Array.from(document.querySelectorAll('.mstage .mu:not(.out):not(.plus):not(.ghost)')).map(e=>e.textContent).join('')")
+                    if fin != exp[di]: errs.append(f'derivation {di}: {fin!r} != {exp[di]!r}')
+                    if exp[di] in ('kārakaḥ','kṛtvā') and not seen_ghost: errs.append('ghost tag never shown for ' + exp[di])
+                    await pg.locator('[data-id="mback"]').click(); await pg.wait_for_timeout(750); await pg.locator('[data-id="mreset"]').click(); await pg.wait_for_timeout(300)
+                n_games = await pg.locator('[data-id="gtabs"] button').count()
+                for gi in range(n_games):
+                    await pg.locator('[data-id="gtabs"] button').nth(gi).click()
+                    tags = await pg.evaluate("(i)=>Object.keys(PANINI.game[i].tags)", gi)
+                    for t_ in tags: await pg.locator('.glet[data-l="%s"]' % t_).click()
+                    await pg.locator('[data-id="gcheck"]').click()
+                    if 'Correct.' not in await pg.inner_text('[data-id="gres"]'): errs.append(f'tag game {gi} not correct')
+                await pg.locator('[data-id="gbtns"] button[data-c="vrddhi"]').click()
+                if 'kār' not in await pg.inner_text('[data-id="gtab"]'): errs.append('vrddhi table missing kār')
+                await pg.locator('details.tbl summary').click(); await pg.locator('[data-id="allrules"] button[data-sutra]').first.click()
             # anvaya: every verse card on this scene rearranges to the expected order and back
             for k in range(await pg.locator('.anv').count()):
                 box = pg.locator('.anv').nth(k); vid = await box.get_attribute('data-anv')
@@ -88,7 +123,7 @@ async def run(width, height, tag):
             if sid in ('sg', 's3', 's7', 's10', 's14') : await pg.screenshot(path=f'shots/{tag}_{sid}.png', full_page=True)
         # guide overlay: all tabs
         await pg.click('#guideBtn'); assert await pg.locator('#gg:not([hidden])').count() == 1
-        for t in ['cases','families','anvaya','numgen','types','notation','sounds','para']:
+        for t in ['cases','families','anvaya','rules','numgen','types','notation','sounds','para']:
             await pg.locator(f'#ggtabs button[data-t="{t}"]').click(); await pg.wait_for_timeout(80)
             if await pg.inner_text('#ggbody') == '': errs.append('EMPTY TAB ' + t)
         await pg.locator('#ggtabs button[data-t="notation"]').click(); await pg.locator('[data-id="exchips"] .wchip').nth(5).click()
@@ -113,7 +148,7 @@ async def run(width, height, tag):
         await pg.screenshot(path=f'shots/{tag}_guide.png')
         await pg.keyboard.press('Escape'); assert await pg.locator('#gg[hidden]').count() == 1
         # devanagari toggle
-        await pg.evaluate('EX.go(3)'); await pg.locator('.wchip[data-vw]').first.click()
+        await pg.evaluate("EX.go(EX.SCENES.findIndex(s=>s.id==='s3'))"); await pg.locator('.wchip[data-vw]').first.click()
         if not (await pg.locator('.gt .fd >> nth=0').is_visible() and await pg.locator('.gt .fi >> nth=0').is_visible()): errs.append('table should show Devanagari + Roman by default')
         await pg.click('#devf'); 
         if await pg.locator('.gt .fi >> nth=0').is_visible(): errs.append('mode-dev should hide Roman')

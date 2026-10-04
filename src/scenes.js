@@ -25,6 +25,8 @@ html:`<div id="cwrap"></div><div class="sec">Check yourself</div><div id="cq"></
 init(r,a){EX.casesTab($('#cwrap',r),'abl');
  quiz($('#cq',r),[{q:'“Rāma comes FROM the village.” Which case marks “from the village”?',o:['Instrumental','Ablative','Dative','Locative'],a:1,e:'Ablative (pañcamī) marks the source or point of departure: grāmāt.'},{q:'“rathena” means “by chariot”. Which case is it?',o:['Genitive','Accusative','Instrumental','Vocative'],a:2,e:'Instrumental (tṛtīyā): the tool or means, with the ending -ena.'},{q:'Which case answers “whose?”',o:['Genitive','Dative','Locative','Nominative'],a:0,e:'Genitive (ṣaṣṭhī): a link between two nouns, as in rāmasya pustakam, “Rāma’s book”.'}],()=>{});}});
 
+P(EX.SK);
+
 /* 2 Setting + V1 */
 P({id:'s2',level:0,mood:'neutral',title:'The odd man out',
 html:`<p class="lead">He studied the Vedas and went to IIT. Two paths, one person. Then he opened in Sanskrit.</p>
@@ -165,6 +167,8 @@ init(r,a){const C=['Why study for JEE? To get into an IIT.','Why an IIT? For a g
  $('#why',r).onclick=()=>{if(n<C.length){$('#chain',r).insertAdjacentHTML('beforeend',`<div class="bubble ${n%2?'b':'a'}">${C[n]}</div>`);n++;if(n===C.length){$('#why',r).disabled=true;$('#alt',r).style.display='';a.react('Is there a more ambitious aim?','think');}}};
  $('#alt',r).onclick=()=>{$('#alt',r).disabled=true;$('#mum',r).innerHTML=TC('T-mumuksha');a.react('Lasting happiness. That is mumukṣā.','happy');};
  const pr=$('#pr',r);pr.oninput=()=>{const y=+pr.value;$('#pv',r).textContent=y;$('#pmsg',r).textContent=y<5?'Alphabet and basic maths: you cannot yet follow the proof.':y<12?'Calculus and linear algebra: closer.':y<20?'Advanced courses: you can follow parts of it.':'Now the proof makes sense. He says the same is true of the Shastras: preparation first.';};}});
+
+P(EX.SX);
 
 /* 14 Lab, quiz, cheat sheet */
 P({id:'s14',level:4,mood:'happy',title:'Word lab, quiz and decoder card',

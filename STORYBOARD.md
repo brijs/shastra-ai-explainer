@@ -1,6 +1,6 @@
 # Storyboard — "Why Shastras, in the Age of AI?" (working title)
 
-An animated, narrated explainer of Dr. Pratosh's talk. Style: palm-leaf manuscript. Guide: a gentle Acharya. Narration: Microsoft `en-IN-PrabhatNeural`. Verses read aloud: `hi-IN-MadhurNeural` (from Devanagari). 15 scenes. Every verse is decoded the same way: **Devanagari → padaccheda (word split) → word-by-word meaning → dhātu (root) → meaning of the whole → "why he quoted this"**.
+An animated, narrated explainer of Dr. Pratosh's talk. Style: palm-leaf manuscript. Guide: a gentle Acharya. Narration: Microsoft `en-IN-PrabhatNeural`. Verses read aloud: `hi-IN-MadhurNeural` (from Devanagari). 17 scenes. Every verse is decoded the same way: **Devanagari → padaccheda (word split) → word-by-word meaning → dhātu (root) → meaning of the whole → "why he quoted this"**.
 
 Confidence badge on every verse: ● verified source, ◐ recognised but wording may differ, ○ reconstructed from audio, not matched to any source (decoded only as far as the words are clear).
 
@@ -40,3 +40,7 @@ One entry per scene, ~35–60 spoken words, second person, in the Acharya's voic
 
 ## Grammar layer (added after review)
 Every word in every verse card shows its type, case/number/gender (or person/tense/voice), stem or root, a use note, and the full table with the form highlighted. The Grammar guide (header) adds cases, number and gender, word types, notation, sounds and a 26-table paradigm gallery. Tables are generated and checked in `gen_grammar.py`.
+
+## Pāṇini scenes (added after review)
+| 1c | Grammar | **Pāṇini's six kārakas, in his own words** | Pick one of three sentences; tap words to see role, sūtra (with audio) and use; answer 4 check questions. | Roles come from the action, not from endings: the falling leaf is the agent. |
+| 15b | Grammar | **Pāṇini's code: hidden tags** | Step through five √kṛ derivations with animated tags, ghosts, substitutions and vowel growth; spot the tags; compare guṇa and vṛddhi. | Suffix tags are deleted but leave effects; same core, different tags, different results. |

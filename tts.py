@@ -9,6 +9,8 @@ for k, t in N.items(): jobs.append((f'n_{k}', t, NV, '+0%'))
 for v in D['verses']:
     for i, l in enumerate(v['lines']): jobs.append((f'v_{v["id"]}_{i}', l['dev'], VV, '-18%'))
 for t in D['terms']: jobs.append((f't_{t["id"]}', t['dev'], VV, '-18%'))
+P = json.load(open('pani.json', encoding='utf-8'))
+for ref, r in P['rules'].items(): jobs.append(('s_' + ref.replace('.', '_'), r['dev'], VV, '-18%'))
 async def main():
     n = 0
     for name, text, voice, rate in jobs:

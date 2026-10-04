@@ -142,8 +142,8 @@ function familiesTab(root){
     $('[data-id="cmpt"]',root).innerHTML=`<tr><th>Stem</th><th>Singular</th><th>Dual</th><th>Plural</th></tr>`+row('deva (-a)',A)+row('rājan (-an)',B);$('[data-id="cmpn"]',root).innerHTML=NOTE[i];});
   $('[data-id="cmpb"] button',root).click();
 }
-const TABS=[['cases','Cases'],['families','Stem families'],['anvaya','Anvaya'],['numgen','Number & gender'],['types','Word types'],['notation','Notation'],['sounds','Sounds'],['para','Paradigms']];
-const FN={families:familiesTab,anvaya:anvayaTab,cases:casesTab,numgen:numgenTab,types:typesTab,notation:notationTab,sounds:soundsTab,para:galleryTab};
+const TABS=[['cases','Cases'],['families','Stem families'],['anvaya','Anvaya'],['rules','Pāṇini’s rules'],['numgen','Number & gender'],['types','Word types'],['notation','Notation'],['sounds','Sounds'],['para','Paradigms']];
+const FN={rules:(root)=>EX.rulesTab(root),families:familiesTab,anvaya:anvayaTab,cases:casesTab,numgen:numgenTab,types:typesTab,notation:notationTab,sounds:soundsTab,para:galleryTab};
 let last=null;
 function openGuide(spec){
   const [tab,arg]=String(spec||'cases').split(':'); const g=$('#gg'); last=document.activeElement; g.hidden=false; document.body.style.overflow='hidden';
