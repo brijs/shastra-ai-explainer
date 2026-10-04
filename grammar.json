@@ -1098,6 +1098,786 @@
 "pattern": "t-stem adjective mahat (\"great\")",
 "note": "Adjectives take the gender, case and number of the noun they describe. Feminine: mahatī."
 },
+"a_m:deva": {
+"id": "a_m:deva",
+"kind": "noun",
+"stem": "deva",
+"gender": "m",
+"forms": {
+"m": [
+[
+"devaḥ",
+"devau",
+"devāḥ"
+],
+[
+"devam",
+"devau",
+"devān"
+],
+[
+"devena",
+"devābhyām",
+"devaiḥ"
+],
+[
+"devāya",
+"devābhyām",
+"devebhyaḥ"
+],
+[
+"devāt",
+"devābhyām",
+"devebhyaḥ"
+],
+[
+"devasya",
+"devayoḥ",
+"devānām"
+],
+[
+"deve",
+"devayoḥ",
+"deveṣu"
+],
+[
+"deva",
+"devau",
+"devāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"i_m:hari": {
+"id": "i_m:hari",
+"kind": "noun",
+"stem": "hari",
+"gender": "m",
+"forms": {
+"m": [
+[
+"hariḥ",
+"harī",
+"harayaḥ"
+],
+[
+"harim",
+"harī",
+"harīn"
+],
+[
+"hariṇā",
+"haribhyām",
+"haribhiḥ"
+],
+[
+"haraye",
+"haribhyām",
+"haribhyaḥ"
+],
+[
+"hareḥ",
+"haribhyām",
+"haribhyaḥ"
+],
+[
+"hareḥ",
+"haryoḥ",
+"harīṇām"
+],
+[
+"harau",
+"haryoḥ",
+"hariṣu"
+],
+[
+"hare",
+"harī",
+"harayaḥ"
+]
+]
+},
+"pattern": "i-stem masculine (like hari)",
+"note": ""
+},
+"i_n:vāri": {
+"id": "i_n:vāri",
+"kind": "noun",
+"stem": "vāri",
+"gender": "n",
+"forms": {
+"n": [
+[
+"vāri",
+"vāriṇī",
+"vārīṇi"
+],
+[
+"vāri",
+"vāriṇī",
+"vārīṇi"
+],
+[
+"vāriṇā",
+"vāribhyām",
+"vāribhiḥ"
+],
+[
+"vāriṇe",
+"vāribhyām",
+"vāribhyaḥ"
+],
+[
+"vāriṇaḥ",
+"vāribhyām",
+"vāribhyaḥ"
+],
+[
+"vāriṇaḥ",
+"vāriṇoḥ",
+"vārīṇām"
+],
+[
+"vāriṇi",
+"vāriṇoḥ",
+"vāriṣu"
+],
+[
+"vāri / vāre",
+"vāriṇī",
+"vārīṇi"
+]
+]
+},
+"pattern": "i-stem neuter (like vāri)",
+"note": ""
+},
+"u_m:guru": {
+"id": "u_m:guru",
+"kind": "noun",
+"stem": "guru",
+"gender": "m",
+"forms": {
+"m": [
+[
+"guruḥ",
+"gurū",
+"guravaḥ"
+],
+[
+"gurum",
+"gurū",
+"gurūn"
+],
+[
+"guruṇā",
+"gurubhyām",
+"gurubhiḥ"
+],
+[
+"gurave",
+"gurubhyām",
+"gurubhyaḥ"
+],
+[
+"guroḥ",
+"gurubhyām",
+"gurubhyaḥ"
+],
+[
+"guroḥ",
+"gurvoḥ",
+"gurūṇām"
+],
+[
+"gurau",
+"gurvoḥ",
+"guruṣu"
+],
+[
+"guro",
+"gurū",
+"guravaḥ"
+]
+]
+},
+"pattern": "u-stem masculine (like guru)",
+"note": ""
+},
+"u_n:madhu": {
+"id": "u_n:madhu",
+"kind": "noun",
+"stem": "madhu",
+"gender": "n",
+"forms": {
+"n": [
+[
+"madhu",
+"madhunī",
+"madhūni"
+],
+[
+"madhu",
+"madhunī",
+"madhūni"
+],
+[
+"madhunā",
+"madhubhyām",
+"madhubhiḥ"
+],
+[
+"madhune",
+"madhubhyām",
+"madhubhyaḥ"
+],
+[
+"madhunaḥ",
+"madhubhyām",
+"madhubhyaḥ"
+],
+[
+"madhunaḥ",
+"madhunoḥ",
+"madhūnām"
+],
+[
+"madhuni",
+"madhunoḥ",
+"madhuṣu"
+],
+[
+"madhu / madho",
+"madhunī",
+"madhūni"
+]
+]
+},
+"pattern": "u-stem neuter (like madhu)",
+"note": ""
+},
+"u_f:dhenu": {
+"id": "u_f:dhenu",
+"kind": "noun",
+"stem": "dhenu",
+"gender": "f",
+"forms": {
+"f": [
+[
+"dhenuḥ",
+"dhenū",
+"dhenavaḥ"
+],
+[
+"dhenum",
+"dhenū",
+"dhenūḥ"
+],
+[
+"dhenvā",
+"dhenubhyām",
+"dhenubhiḥ"
+],
+[
+"dhenave / dhenvai",
+"dhenubhyām",
+"dhenubhyaḥ"
+],
+[
+"dhenoḥ / dhenvāḥ",
+"dhenubhyām",
+"dhenubhyaḥ"
+],
+[
+"dhenoḥ / dhenvāḥ",
+"dhenvoḥ",
+"dhenūnām"
+],
+[
+"dhenau / dhenvām",
+"dhenvoḥ",
+"dhenuṣu"
+],
+[
+"dheno",
+"dhenū",
+"dhenavaḥ"
+]
+]
+},
+"pattern": "u-stem feminine (like dhenu)",
+"note": ""
+},
+"uu_f:vadhū": {
+"id": "uu_f:vadhū",
+"kind": "noun",
+"stem": "vadhū",
+"gender": "f",
+"forms": {
+"f": [
+[
+"vadhūḥ",
+"vadhvau",
+"vadhvaḥ"
+],
+[
+"vadhūm",
+"vadhvau",
+"vadhūḥ"
+],
+[
+"vadhvā",
+"vadhūbhyām",
+"vadhūbhiḥ"
+],
+[
+"vadhvai",
+"vadhūbhyām",
+"vadhūbhyaḥ"
+],
+[
+"vadhvāḥ",
+"vadhūbhyām",
+"vadhūbhyaḥ"
+],
+[
+"vadhvāḥ",
+"vadhvoḥ",
+"vadhūnām"
+],
+[
+"vadhvām",
+"vadhvoḥ",
+"vadhūṣu"
+],
+[
+"vadhu",
+"vadhvau",
+"vadhvaḥ"
+]
+]
+},
+"pattern": "ū-stem feminine (like vadhū)",
+"note": ""
+},
+"kartr": {
+"id": "kartr",
+"kind": "noun",
+"stem": "kartṛ",
+"gender": "m",
+"forms": {
+"m": [
+[
+"kartā",
+"kartārau",
+"kartāraḥ"
+],
+[
+"kartāram",
+"kartārau",
+"kartṝn"
+],
+[
+"kartrā",
+"kartṛbhyām",
+"kartṛbhiḥ"
+],
+[
+"kartre",
+"kartṛbhyām",
+"kartṛbhyaḥ"
+],
+[
+"kartuḥ",
+"kartṛbhyām",
+"kartṛbhyaḥ"
+],
+[
+"kartuḥ",
+"kartroḥ",
+"kartṝṇām"
+],
+[
+"kartari",
+"kartroḥ",
+"kartṛṣu"
+],
+[
+"kartaḥ",
+"kartārau",
+"kartāraḥ"
+]
+]
+},
+"pattern": "ṛ-stem masculine (agent nouns in -tṛ, like kartṛ “doer”, dātṛ)",
+"note": "The stem strengthens: kartṛ → kartār- (strong), kart- (weak) before some endings. The word kartṛ is itself Pāṇini’s name for the agent."
+},
+"matr": {
+"id": "matr",
+"kind": "noun",
+"stem": "mātṛ",
+"gender": "f",
+"forms": {
+"f": [
+[
+"mātā",
+"mātarau",
+"mātaraḥ"
+],
+[
+"mātaram",
+"mātarau",
+"mātṝḥ"
+],
+[
+"mātrā",
+"mātṛbhyām",
+"mātṛbhiḥ"
+],
+[
+"mātre",
+"mātṛbhyām",
+"mātṛbhyaḥ"
+],
+[
+"mātuḥ",
+"mātṛbhyām",
+"mātṛbhyaḥ"
+],
+[
+"mātuḥ",
+"mātroḥ",
+"mātṝṇām"
+],
+[
+"mātari",
+"mātroḥ",
+"mātṛṣu"
+],
+[
+"mātaḥ",
+"mātarau",
+"mātaraḥ"
+]
+]
+},
+"pattern": "ṛ-stem feminine (like mātṛ “mother”)",
+"note": "Almost the same as kartṛ; only the accusative plural differs (mātṝḥ)."
+},
+"rajan": {
+"id": "rajan",
+"kind": "noun",
+"stem": "rājan",
+"gender": "m",
+"forms": {
+"m": [
+[
+"rājā",
+"rājānau",
+"rājānaḥ"
+],
+[
+"rājānam",
+"rājānau",
+"rājñaḥ"
+],
+[
+"rājñā",
+"rājabhyām",
+"rājabhiḥ"
+],
+[
+"rājñe",
+"rājabhyām",
+"rājabhyaḥ"
+],
+[
+"rājñaḥ",
+"rājabhyām",
+"rājabhyaḥ"
+],
+[
+"rājñaḥ",
+"rājñoḥ",
+"rājñām"
+],
+[
+"rājñi / rājani",
+"rājñoḥ",
+"rājasu"
+],
+[
+"rājan",
+"rājānau",
+"rājānaḥ"
+]
+]
+},
+"pattern": "n-stem masculine (rājan, “king”): the stem takes three shapes",
+"note": "Strong stem rājān- (nominative and accusative singular/dual, nominative plural). Middle stem rāja- (before bh- and s-). Weak stem rājñ- (before other vowel endings: a drops, jn → jñ). The nominative singular rājā is the “dictionary” form, not the stem. In compounds the stem often becomes a-stem, so mahā-rāja declines like deva."
+},
+"naman": {
+"id": "naman",
+"kind": "noun",
+"stem": "nāman",
+"gender": "n",
+"forms": {
+"n": [
+[
+"nāma",
+"nāmnī / nāmanī",
+"nāmāni"
+],
+[
+"nāma",
+"nāmnī / nāmanī",
+"nāmāni"
+],
+[
+"nāmnā",
+"nāmabhyām",
+"nāmabhiḥ"
+],
+[
+"nāmne",
+"nāmabhyām",
+"nāmabhyaḥ"
+],
+[
+"nāmnaḥ",
+"nāmabhyām",
+"nāmabhyaḥ"
+],
+[
+"nāmnaḥ",
+"nāmnoḥ",
+"nāmnām"
+],
+[
+"nāmni / nāmani",
+"nāmnoḥ",
+"nāmasu"
+],
+[
+"nāman / nāma",
+"nāmnī / nāmanī",
+"nāmāni"
+]
+]
+},
+"pattern": "n-stem neuter (like nāman “name”)",
+"note": "Same three stem shapes as rājan: nāmān- is not used, but nām- / nāman- / nāmn- appear."
+},
+"balin": {
+"id": "balin",
+"kind": "noun",
+"stem": "balin",
+"gender": "m",
+"forms": {
+"m": [
+[
+"balī",
+"balinau",
+"balinaḥ"
+],
+[
+"balinam",
+"balinau",
+"balinaḥ"
+],
+[
+"balinā",
+"balibhyām",
+"balibhiḥ"
+],
+[
+"baline",
+"balibhyām",
+"balibhyaḥ"
+],
+[
+"balinaḥ",
+"balibhyām",
+"balibhyaḥ"
+],
+[
+"balinaḥ",
+"balinoḥ",
+"balinām"
+],
+[
+"balini",
+"balinoḥ",
+"baliṣu"
+],
+[
+"balin",
+"balinau",
+"balinaḥ"
+]
+]
+},
+"pattern": "in-stem masculine (-in = “having”, like balin “strong”)",
+"note": "The suffix -in means “possessing”: bala (strength) → balin (one who has strength)."
+},
+"manas": {
+"id": "manas",
+"kind": "noun",
+"stem": "manas",
+"gender": "n",
+"forms": {
+"n": [
+[
+"manaḥ",
+"manasī",
+"manāṃsi"
+],
+[
+"manaḥ",
+"manasī",
+"manāṃsi"
+],
+[
+"manasā",
+"manobhyām",
+"manobhiḥ"
+],
+[
+"manase",
+"manobhyām",
+"manobhyaḥ"
+],
+[
+"manasaḥ",
+"manobhyām",
+"manobhyaḥ"
+],
+[
+"manasaḥ",
+"manasoḥ",
+"manasām"
+],
+[
+"manasi",
+"manasoḥ",
+"manaḥsu / manassu"
+],
+[
+"manaḥ",
+"manasī",
+"manāṃsi"
+]
+]
+},
+"pattern": "as-stem neuter (like manas “mind”)",
+"note": "The final -s shows as -ḥ at the end of a word and -o- before bh-: manobhiḥ."
+},
+"vac": {
+"id": "vac",
+"kind": "noun",
+"stem": "vāc",
+"gender": "f",
+"forms": {
+"f": [
+[
+"vāk",
+"vācau",
+"vācaḥ"
+],
+[
+"vācam",
+"vācau",
+"vācaḥ"
+],
+[
+"vācā",
+"vāgbhyām",
+"vāgbhiḥ"
+],
+[
+"vāce",
+"vāgbhyām",
+"vāgbhyaḥ"
+],
+[
+"vācaḥ",
+"vāgbhyām",
+"vāgbhyaḥ"
+],
+[
+"vācaḥ",
+"vācoḥ",
+"vācām"
+],
+[
+"vāci",
+"vācoḥ",
+"vākṣu"
+],
+[
+"vāk",
+"vācau",
+"vācaḥ"
+]
+]
+},
+"pattern": "c-stem feminine (vāc, “speech”, from √vac)",
+"note": "The final c turns into k or g depending on what follows: vāk, vāgbhiḥ. The speaker’s word vāg-vyāpāra (V1) is this stem."
+},
+"bhagavat": {
+"id": "bhagavat",
+"kind": "noun",
+"stem": "bhagavat",
+"gender": "m",
+"forms": {
+"m": [
+[
+"bhagavān",
+"bhagavantau",
+"bhagavantaḥ"
+],
+[
+"bhagavantam",
+"bhagavantau",
+"bhagavataḥ"
+],
+[
+"bhagavatā",
+"bhagavadbhyām",
+"bhagavadbhiḥ"
+],
+[
+"bhagavate",
+"bhagavadbhyām",
+"bhagavadbhyaḥ"
+],
+[
+"bhagavataḥ",
+"bhagavadbhyām",
+"bhagavadbhyaḥ"
+],
+[
+"bhagavataḥ",
+"bhagavatoḥ",
+"bhagavatām"
+],
+[
+"bhagavati",
+"bhagavatoḥ",
+"bhagavatsu"
+],
+[
+"bhagavan",
+"bhagavantau",
+"bhagavantaḥ"
+]
+]
+},
+"pattern": "vat-stem masculine (-vat / -mat = “having”, like bhagavat “fortunate, the Lord”)",
+"note": "Strong stem bhagavant- / weak stem bhagavat-. mahat (great) follows the same pattern."
+},
 "kr_pres": {
 "id": "kr_pres",
 "kind": "verb",
@@ -2175,7 +2955,7 @@
 ]
 ]
 },
-"pattern": "n-stem masculine (like rājan)",
+"pattern": "n-stem masculine after a consonant cluster (like janman, ātman: no contraction)",
 "note": ""
 },
 "pron_a:sva": {

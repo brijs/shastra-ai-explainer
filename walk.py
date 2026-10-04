@@ -88,7 +88,7 @@ async def run(width, height, tag):
             if sid in ('sg', 's3', 's7', 's10', 's14') : await pg.screenshot(path=f'shots/{tag}_{sid}.png', full_page=True)
         # guide overlay: all tabs
         await pg.click('#guideBtn'); assert await pg.locator('#gg:not([hidden])').count() == 1
-        for t in ['cases','anvaya','numgen','types','notation','sounds','para']:
+        for t in ['cases','families','anvaya','numgen','types','notation','sounds','para']:
             await pg.locator(f'#ggtabs button[data-t="{t}"]').click(); await pg.wait_for_timeout(80)
             if await pg.inner_text('#ggbody') == '': errs.append('EMPTY TAB ' + t)
         await pg.locator('#ggtabs button[data-t="notation"]').click(); await pg.locator('[data-id="exchips"] .wchip').nth(5).click()
