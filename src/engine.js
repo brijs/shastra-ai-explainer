@@ -97,12 +97,12 @@ function gtable(pdId,hit,alt,gk,opts){
   const rows=P.forms[gk];
   if(P.kind==='noun'){
     h+=`<table class="gtab"><caption>${esc(P.stem)} <span class="dev">(${esc(toDev(P.stem))})</span> · ${esc(P.pattern)}${keys.length===1&&{m:1,f:1,n:1}[P.gender]?' · '+{m:'masculine',f:'feminine',n:'neuter'}[P.gender]:''}</caption><thead><tr><th scope="col">Case · <span class="dev">विभक्ति</span></th>${NUMN.map((n,i)=>`<th scope="col">${n}<span class="cs dev">${NUMD[i]}</span></th>`).join('')}</tr></thead><tbody>`;
-    CASEKEYS.forEach((c,r)=>{const m=CN[c];h+=`<tr data-c="${c}"><th scope="row"><span class="cn">${m[0]} ${m[1]} · <span class="dev">${esc(G.cases[r].sktd)}</span></span><span class="cs">${m[2]} · ${m[3]}</span></th>`;
+    CASEKEYS.forEach((c,r)=>{const m=CN[c];h+=`<tr data-c="${c}"><th scope="row"><span class="cn">${m[0]} ${m[1]} · <span class="dev">${esc(G.cases[r].sktd)}</span></span><span class="cs">${m[2]} · ${m[3]}</span><span class="cs kar">Pāṇini: ${esc(G.cases[r].kn)} <span class="dev">${esc(G.cases[r].kd)}</span></span><span class="cs sup">affixes: ${G.sup[c].join(' · ')}</span></th>`;
       for(let n=0;n<3;n++){const k=r+','+n;h+=`<td data-r="${r}" data-n="${n}" class="${hs.has(k)?'hit':as.has(k)?'alt':''}" tabindex="0">${cellHtml(rows[r][n])}</td>`;}h+='</tr>';});
     h+='</tbody></table>';
   } else {
     h+=`<table class="gtab"><caption>${esc(P.root)} <span class="dev">(${esc(toDev(P.root))})</span> (${esc(P.meaning)}) · ${esc(P.tense)} <span class="dev">${esc(toDev(P.tense.split(' (')[0]))}</span> · ${esc(P.voice)} <span class="dev">${esc(toDev(P.voice))}</span> · ${esc(P.gana)}</caption><thead><tr><th scope="col">Person · <span class="dev">पुरुष</span></th>${NUMN.map((n,i)=>`<th scope="col">${n}<span class="cs dev">${NUMD[i]}</span></th>`).join('')}</tr></thead><tbody>`;
-    ['prathama · 3rd (he, they)','madhyama · 2nd (you)','uttama · 1st (I, we)'].forEach((p,r)=>{h+=`<tr data-c="verb"><th scope="row"><span class="cn"><span class="dev">${PERSD[r]}</span> · ${p}</span></th>`;
+    ['prathama · 3rd (he, they)','madhyama · 2nd (you)','uttama · 1st (I, we)'].forEach((p,r)=>{h+=`<tr data-c="verb"><th scope="row"><span class="cn"><span class="dev">${PERSD[r]}</span> · ${p}</span><span class="cs sup">affixes (tiṅ): ${(G.ting[P.voice]||G.ting.parasmaipada)[r].join(' · ')}</span></th>`;
       for(let n=0;n<3;n++){const k=r+','+n;h+=`<td data-r="${r}" data-n="${n}" class="${hs.has(k)?'hit':''}" tabindex="0">${cellHtml(rows[r][n])}</td>`;}h+='</tr>';});
     h+='</tbody></table>';
   }
@@ -112,7 +112,7 @@ function gtable(pdId,hit,alt,gk,opts){
 }
 function cellMeaning(gt,r,n){
   const P=G.paradigms[gt.dataset.pd];
-  if(P.kind==='noun'){const c=CASEKEYS[r],m=CN[c];const num=['one','two','many'][n];return `<b>${m[1]} ${NUMN[n].toLowerCase()}</b> (${m[2]}): ${m[3]}, ${num}. Question: ${(G.cases[r].q)}`;}
+  if(P.kind==='noun'){const c=CASEKEYS[r],m=CN[c];const num=['one','two','many'][n];return `<b>${m[1]} ${NUMN[n].toLowerCase()}</b> (${m[2]}; Pāṇini: ${G.cases[r].kn}): ${m[3]}, ${num}. Question: ${(G.cases[r].q)}`;}
   const t=P.tense.split(' (')[0];return `<b>${t}, ${['3rd','2nd','1st'][r]} person ${NUMN[n].toLowerCase()}</b> of ${P.root}.`;
 }
 function posPill(ent){return `<span class="pill">${esc(ent.pos[0].toUpperCase()+ent.pos.slice(1))}</span>`;}
@@ -126,6 +126,7 @@ function wordGram(ent,open){
   h+=`<div class="gram">${posPill(ent)}`;
   if(ent.case)h+=`<span class="pill c" data-c="${ent.case}">${esc(CN[ent.case][1])} · ${esc(NUMN[NUMS(ent.num)].toLowerCase())}${ent.gen?' · '+({m:'masculine',f:'feminine',n:'neuter'}[ent.gen]):''}</span>`;
   if(ent.person)h+=`<span class="pill">${esc(G.paradigms[ent.pd].tense.split(' (')[0])} · ${{3:'3rd',2:'2nd',1:'1st'}[ent.person]} person · ${esc(NUMN[NUMS(ent.num)].toLowerCase())}</span>`;
+  if(ent.kar)h+=`<span class="pill kp" title="Pāṇini’s kāraka: this word’s role in the action">kāraka: ${esc(ent.kar)} <span class="dev">${esc((G.karaka[ent.kar]||{}).dev||'')}</span></span>`;
   if(ent.stem)h+=`<span class="pill">stem: ${esc(ent.stem)}</span>`;
   if(ent.root)h+=`<span class="pill">root: ${esc(ent.root)}</span>`;
   h+=`</div>`;

@@ -14,6 +14,9 @@ Each verse carries a confidence badge: ● matches a source, ◐ recognised but 
 ## Grammar for every word
 Tap any word in a verse to see its word type (noun, pronoun, adjective, verb, participle, gerund, indeclinable), its case, number and gender (or person, tense and voice for verbs), its stem or root, how it is used in the verse, and the **full declension or conjugation table with the exact form highlighted**. Tables show every form in Devanagari with the Roman transliteration beneath, plus Sanskrit labels for case, number and person; a header button cycles Devanagari + Roman / Devanagari only / Roman only.
 
+## Pāṇini's terms
+Case rows and the case wheel carry Pāṇini's own names: the six **kārakas** (*kartṛ, karman, karaṇa, sampradāna, apādāna, adhikaraṇa*, plus *sambandha* and *sambodhana*) with Devanagari and his defining sūtras (Aṣṭādhyāyī 1.4.24, 1.4.32, 1.4.42, 1.4.45, 1.4.49, 1.4.54), and his affix names (*su au jas, am auṭ śas, …* for nouns; *tip tas jhi, …* for verbs). Word cards show a **kāraka** tag only where a word's role in the action is clear, and flag cases where case and role differ (e.g. passive agent in the instrumental).
+
 ## Anvaya (prose order)
 Every verse card has an **Anvaya** section: tap *Rearrange into anvaya* and the words glide into plain prose order (subject … object … verb last), with numbered positions, dashed chips for words the verse leaves out (like *asti*), and the re-ordered sentence in Devanagari and Roman. *Slow motion* shows it word by word. The orders live in `gen_anvaya.py`, which checks every word is used exactly once. The **Grammar guide** (top right) has a case wheel (the eight vibhaktis as roles around the action), a sentence builder showing why eight cases are enough, number and gender, word types, notation (√, +, ←), a sound guide, and a gallery of 26 paradigm tables with a "hide the forms" self-test mode.
 

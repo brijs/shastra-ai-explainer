@@ -259,10 +259,56 @@ CASEINFO = [
  {'id':'voc','n':8,'skt':'sambodhana','sktd':'सम्बोधन','en':'Vocative','role':'calling or addressing someone','kar':'not a kāraka (address)','q':'O …!','prep':'O …','end':'-a (a-stem: short)','think':'Not part of the action at all: you are calling someone.','ex':{'dev':'हे राम','iast':'he rāma','en':'O Rāma!','hit':'rāma'},'talk':{'v':'','w':'—','en':'No vocative appears in his quoted verses. Yājñavalkya would say he maitreyi (“O Maitreyī!”).'}},
 ]
 
+
+# ---------- Pāṇini's terms ----------
+KARAKA = {
+ 'kartṛ':      {'dev':'कर्तृ','en':'agent','sutra':{'dev':'स्वतन्त्रः कर्ता','iast':'svatantraḥ kartā','ref':'1.4.54','gloss':'The independent one (the one who acts on its own) is the kartṛ.'}},
+ 'karman':     {'dev':'कर्म','en':'object','sutra':{'dev':'कर्तुरीप्सिततमं कर्म','iast':'kartur īpsitatamaṁ karma','ref':'1.4.49','gloss':'What the agent most wishes to reach is the karman.'}},
+ 'karaṇa':     {'dev':'करण','en':'instrument','sutra':{'dev':'साधकतमं करणम्','iast':'sādhakatamaṁ karaṇam','ref':'1.4.42','gloss':'The most effective means is the karaṇa.'}},
+ 'sampradāna': {'dev':'सम्प्रदान','en':'recipient','sutra':{'dev':'कर्मणा यमभिप्रैति स सम्प्रदानम्','iast':'karmaṇā yam abhipraiti sa sampradānam','ref':'1.4.32','gloss':'The one whom the agent intends to reach through the object is the sampradāna.'}},
+ 'apādāna':    {'dev':'अपादान','en':'point of departure','sutra':{'dev':'ध्रुवमपायेऽपादानम्','iast':'dhruvam apāye \'pādānam','ref':'1.4.24','gloss':'The fixed point from which separation occurs is the apādāna.'}},
+ 'adhikaraṇa': {'dev':'अधिकरण','en':'locus','sutra':{'dev':'आधारोऽधिकरणम्','iast':'ādhāro \'dhikaraṇam','ref':'1.4.45','gloss':'The support or substrate is the adhikaraṇa.'}},
+ 'sambandha':  {'dev':'सम्बन्ध','en':'relation','sutra':None},
+ 'sambodhana': {'dev':'सम्बोधन','en':'address','sutra':None},
+}
+CASE_KAR = {'nom':'kartṛ','acc':'karman','ins':'karaṇa','dat':'sampradāna','abl':'apādāna','gen':'sambandha','loc':'adhikaraṇa','voc':'sambodhana'}
+for c in CASEINFO:
+    k = CASE_KAR[c['id']]; c['kn'] = k; c['kd'] = KARAKA[k]['dev']; c['ken'] = KARAKA[k]['en']
+SUP = {'nom':['su','au','jas'],'acc':['am','auṭ','śas'],'ins':['ṭā','bhyām','bhis'],'dat':['ṅe','bhyām','bhyas'],'abl':['ṅasi','bhyām','bhyas'],'gen':['ṅas','os','ām'],'loc':['ṅi','os','sup'],'voc':['su','au','jas']}
+TING = {'parasmaipada':[['tip','tas','jhi'],['sip','thas','tha'],['mip','vas','mas']],'ātmanepada':[['ta','ātām','jha'],['thās','āthām','dhvam'],['iṭ','vahi','mahiṅ']]}
+
+# role of each word in the ACTION (kāraka), only where it is clear. Case and kāraka usually match but not always.
+KAR = {
+ 'V1:0:2':'adhikaraṇa','V1:0:3':'kartṛ','V1:0:5':'karaṇa','V1:0:6':'karman','V1:1:1':'kartṛ','V1:1:3':'karman','V1:1:4':'karaṇa','V1:2:0':'karman',
+ 'V3:0:3':'apādāna','V3:0:4':'sambandha','V3:0:2':'sambandha','V3:1:1':'karman','V3:1:3':'adhikaraṇa','V3:1:4':'kartṛ',
+ 'V4:0:0':'sambandha','V4:0:1':'sambandha','V4:0:2':'adhikaraṇa',
+ 'V5:0:2#1':'sambandha',
+ 'V6:0:0':'karaṇa','V6:0:2':'karman','V6:0:4':'kartṛ',
+ 'V7:0:2':'karman',
+ 'V8a:0:0':'sambandha','V8a:0:3':'karaṇa','V8b:0:0':'karaṇa','V8b:0:1':'kartṛ','V8b:0:5':'karman','V8b:0:6':'karaṇa',
+ 'V9:1:0#0':'sambandha','V9:1:2':'sambandha',
+ 'V10:0:0':'adhikaraṇa','V10:0:1':'kartṛ','V10:0:4':'karman','V10:1:0':'kartṛ','V10:1:1':'karman',
+}
+KAR_NOTE = {
+ 'V1:0:3':'Here the case and the role differ: the doer (kartṛ) of a “should be done” verb is put in the instrumental, because the verb already expresses the object.',
+ 'V1:0:6':'Here the object (karman) takes the nominative, because the “should be done” form of the verb (kartavyam) is passive and expresses the object itself.',
+ 'V6:0:2':'The object (karman) takes the nominative because uktam (“said”) is a passive participle.',
+ 'V6:0:4':'The agent (kartṛ) takes the instrumental because uktam is passive: “said by crores of books”.',
+ 'V6:1:1':'A dative of purpose (“for the sake of”), so Pāṇini’s sampradāna (recipient) does not apply strictly here.',
+ 'V6:1:2':'A dative of purpose (“for the sake of”), so Pāṇini’s sampradāna (recipient) does not apply strictly here.',
+ 'V10:0:4':'With verbs of going, the destination takes the accusative and counts as the karman.',
+}
+for k, v in KAR.items():
+    if '#' in k:
+        kk, i = k.split('#'); WORDS[kk]['multi'][int(i)]['kar'] = v
+    else: WORDS[k]['kar'] = v
+for k, n in KAR_NOTE.items():
+    w = WORDS[k]; w['note'] = (w.get('note', '') + ' ' + n).strip()
+
 # ---------- write ----------
 for k, w in WORDS.items():
     assert 'form' in w, k
 missing = [k for k in WT if k not in WORDS]
 print('annotated', len(WORDS), 'of', len(WT), 'words; missing:', missing)
-json.dump({'cases': CASEINFO, 'paradigms': PARAD, 'words': WORDS}, open('grammar.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+json.dump({'cases': CASEINFO, 'karaka': KARAKA, 'sup': SUP, 'ting': TING, 'paradigms': PARAD, 'words': WORDS}, open('grammar.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 print('paradigms:', len(PARAD))

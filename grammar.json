@@ -22,7 +22,10 @@
 "v": "V7",
 "w": "muktiḥ",
 "en": "muktiḥ: \"liberation\" is what is being defined."
-}
+},
+"kn": "kartṛ",
+"kd": "कर्तृ",
+"ken": "agent"
 },
 {
 "id": "acc",
@@ -46,7 +49,10 @@
 "v": "V10",
 "w": "yamālayam",
 "en": "yamālayam: “to Yama’s abode”, the destination of the beings."
-}
+},
+"kn": "karman",
+"kd": "कर्म",
+"ken": "object"
 },
 {
 "id": "ins",
@@ -70,7 +76,10 @@
 "v": "V8a",
 "w": "vittena",
 "en": "vittena: “by means of wealth”, no immortality comes by that route."
-}
+},
+"kn": "karaṇa",
+"kd": "करण",
+"ken": "instrument"
 },
 {
 "id": "dat",
@@ -94,7 +103,10 @@
 "v": "V6",
 "w": "puṇyāya",
 "en": "puṇyāya: “for merit”, helping others leads to merit."
-}
+},
+"kn": "sampradāna",
+"kd": "सम्प्रदान",
+"ken": "recipient"
 },
 {
 "id": "abl",
@@ -118,7 +130,10 @@
 "v": "V3",
 "w": "sakāśāt",
 "en": "sakāśāt: “from the presence of” the teachers, the source of learning."
-}
+},
+"kn": "apādāna",
+"kd": "अपादान",
+"ken": "point of departure"
 },
 {
 "id": "gen",
@@ -142,7 +157,10 @@
 "v": "V9",
 "w": "tava",
 "en": "tava: “your” chariots, dance and song."
-}
+},
+"kn": "sambandha",
+"kd": "सम्बन्ध",
+"ken": "relation"
 },
 {
 "id": "loc",
@@ -166,7 +184,10 @@
 "v": "V3",
 "w": "pṛthivyām",
 "en": "pṛthivyām: “on the earth”, where all people should learn."
-}
+},
+"kn": "adhikaraṇa",
+"kd": "अधिकरण",
+"ken": "locus"
 },
 {
 "id": "voc",
@@ -190,9 +211,162 @@
 "v": "",
 "w": "—",
 "en": "No vocative appears in his quoted verses. Yājñavalkya would say he maitreyi (“O Maitreyī!”)."
-}
+},
+"kn": "sambodhana",
+"kd": "सम्बोधन",
+"ken": "address"
 }
 ],
+"karaka": {
+"kartṛ": {
+"dev": "कर्तृ",
+"en": "agent",
+"sutra": {
+"dev": "स्वतन्त्रः कर्ता",
+"iast": "svatantraḥ kartā",
+"ref": "1.4.54",
+"gloss": "The independent one (the one who acts on its own) is the kartṛ."
+}
+},
+"karman": {
+"dev": "कर्म",
+"en": "object",
+"sutra": {
+"dev": "कर्तुरीप्सिततमं कर्म",
+"iast": "kartur īpsitatamaṁ karma",
+"ref": "1.4.49",
+"gloss": "What the agent most wishes to reach is the karman."
+}
+},
+"karaṇa": {
+"dev": "करण",
+"en": "instrument",
+"sutra": {
+"dev": "साधकतमं करणम्",
+"iast": "sādhakatamaṁ karaṇam",
+"ref": "1.4.42",
+"gloss": "The most effective means is the karaṇa."
+}
+},
+"sampradāna": {
+"dev": "सम्प्रदान",
+"en": "recipient",
+"sutra": {
+"dev": "कर्मणा यमभिप्रैति स सम्प्रदानम्",
+"iast": "karmaṇā yam abhipraiti sa sampradānam",
+"ref": "1.4.32",
+"gloss": "The one whom the agent intends to reach through the object is the sampradāna."
+}
+},
+"apādāna": {
+"dev": "अपादान",
+"en": "point of departure",
+"sutra": {
+"dev": "ध्रुवमपायेऽपादानम्",
+"iast": "dhruvam apāye 'pādānam",
+"ref": "1.4.24",
+"gloss": "The fixed point from which separation occurs is the apādāna."
+}
+},
+"adhikaraṇa": {
+"dev": "अधिकरण",
+"en": "locus",
+"sutra": {
+"dev": "आधारोऽधिकरणम्",
+"iast": "ādhāro 'dhikaraṇam",
+"ref": "1.4.45",
+"gloss": "The support or substrate is the adhikaraṇa."
+}
+},
+"sambandha": {
+"dev": "सम्बन्ध",
+"en": "relation",
+"sutra": null
+},
+"sambodhana": {
+"dev": "सम्बोधन",
+"en": "address",
+"sutra": null
+}
+},
+"sup": {
+"nom": [
+"su",
+"au",
+"jas"
+],
+"acc": [
+"am",
+"auṭ",
+"śas"
+],
+"ins": [
+"ṭā",
+"bhyām",
+"bhis"
+],
+"dat": [
+"ṅe",
+"bhyām",
+"bhyas"
+],
+"abl": [
+"ṅasi",
+"bhyām",
+"bhyas"
+],
+"gen": [
+"ṅas",
+"os",
+"ām"
+],
+"loc": [
+"ṅi",
+"os",
+"sup"
+],
+"voc": [
+"su",
+"au",
+"jas"
+]
+},
+"ting": {
+"parasmaipada": [
+[
+"tip",
+"tas",
+"jhi"
+],
+[
+"sip",
+"thas",
+"tha"
+],
+[
+"mip",
+"vas",
+"mas"
+]
+],
+"ātmanepada": [
+[
+"ta",
+"ātām",
+"jha"
+],
+[
+"thās",
+"āthām",
+"dhvam"
+],
+[
+"iṭ",
+"vahi",
+"mahiṅ"
+]
+]
+},
 "paradigms": {
 "tad": {
 "id": "tad",
@@ -4194,12 +4368,13 @@
 "gen": "n",
 "label": "Loc. sg. n.",
 "stem": "bhāratavarṣa",
-"form": "bhāratavarṣe"
+"form": "bhāratavarṣe",
+"kar": "adhikaraṇa"
 },
 "V1:0:3": {
 "pos": "pronoun",
 "use": "by us: with a \"should be done\" verb, the doer takes the instrumental.",
-"note": "asmad = \"we\" (first-person pronoun).",
+"note": "asmad = \"we\" (first-person pronoun). Here the case and the role differ: the doer (kartṛ) of a “should be done” verb is put in the instrumental, because the verb already expresses the object.",
 "cmp": "",
 "pd": "asmad",
 "hit": [
@@ -4214,7 +4389,8 @@
 "gen": null,
 "label": "Instr. pl.",
 "stem": "asmad",
-"form": "asmābhiḥ"
+"form": "asmābhiḥ",
+"kar": "kartṛ"
 },
 "V1:0:4": {
 "pos": "indeclinable",
@@ -4242,12 +4418,13 @@
 "gen": "f",
 "label": "Instr. sg. f.",
 "stem": "gīrvāṇabhāṣā",
-"form": "gīrvāṇabhāṣayā"
+"form": "gīrvāṇabhāṣayā",
+"kar": "karaṇa"
 },
 "V1:0:6": {
 "pos": "adjective",
 "use": "dealings and so on: the thing that ought to be done (subject of the passive).",
-"note": "",
+"note": "Here the object (karman) takes the nominative, because the “should be done” form of the verb (kartavyam) is passive and expresses the object itself.",
 "cmp": "vyavahāra + ādika (\"beginning with\")",
 "pd": "a_n:vyavahārādika",
 "hit": [
@@ -4268,7 +4445,8 @@
 "gen": "n",
 "label": "Nom. sg. n.",
 "stem": "vyavahārādika",
-"form": "vyavahārādikam"
+"form": "vyavahārādikam",
+"kar": "karman"
 },
 "V1:0:7": {
 "pos": "gerundive",
@@ -4340,7 +4518,8 @@
 "gen": null,
 "label": "Nom. sg.",
 "stem": "asmad",
-"form": "aham"
+"form": "aham",
+"kar": "kartṛ"
 },
 "V1:1:2": {
 "pos": "indeclinable",
@@ -4368,7 +4547,8 @@
 "gen": "m",
 "label": "Acc. sg. m.",
 "stem": "vāgvyāpāra",
-"form": "vāgvyāpāram"
+"form": "vāgvyāpāram",
+"kar": "karman"
 },
 "V1:1:4": {
 "pos": "noun",
@@ -4388,7 +4568,8 @@
 "gen": "f",
 "label": "Instr. sg. f.",
 "stem": "mlecchabhāṣā",
-"form": "mlecchabhāṣayā"
+"form": "mlecchabhāṣayā",
+"kar": "karaṇa"
 },
 "V1:1:5": {
 "pos": "verb",
@@ -4426,7 +4607,8 @@
 "gen": "f",
 "label": "Acc. sg. f.",
 "stem": "kṣamā",
-"form": "kṣamām"
+"form": "kṣamām",
+"kar": "karman"
 },
 "V1:2:1": {
 "pos": "gerund",
@@ -4572,7 +4754,8 @@
 "gen": "m",
 "label": "Gen. sg. m.",
 "stem": "etaddeśaprasūta",
-"form": "etaddeśaprasūtasya"
+"form": "etaddeśaprasūtasya",
+"kar": "sambandha"
 },
 "V3:0:3": {
 "pos": "noun",
@@ -4592,7 +4775,8 @@
 "gen": "m",
 "label": "Abl. sg. m.",
 "stem": "sakāśa",
-"form": "sakāśāt"
+"form": "sakāśāt",
+"kar": "apādāna"
 },
 "V3:0:4": {
 "pos": "noun",
@@ -4618,7 +4802,8 @@
 "gen": "m",
 "label": "Gen. sg. m.",
 "stem": "agrajanman",
-"form": "agrajanmanaḥ"
+"form": "agrajanmanaḥ",
+"kar": "sambandha"
 },
 "V3:1:0": {
 "pos": "pronoun",
@@ -4658,7 +4843,8 @@
 "gen": "n",
 "label": "Acc. sg. n.",
 "stem": "caritra",
-"form": "caritram"
+"form": "caritram",
+"kar": "karman"
 },
 "V3:1:2": {
 "pos": "verb",
@@ -4696,7 +4882,8 @@
 "gen": "f",
 "label": "Loc. sg. f.",
 "stem": "pṛthivī",
-"form": "pṛthivyām"
+"form": "pṛthivyām",
+"kar": "adhikaraṇa"
 },
 "V3:1:4": {
 "pos": "adjective",
@@ -4716,7 +4903,8 @@
 "gen": "m",
 "label": "Nom. pl. m.",
 "stem": "sarvamānava",
-"form": "sarvamānavāḥ"
+"form": "sarvamānavāḥ",
+"kar": "kartṛ"
 },
 "V4:0:0": {
 "pos": "pronoun",
@@ -4736,7 +4924,8 @@
 "gen": "m",
 "label": "Gen. pl. m.",
 "stem": "sarva",
-"form": "sarveṣām"
+"form": "sarveṣām",
+"kar": "sambandha"
 },
 "V4:0:1": {
 "pos": "noun",
@@ -4756,7 +4945,8 @@
 "gen": "m",
 "label": "Gen. pl. m.",
 "stem": "śabda",
-"form": "śabdānām"
+"form": "śabdānām",
+"kar": "sambandha"
 },
 "V4:0:2": {
 "pos": "noun",
@@ -4776,7 +4966,8 @@
 "gen": "m",
 "label": "Loc. sg. m.",
 "stem": "svārtha",
-"form": "svārthe"
+"form": "svārthe",
+"kar": "adhikaraṇa"
 },
 "V4:0:3": {
 "pos": "noun",
@@ -4860,7 +5051,8 @@
 "gen": "n",
 "label": "Gen. sg. n.",
 "stem": "idam",
-"form": "asya"
+"form": "asya",
+"kar": "sambandha"
 }
 ],
 "use": "not of this",
@@ -4944,7 +5136,8 @@
 "gen": "n",
 "label": "Instr. sg. n.",
 "stem": "ślokārdha",
-"form": "ślokārdhena"
+"form": "ślokārdhena",
+"kar": "karaṇa"
 },
 "V6:0:1": {
 "pos": "verb",
@@ -4967,7 +5160,7 @@
 "V6:0:2": {
 "pos": "pronoun",
 "use": "what: the thing that has been said.",
-"note": "yat becomes yad before a vowel (yad uktam).",
+"note": "yat becomes yad before a vowel (yad uktam). The object (karman) takes the nominative because uktam (“said”) is a passive participle.",
 "cmp": "",
 "pd": "yad",
 "hit": [
@@ -4988,7 +5181,8 @@
 "gen": "n",
 "label": "Nom. sg. n.",
 "stem": "yad",
-"form": "yat"
+"form": "yat",
+"kar": "karman"
 },
 "V6:0:3": {
 "pos": "participle",
@@ -5019,7 +5213,7 @@
 "V6:0:4": {
 "pos": "noun",
 "use": "by crores of books: who/what has said it (the agent of the passive).",
-"note": "",
+"note": "The agent (kartṛ) takes the instrumental because uktam is passive: “said by crores of books”.",
 "cmp": "grantha + koṭi",
 "pd": "i_f:granthakoṭi",
 "hit": [
@@ -5034,7 +5228,8 @@
 "gen": "f",
 "label": "Instr. pl. f.",
 "stem": "granthakoṭi",
-"form": "granthakoṭibhiḥ"
+"form": "granthakoṭibhiḥ",
+"kar": "kartṛ"
 },
 "V6:1:0": {
 "pos": "noun",
@@ -5059,7 +5254,7 @@
 "V6:1:1": {
 "pos": "noun",
 "use": "for merit: the purpose or result.",
-"note": "",
+"note": "A dative of purpose (“for the sake of”), so Pāṇini’s sampradāna (recipient) does not apply strictly here.",
 "cmp": "",
 "pd": "a_n:puṇya",
 "hit": [
@@ -5079,7 +5274,7 @@
 "V6:1:2": {
 "pos": "noun",
 "use": "for sin: the purpose or result.",
-"note": "",
+"note": "A dative of purpose (“for the sake of”), so Pāṇini’s sampradāna (recipient) does not apply strictly here.",
 "cmp": "",
 "pd": "a_n:pāpa",
 "hit": [
@@ -5168,7 +5363,8 @@
 "gen": "n",
 "label": "Acc. sg. n.",
 "stem": "anyathārūpa",
-"form": "anyathārūpam"
+"form": "anyathārūpam",
+"kar": "karman"
 },
 "V7:0:3": {
 "pos": "noun",
@@ -5228,7 +5424,8 @@
 "gen": "n",
 "label": "Gen. sg. n.",
 "stem": "amṛtatva",
-"form": "amṛtatvasya"
+"form": "amṛtatvasya",
+"kar": "sambandha"
 },
 "V8a:0:1": {
 "pos": "indeclinable",
@@ -5308,7 +5505,8 @@
 "gen": "n",
 "label": "Instr. sg. n.",
 "stem": "vitta",
-"form": "vittena"
+"form": "vittena",
+"kar": "karaṇa"
 },
 "V8b:0:0": {
 "pos": "pronoun",
@@ -5328,7 +5526,8 @@
 "gen": "n",
 "label": "Instr. sg. n.",
 "stem": "yad",
-"form": "yena"
+"form": "yena",
+"kar": "karaṇa"
 },
 "V8b:0:1": {
 "pos": "pronoun",
@@ -5348,7 +5547,8 @@
 "gen": null,
 "label": "Nom. sg.",
 "stem": "asmad",
-"form": "aham"
+"form": "aham",
+"kar": "kartṛ"
 },
 "V8b:0:2": {
 "pos": "composite",
@@ -5446,7 +5646,8 @@
 "gen": "n",
 "label": "Instr. sg. n.",
 "stem": "tad",
-"form": "tena"
+"form": "tena",
+"kar": "karman"
 },
 "V8b:0:6": {
 "pos": "verb",
@@ -5464,7 +5665,8 @@
 "root": "√kṛ",
 "label": "vidhiliṅ 1sg.",
 "person": "1",
-"num": "sg"
+"num": "sg",
+"kar": "karaṇa"
 },
 "V9:0:0": {
 "pos": "indeclinable",
@@ -5581,7 +5783,8 @@
 "gen": null,
 "label": "Gen. sg.",
 "stem": "tvad",
-"form": "tava"
+"form": "tava",
+"kar": "sambandha"
 },
 {
 "pos": "indeclinable",
@@ -5632,7 +5835,8 @@
 "gen": null,
 "label": "Gen. sg.",
 "stem": "tvad",
-"form": "tava"
+"form": "tava",
+"kar": "sambandha"
 },
 "V9:1:3": {
 "pos": "noun",
@@ -5682,7 +5886,8 @@
 "gen": "n",
 "label": "Loc. sg. n.",
 "stem": "ahan",
-"form": "ahani"
+"form": "ahani",
+"kar": "adhikaraṇa"
 },
 "V10:0:1": {
 "pos": "noun",
@@ -5712,7 +5917,8 @@
 "gen": "n",
 "label": "Nom. pl. n.",
 "stem": "bhūta",
-"form": "bhūtāni"
+"form": "bhūtāni",
+"kar": "kartṛ"
 },
 "V10:0:2": {
 "pos": "verb",
@@ -5743,7 +5949,7 @@
 "V10:0:4": {
 "pos": "noun",
 "use": "to Yama’s abode: the destination.",
-"note": "",
+"note": "With verbs of going, the destination takes the accusative and counts as the karman.",
 "cmp": "yama + ālaya",
 "pd": "a_m:yamālaya",
 "hit": [
@@ -5758,7 +5964,8 @@
 "gen": "m",
 "label": "Acc. sg. m.",
 "stem": "yamālaya",
-"form": "yamālayam"
+"form": "yamālayam",
+"kar": "karman"
 },
 "V10:1:0": {
 "pos": "noun",
@@ -5778,7 +5985,8 @@
 "gen": "m",
 "label": "Nom. pl. m.",
 "stem": "śeṣa",
-"form": "śeṣāḥ"
+"form": "śeṣāḥ",
+"kar": "kartṛ"
 },
 "V10:1:1": {
 "pos": "adjective",
@@ -5798,7 +6006,8 @@
 "gen": "m",
 "label": "Acc. sg. m.",
 "stem": "sthāvara",
-"form": "sthāvaram"
+"form": "sthāvaram",
+"kar": "karman"
 },
 "V10:1:2": {
 "pos": "verb",

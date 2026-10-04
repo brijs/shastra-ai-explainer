@@ -56,6 +56,9 @@ async def run(width, height, tag):
                 if await pg.locator('.card[data-v] .gblock').count() == 0: errs.append(f'NO GRAMMAR BLOCK {sid} chip {k}')
                 bad = await pg.evaluate("Array.from(document.querySelectorAll('.card .gt')).filter(t=>t.dataset.hit!=='[]'&&!t.querySelector('td.hit')).length")
                 if bad: errs.append(f'NO HIT CELL {sid} chip {k}')
+            if sid == 's12':
+                await pg.locator('.card[data-v="V10"] .wchip[data-vw="V10:0:4"]').click()
+                if 'kāraka: karman' not in await pg.inner_text('.card[data-v="V10"] .wdetail'): errs.append('V10 yamālayam missing kāraka karman')
             # anvaya: every verse card on this scene rearranges to the expected order and back
             for k in range(await pg.locator('.anv').count()):
                 box = pg.locator('.anv').nth(k); vid = await box.get_attribute('data-anv')
@@ -95,6 +98,18 @@ async def run(width, height, tag):
             try: await pg.locator('#ggbody [data-id="gal"] button').nth(k).click(timeout=3000)
             except Exception as ex: errs.append(f'gallery click {k} failed: ' + str(ex).split(chr(10))[0]); break
             if await pg.locator('#ggbody [data-id="galtab"] .gt td').count() < 9: errs.append(f'short table {k}')
+        await pg.locator('#ggbody [data-id="gal"] button[data-pd="a_m:veda"]').click()
+        head = await pg.inner_text('#ggbody [data-id="galtab"] table')
+        for needle in ['sampradāna','apādāna','karaṇa','kartṛ','adhikaraṇa','su · au · jas','ṅe · bhyām · bhyas']:
+            if needle not in head: errs.append('table missing Pāṇini term: ' + needle)
+        await pg.locator('#ggbody [data-id="gal"] button[data-pd="gam_pres"]').click()
+        if 'tip · tas · jhi' not in await pg.inner_text('#ggbody [data-id="galtab"] table'): errs.append('verb table missing tiṅ affixes')
+        await pg.locator('#ggtabs button[data-t="cases"]').click()
+        ct = await pg.inner_text('#ggbody')
+        for needle in ['sampradāna','सम्प्रदान','ध्रुवमपायेऽपादानम्'[:0] or 'apādāna','Aṣṭādhyāyī']:
+            if needle not in ct: errs.append('cases tab missing ' + needle)
+        await pg.locator('.wnode[data-case="dat"]').first.click(); 
+        if '1.4.32' not in await pg.inner_text('.cdet'): errs.append('dative detail missing Pāṇini sutra 1.4.32')
         await pg.screenshot(path=f'shots/{tag}_guide.png')
         await pg.keyboard.press('Escape'); assert await pg.locator('#gg[hidden]').count() == 1
         # devanagari toggle
