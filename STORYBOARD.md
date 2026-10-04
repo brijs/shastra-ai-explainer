@@ -1,12 +1,13 @@
 # Storyboard — "Why Shastras, in the Age of AI?" (working title)
 
-An animated, narrated explainer of Dr. Pratosh's talk. Style: palm-leaf manuscript. Guide: a gentle Acharya. Narration: Microsoft `en-IN-PrabhatNeural`. Verses read aloud: `hi-IN-MadhurNeural` (from Devanagari). ~14 scenes. Every verse is decoded the same way: **Devanagari → padaccheda (word split) → word-by-word meaning → dhātu (root) → meaning of the whole → "why he quoted this"**.
+An animated, narrated explainer of Dr. Pratosh's talk. Style: palm-leaf manuscript. Guide: a gentle Acharya. Narration: Microsoft `en-IN-PrabhatNeural`. Verses read aloud: `hi-IN-MadhurNeural` (from Devanagari). 15 scenes. Every verse is decoded the same way: **Devanagari → padaccheda (word split) → word-by-word meaning → dhātu (root) → meaning of the whole → "why he quoted this"**.
 
 Confidence badge on every verse: ● verified source, ◐ recognised but wording may differ, ○ reconstructed from audio, not matched to any source (decoded only as far as the words are clear).
 
 | # | Level | Scene | What you do | Takeaway |
 |---|---|---|---|---|
 | 1 | Welcome | **Namaskāram: the question** | Pick why you're here (curious / inspired / want grammar). Light the diya to begin. | The talk's single question: *what is the relevance of the scriptures in the age of AI?* How to read a decode card. |
+| 1b | Grammar | **Eight cases, one map** | Tap the case wheel (doer, goal, means, recipient, source, place, plus 'whose' and 'calling'); build a sentence one role at a time; answer 3 check questions. | Why eight cases cover every role a noun can play (six kārakas + genitive + vocative). |
 | 2 | Setting | **The odd man out** (V1 ◐○, speaker's own Sanskrit) | Tap each phrase of his opening to unfold: *gīrvāṇa-bhāṣā*, *vāg-vyāpāra*, *kṣamāṁ yācitvā*. | Why a Veda scholar and IIT teacher is on this stage, and why he apologises for speaking English. First taste of a dhātu: **gir / vac / yāc**. |
 | 3 | Claim | **A non-negotiable for everyone** (V3 ● Manusmṛti 2.20) | Drag word tiles into the right order (padaccheda), then match each to its meaning. | His claim: studying the Shastras isn't only for Bharat, but for every person on earth. Roots: **sū** (prasūta), **jan**, **śikṣ** (a desiderative of śak: "wish to be able"), **car**. |
 | 4 | Level 1: Intellect | **Train the mind first** (buddhi-vaiśadya, Nyāya) | A "12 years of logic → physics in a year" slider; reveal what *vaiśadya* (clarity) means. | The Shastras sharpen the instrument, so learning anything else gets faster. Nyāya = logic, not "jurisprudence". |
@@ -36,3 +37,6 @@ One entry per scene, ~35–60 spoken words, second person, in the Acharya's voic
 
 - No political commentary. The talk thanks organisations and leaders on stage; the explainer keeps to the ideas and scriptures.
 - No claim that the Shastras "contain" AI or modern science. The explainer sticks to the speaker's own caveat (scene 6).
+
+## Grammar layer (added after review)
+Every word in every verse card shows its type, case/number/gender (or person/tense/voice), stem or root, a use note, and the full table with the form highlighted. The Grammar guide (header) adds cases, number and gender, word types, notation, sounds and a 26-table paradigm gallery. Tables are generated and checked in `gen_grammar.py`.

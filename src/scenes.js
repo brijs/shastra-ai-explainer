@@ -1,6 +1,6 @@
 /* Scenes. Each: {id, level, mood, title, html, init(root, api)} */
 (function(){
-const {decodeCard:DC,termCard:TC,quiz,esc,V,T,DATA_}=EX; const P=s=>SCENES.push(s);
+const {decodeCard:DC,termCard:TC,quiz,esc,V,T}=EX; const DATA_PD=p=>{const P=EX.G.paradigms[p];return P.root+' '+P.tense.split(' (')[0]+' table';}; const P=s=>SCENES.push(s);
 const $=(s,r)=>(r||document).querySelector(s), $$=(s,r)=>Array.from((r||document).querySelectorAll(s));
 
 /* 1 Welcome */
@@ -12,12 +12,18 @@ html:`<p class="lead">One question drives the whole talk: <b>what is the relevan
 <div class="row2" id="intent"><button class="btn small" data-i="c">I'm curious</button><button class="btn small" data-i="i">I want inspiration</button><button class="btn small" data-i="g">I want the grammar</button></div>
 <p id="intentMsg" class="lead"></p>
 <div class="sec">How to read a decode card</div>
-<p>Every Sanskrit line is shown in <b>Devanagari</b> and Roman letters (<b>IAST</b>). Tap a word to see its meaning and <b>dhātu</b> (root). The badge tells you how sure I am of the verse.</p>
+<p>Every Sanskrit line is shown in <b>Devanagari</b> and Roman letters (<b>IAST</b>). Tap a word to see its meaning and <b>dhātu</b> (root). The badge tells you how sure I am of the verse. Tap <b>Grammar guide</b> (top right) any time for cases, word types, notation and full declension tables.</p>
 <p><span class="badge conf-ok">● Verified</span> matches a source · <span class="badge conf-mid">◐ Recognised</span> wording may differ · <span class="badge conf-low">○ Not matched</span> reconstructed from audio</p>`,
 init(r,a){let lit=false;
  $('#diya',r).onclick=()=>{lit=!lit;$('#diya',r).classList.toggle('unlit',!lit);$('#diyaMsg',r).innerHTML=lit?'<b>The lamp is lit.</b> Tamaso mā jyotirgamaya: from darkness, lead me to light.':'<i>Tap the diya to light it.</i>';a.react(lit?'Lovely. We can begin.':'',lit?'happy':'neutral');};
  const M={c:'Curiosity is the right start. Every card ends with "why he quoted this", so you always know the point.',i:'Look for the pattern: each verse answers the question "what lasts?"',g:'Wonderful. Watch for roots (dhātu) and sandhi (how words fuse). The Word Lab at the end gathers them.'};
  $$('#intent button',r).forEach(b=>b.onclick=()=>{$('#intentMsg',r).textContent=M[b.dataset.i];a.react('Noted.','happy');});}});
+
+/* 1b Cases */
+P({id:'sg',level:0,mood:'think',title:'Eight cases, one map',
+html:`<div id="cwrap"></div><div class="sec">Check yourself</div><div id="cq"></div><p><button class="btn small" data-guide="cases">Open the full Grammar guide</button></p>`,
+init(r,a){EX.casesTab($('#cwrap',r),'abl');
+ quiz($('#cq',r),[{q:'“Rāma comes FROM the village.” Which case marks “from the village”?',o:['Instrumental','Ablative','Dative','Locative'],a:1,e:'Ablative (pañcamī) marks the source or point of departure: grāmāt.'},{q:'“rathena” means “by chariot”. Which case is it?',o:['Genitive','Accusative','Instrumental','Vocative'],a:2,e:'Instrumental (tṛtīyā): the tool or means, with the ending -ena.'},{q:'Which case answers “whose?”',o:['Genitive','Dative','Locative','Nominative'],a:0,e:'Genitive (ṣaṣṭhī): a link between two nouns, as in rāmasya pustakam, “Rāma’s book”.'}],()=>{});}});
 
 /* 2 Setting + V1 */
 P({id:'s2',level:0,mood:'neutral',title:'The odd man out',
@@ -162,14 +168,17 @@ init(r,a){const C=['Why study for JEE? To get into an IIT.','Why an IIT? For a g
 
 /* 14 Lab, quiz, cheat sheet */
 P({id:'s14',level:4,mood:'happy',title:'Word lab, quiz and decoder card',
-html:`<div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-t="lab">Word lab</button><button role="tab" aria-selected="false" data-t="quiz">Quiz</button><button role="tab" aria-selected="false" data-t="sheet">Decoder card</button></div>
+html:`<div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-t="lab">Word lab</button><button role="tab" aria-selected="false" data-t="quiz">Quiz</button><button role="tab" aria-selected="false" data-t="para">Word forms</button><button role="tab" aria-selected="false" data-t="sheet">Decoder card</button></div>
 <div id="tab-lab"><p class="lead">Pick a root (<i>dhātu</i>) to see every word in the talk that grows from it.</p><div class="rootgrid" id="rg"></div><div class="wdetail" id="rd">Tap a root.</div></div>
-<div id="tab-quiz" hidden><p class="lead">Score 8 or more to earn the rank of Ācārya.</p><div id="qz"></div></div>
+<div id="tab-para" hidden><div id="pg2"></div></div>
+<div id="tab-quiz" hidden><p class="lead" id="passline"></p><div id="qz"></div></div>
 <div id="tab-sheet" hidden><p class="lead">Everything in one place. Copy it to keep.</p><div class="row2"><button class="btn small" id="cp">Copy decoder card</button><span id="cpm"></span></div><pre class="sheet" id="sheet"></pre></div>`,
 init(r,a){
- $$('.tabs button',r).forEach(b=>b.onclick=()=>{$$('.tabs button',r).forEach(x=>x.setAttribute('aria-selected',x===b));['lab','quiz','sheet'].forEach(t=>$('#tab-'+t,r).hidden=t!==b.dataset.t);});
- const rg=$('#rg',r);DATA.roots.forEach((o,i)=>{const b=document.createElement('button');b.setAttribute('aria-pressed','false');b.innerHTML=`<span class="dev">${esc(o.dev)}</span>${esc(o.r)}`;b.onclick=()=>{$$('button',rg).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');$('#rd',r).innerHTML=`<div class="big">${esc(o.dev)} <span class="iast">${esc(o.r)}</span></div><div><b>Meaning:</b> ${esc(o.m)}</div><div><b>Words in this talk:</b> ${o.words.map(esc).join(', ')}</div><div><b>English cousins:</b> ${esc(o.en)}</div>`;a.react('Roots connect the verses.','happy');};rg.appendChild(b);});
- quiz($('#qz',r),DATA.quiz,(s,n)=>{$('#qz',r).insertAdjacentHTML('beforeend',s>=8?`<p class="ok">You are an Ācārya. Śrīkṛṣṇārpaṇam astu.</p>`:'<p class="bad">Not yet: review the Word lab and try again by reopening this scene.</p>');if(s>=8){a.quizPassed();a.toast('Rank earned: Ācārya');a.react('Well done.','happy');}});
+ $$('.tabs button',r).forEach(b=>b.onclick=()=>{$$('.tabs button',r).forEach(x=>x.setAttribute('aria-selected',x===b));['lab','quiz','para','sheet'].forEach(t=>$('#tab-'+t,r).hidden=t!==b.dataset.t);if(b.dataset.t==='para'&&!$('#pg2',r).firstChild)EX.galleryTab($('#pg2',r),'kr_pres');});
+ const ROOTPD={'√kṛ':['kr_pres','kr_opt'],'√vac':['vac_fut'],'√gam':['gam_pres'],'√iṣ':['is_pres'],'√bhū':['bhu_pres'],'√as':['as_pres','as_opt','as_imp'],'√śikṣ':['siks_opt']};
+ const need=Math.ceil(DATA.quiz.length*0.8);$('#passline',r).textContent=`Score ${need} or more out of ${DATA.quiz.length} to earn the rank of Ācārya.`;
+ const rg=$('#rg',r);DATA.roots.forEach((o,i)=>{const b=document.createElement('button');b.setAttribute('aria-pressed','false');b.innerHTML=`<span class="dev">${esc(o.dev)}</span>${esc(o.r)}`;b.onclick=()=>{$$('button',rg).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');$('#rd',r).innerHTML=`<div class="big">${esc(o.dev)} <span class="iast">${esc(o.r)}</span></div><div><b>Meaning:</b> ${esc(o.m)}</div><div><b>Words in this talk:</b> ${o.words.map(esc).join(', ')}</div><div><b>English cousins:</b> ${esc(o.en)}</div>`+(ROOTPD[o.r]?`<div class="row2">`+ROOTPD[o.r].map(p=>`<button class="btn small" data-guide="para:${p}">See ${esc(DATA_PD(p))}</button>`).join('')+`</div>`:`<div class="gnote">Tip: pick the Word forms tab to see how verb roots and nouns inflect.</div>`);a.react('Roots connect the verses.','happy');};rg.appendChild(b);});
+ quiz($('#qz',r),DATA.quiz,(s,n)=>{$('#qz',r).insertAdjacentHTML('beforeend',s>=8?`<p class="ok">You are an Ācārya. Śrīkṛṣṇārpaṇam astu.</p>`:'<p class="bad">Not yet: review the Word lab and try again by reopening this scene.</p>');if(s>=need){a.quizPassed();a.toast('Rank earned: Ācārya');a.react('Well done.','happy');}});
  const txt=DATA.verses.map(v=>`${v.id} · ${v.short}\n  ${v.lines.map(l=>l.dev).join(' / ')}\n  ${v.lines.map(l=>l.iast).join(' / ')}\n  Meaning: ${v.meaning}\n  Source: ${v.source}\n  Why he said it: ${v.why}\n`).join('\n');
  $('#sheet',r).textContent='DECODER CARD: Why Shastras in the Age of AI\n\n'+txt+'\nKey roots: '+DATA.roots.map(o=>o.r+' ('+o.m+')').join('; ');
  $('#cp',r).onclick=()=>{const t=$('#sheet',r).textContent;const ok=()=>{$('#cpm',r).textContent='Copied.';};const fb=()=>{const s=window.getSelection(),g=document.createRange();g.selectNodeContents($('#sheet',r));s.removeAllRanges();s.addRange(g);$('#cpm',r).textContent='Selected. Press Ctrl/Cmd+C.';};

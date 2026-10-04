@@ -1,0 +1,6061 @@
+{
+"cases": [
+{
+"id": "nom",
+"n": 1,
+"skt": "prathamā",
+"sktd": "प्रथमा",
+"en": "Nominative",
+"role": "the doer (subject)",
+"kar": "kartṛ · agent",
+"q": "who? what? (does it)",
+"prep": "—",
+"end": "-aḥ (m), -am (n), -ā (f)",
+"think": "The star of the sentence: who or what performs the action, or is described.",
+"ex": {
+"dev": "रामः गच्छति",
+"iast": "rāmaḥ gacchati",
+"en": "Rāma goes.",
+"hit": "rāmaḥ"
+},
+"talk": {
+"v": "V7",
+"w": "muktiḥ",
+"en": "muktiḥ: \"liberation\" is what is being defined."
+}
+},
+{
+"id": "acc",
+"n": 2,
+"skt": "dvitīyā",
+"sktd": "द्वितीया",
+"en": "Accusative",
+"role": "what is acted on, or where it reaches",
+"kar": "karman · object",
+"q": "whom? what? to where?",
+"prep": "(direct object); “to, towards”",
+"end": "-am",
+"think": "The action lands on it: the thing done to, or the place gone to.",
+"ex": {
+"dev": "रामः ग्रामं गच्छति",
+"iast": "rāmaḥ grāmaṁ gacchati",
+"en": "Rāma goes to the village.",
+"hit": "grāmaṁ"
+},
+"talk": {
+"v": "V10",
+"w": "yamālayam",
+"en": "yamālayam: “to Yama’s abode”, the destination of the beings."
+}
+},
+{
+"id": "ins",
+"n": 3,
+"skt": "tṛtīyā",
+"sktd": "तृतीया",
+"en": "Instrumental",
+"role": "the means or tool; the one accompanying",
+"kar": "karaṇa · instrument",
+"q": "by what? with what? with whom?",
+"prep": "by, with, by means of",
+"end": "-ena (a-stem)",
+"think": "The tool or route by which it happens. Also the agent of a passive verb.",
+"ex": {
+"dev": "रामः रथेन गच्छति",
+"iast": "rāmaḥ rathena gacchati",
+"en": "Rāma goes by chariot.",
+"hit": "rathena"
+},
+"talk": {
+"v": "V8a",
+"w": "vittena",
+"en": "vittena: “by means of wealth”, no immortality comes by that route."
+}
+},
+{
+"id": "dat",
+"n": 4,
+"skt": "caturthī",
+"sktd": "चतुर्थी",
+"en": "Dative",
+"role": "the recipient or purpose",
+"kar": "sampradāna · recipient",
+"q": "to whom? for what?",
+"prep": "to, for",
+"end": "-āya (a-stem)",
+"think": "The one who receives, or the goal something is for.",
+"ex": {
+"dev": "रामः मित्राय फलं ददाति",
+"iast": "rāmaḥ mitrāya phalaṁ dadāti",
+"en": "Rāma gives fruit to a friend.",
+"hit": "mitrāya"
+},
+"talk": {
+"v": "V6",
+"w": "puṇyāya",
+"en": "puṇyāya: “for merit”, helping others leads to merit."
+}
+},
+{
+"id": "abl",
+"n": 5,
+"skt": "pañcamī",
+"sktd": "पञ्चमी",
+"en": "Ablative",
+"role": "the source; where it separates or comes from",
+"kar": "apādāna · source",
+"q": "from where? from what? why?",
+"prep": "from, out of, because of",
+"end": "-āt (a-stem)",
+"think": "The starting point: the place, person or cause something moves away from.",
+"ex": {
+"dev": "रामः ग्रामात् आगच्छति",
+"iast": "rāmaḥ grāmāt āgacchati",
+"en": "Rāma comes from the village.",
+"hit": "grāmāt"
+},
+"talk": {
+"v": "V3",
+"w": "sakāśāt",
+"en": "sakāśāt: “from the presence of” the teachers, the source of learning."
+}
+},
+{
+"id": "gen",
+"n": 6,
+"skt": "ṣaṣṭhī",
+"sktd": "षष्ठी",
+"en": "Genitive",
+"role": "of: a link between two nouns",
+"kar": "not a kāraka (relates noun to noun)",
+"q": "whose? of what?",
+"prep": "of, ’s",
+"end": "-asya (a-stem)",
+"think": "Belonging and relation: it joins one noun to another, not to the action.",
+"ex": {
+"dev": "रामस्य पुस्तकम्",
+"iast": "rāmasya pustakam",
+"en": "Rāma’s book.",
+"hit": "rāmasya"
+},
+"talk": {
+"v": "V9",
+"w": "tava",
+"en": "tava: “your” chariots, dance and song."
+}
+},
+{
+"id": "loc",
+"n": 7,
+"skt": "saptamī",
+"sktd": "सप्तमी",
+"en": "Locative",
+"role": "the place or time where",
+"kar": "adhikaraṇa · locus",
+"q": "where? when? in what?",
+"prep": "in, on, at",
+"end": "-e (a-stem)",
+"think": "The setting: where or when the action takes place.",
+"ex": {
+"dev": "रामः गृहे तिष्ठति",
+"iast": "rāmaḥ gṛhe tiṣṭhati",
+"en": "Rāma stays in the house.",
+"hit": "gṛhe"
+},
+"talk": {
+"v": "V3",
+"w": "pṛthivyām",
+"en": "pṛthivyām: “on the earth”, where all people should learn."
+}
+},
+{
+"id": "voc",
+"n": 8,
+"skt": "sambodhana",
+"sktd": "सम्बोधन",
+"en": "Vocative",
+"role": "calling or addressing someone",
+"kar": "not a kāraka (address)",
+"q": "O …!",
+"prep": "O …",
+"end": "-a (a-stem: short)",
+"think": "Not part of the action at all: you are calling someone.",
+"ex": {
+"dev": "हे राम",
+"iast": "he rāma",
+"en": "O Rāma!",
+"hit": "rāma"
+},
+"talk": {
+"v": "",
+"w": "—",
+"en": "No vocative appears in his quoted verses. Yājñavalkya would say he maitreyi (“O Maitreyī!”)."
+}
+}
+],
+"paradigms": {
+"tad": {
+"id": "tad",
+"kind": "noun",
+"stem": "tad",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"saḥ",
+"tau",
+"te"
+],
+[
+"tam",
+"tau",
+"tān"
+],
+[
+"tena",
+"tābhyām",
+"taiḥ"
+],
+[
+"tasmai",
+"tābhyām",
+"tebhyaḥ"
+],
+[
+"tasmāt",
+"tābhyām",
+"tebhyaḥ"
+],
+[
+"tasya",
+"tayoḥ",
+"teṣām"
+],
+[
+"tasmin",
+"tayoḥ",
+"teṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+],
+"n": [
+[
+"tat",
+"te",
+"tāni"
+],
+[
+"tat",
+"te",
+"tāni"
+],
+[
+"tena",
+"tābhyām",
+"taiḥ"
+],
+[
+"tasmai",
+"tābhyām",
+"tebhyaḥ"
+],
+[
+"tasmāt",
+"tābhyām",
+"tebhyaḥ"
+],
+[
+"tasya",
+"tayoḥ",
+"teṣām"
+],
+[
+"tasmin",
+"tayoḥ",
+"teṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+]
+},
+"pattern": "pronoun tad (\"that, he/she/it\")",
+"note": "Pronouns have no vocative. Feminine forms differ (e.g. sā, tām, tayā) and are not shown."
+},
+"yad": {
+"id": "yad",
+"kind": "noun",
+"stem": "yad",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"yaḥ",
+"yau",
+"ye"
+],
+[
+"yam",
+"yau",
+"yān"
+],
+[
+"yena",
+"yābhyām",
+"yaiḥ"
+],
+[
+"yasmai",
+"yābhyām",
+"yebhyaḥ"
+],
+[
+"yasmāt",
+"yābhyām",
+"yebhyaḥ"
+],
+[
+"yasya",
+"yayoḥ",
+"yeṣām"
+],
+[
+"yasmin",
+"yayoḥ",
+"yeṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+],
+"n": [
+[
+"yat",
+"ye",
+"yāni"
+],
+[
+"yat",
+"ye",
+"yāni"
+],
+[
+"yena",
+"yābhyām",
+"yaiḥ"
+],
+[
+"yasmai",
+"yābhyām",
+"yebhyaḥ"
+],
+[
+"yasmāt",
+"yābhyām",
+"yebhyaḥ"
+],
+[
+"yasya",
+"yayoḥ",
+"yeṣām"
+],
+[
+"yasmin",
+"yayoḥ",
+"yeṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+]
+},
+"pattern": "relative pronoun yad (\"who, which, what\")",
+"note": "Pronouns have no vocative. Feminine forms differ (e.g. sā, tām, tayā) and are not shown. Before a vowel or voiced sound, yat is written yad."
+},
+"kim": {
+"id": "kim",
+"kind": "noun",
+"stem": "kim",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"kaḥ",
+"kau",
+"ke"
+],
+[
+"kam",
+"kau",
+"kān"
+],
+[
+"kena",
+"kābhyām",
+"kaiḥ"
+],
+[
+"kasmai",
+"kābhyām",
+"kebhyaḥ"
+],
+[
+"kasmāt",
+"kābhyām",
+"kebhyaḥ"
+],
+[
+"kasya",
+"kayoḥ",
+"keṣām"
+],
+[
+"kasmin",
+"kayoḥ",
+"keṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+],
+"n": [
+[
+"kim",
+"ke",
+"kāni"
+],
+[
+"kim",
+"ke",
+"kāni"
+],
+[
+"kena",
+"kābhyām",
+"kaiḥ"
+],
+[
+"kasmai",
+"kābhyām",
+"kebhyaḥ"
+],
+[
+"kasmāt",
+"kābhyām",
+"kebhyaḥ"
+],
+[
+"kasya",
+"kayoḥ",
+"keṣām"
+],
+[
+"kasmin",
+"kayoḥ",
+"keṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+]
+},
+"pattern": "interrogative pronoun kim (\"who? what?\")",
+"note": "Pronouns have no vocative. Feminine forms differ (e.g. sā, tām, tayā) and are not shown."
+},
+"idam": {
+"id": "idam",
+"kind": "noun",
+"stem": "idam",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"ayam",
+"imau",
+"ime"
+],
+[
+"imam / enam",
+"imau / enau",
+"imān / enān"
+],
+[
+"anena",
+"ābhyām",
+"ebhiḥ"
+],
+[
+"asmai",
+"ābhyām",
+"ebhyaḥ"
+],
+[
+"asmāt",
+"ābhyām",
+"ebhyaḥ"
+],
+[
+"asya",
+"anayoḥ",
+"eṣām"
+],
+[
+"asmin",
+"anayoḥ",
+"eṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+],
+"n": [
+[
+"idam",
+"ime",
+"imāni"
+],
+[
+"idam",
+"ime",
+"imāni"
+],
+[
+"anena",
+"ābhyām",
+"ebhiḥ"
+],
+[
+"asmai",
+"ābhyām",
+"ebhyaḥ"
+],
+[
+"asmāt",
+"ābhyām",
+"ebhyaḥ"
+],
+[
+"asya",
+"anayoḥ",
+"eṣām"
+],
+[
+"asmin",
+"anayoḥ",
+"eṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+]
+},
+"pattern": "pronoun idam (\"this\")",
+"note": "Pronouns have no vocative. Feminine forms differ (e.g. sā, tām, tayā) and are not shown. The enam/enau/enān forms are short, unstressed alternates."
+},
+"etad": {
+"id": "etad",
+"kind": "noun",
+"stem": "etad",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"eṣaḥ",
+"etau",
+"ete"
+],
+[
+"etam / enam",
+"etau / enau",
+"etān / enān"
+],
+[
+"etena",
+"etābhyām",
+"etaiḥ"
+],
+[
+"etasmai",
+"etābhyām",
+"etebhyaḥ"
+],
+[
+"etasmāt",
+"etābhyām",
+"etebhyaḥ"
+],
+[
+"etasya",
+"etayoḥ",
+"eteṣām"
+],
+[
+"etasmin",
+"etayoḥ",
+"eteṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+],
+"n": [
+[
+"etat",
+"ete",
+"etāni"
+],
+[
+"etat",
+"ete",
+"etāni"
+],
+[
+"etena",
+"etābhyām",
+"etaiḥ"
+],
+[
+"etasmai",
+"etābhyām",
+"etebhyaḥ"
+],
+[
+"etasmāt",
+"etābhyām",
+"etebhyaḥ"
+],
+[
+"etasya",
+"etayoḥ",
+"eteṣām"
+],
+[
+"etasmin",
+"etayoḥ",
+"eteṣu"
+],
+[
+"—",
+"—",
+"—"
+]
+]
+},
+"pattern": "pronoun etad (\"this here\")",
+"note": "Pronouns have no vocative. Feminine forms differ (e.g. sā, tām, tayā) and are not shown."
+},
+"asmad": {
+"id": "asmad",
+"kind": "noun",
+"stem": "asmad",
+"gender": "x",
+"forms": {
+"x": [
+[
+"aham",
+"āvām",
+"vayam"
+],
+[
+"mām / mā",
+"āvām / nau",
+"asmān / naḥ"
+],
+[
+"mayā",
+"āvābhyām",
+"asmābhiḥ"
+],
+[
+"mahyam / me",
+"āvābhyām / nau",
+"asmabhyam / naḥ"
+],
+[
+"mat",
+"āvābhyām",
+"asmat"
+],
+[
+"mama / me",
+"āvayoḥ / nau",
+"asmākam / naḥ"
+],
+[
+"mayi",
+"āvayoḥ",
+"asmāsu"
+],
+[
+"—",
+"—",
+"—"
+]
+]
+},
+"pattern": "first-person pronoun (\"I, we\")",
+"note": "Same for all genders. Forms after \"/\" (mā, me, nau, naḥ) are short, unstressed alternates. No vocative."
+},
+"tvad": {
+"id": "tvad",
+"kind": "noun",
+"stem": "tvad",
+"gender": "x",
+"forms": {
+"x": [
+[
+"tvam",
+"yuvām",
+"yūyam"
+],
+[
+"tvām / tvā",
+"yuvām / vām",
+"yuṣmān / vaḥ"
+],
+[
+"tvayā",
+"yuvābhyām",
+"yuṣmābhiḥ"
+],
+[
+"tubhyam / te",
+"yuvābhyām / vām",
+"yuṣmabhyam / vaḥ"
+],
+[
+"tvat",
+"yuvābhyām",
+"yuṣmat"
+],
+[
+"tava / te",
+"yuvayoḥ / vām",
+"yuṣmākam / vaḥ"
+],
+[
+"tvayi",
+"yuvayoḥ",
+"yuṣmāsu"
+],
+[
+"—",
+"—",
+"—"
+]
+]
+},
+"pattern": "second-person pronoun (\"you\")",
+"note": "Same for all genders. Forms after \"/\" are short, unstressed alternates. No vocative."
+},
+"ahan": {
+"id": "ahan",
+"kind": "noun",
+"stem": "ahan",
+"gender": "n",
+"forms": {
+"n": [
+[
+"ahaḥ",
+"ahnī / ahanī",
+"ahāni"
+],
+[
+"ahaḥ",
+"ahnī / ahanī",
+"ahāni"
+],
+[
+"ahnā",
+"ahobhyām",
+"ahobhiḥ"
+],
+[
+"ahne",
+"ahobhyām",
+"ahobhyaḥ"
+],
+[
+"ahnaḥ",
+"ahobhyām",
+"ahobhyaḥ"
+],
+[
+"ahnaḥ",
+"ahnoḥ",
+"ahnām"
+],
+[
+"ahni / ahani",
+"ahnoḥ",
+"ahaḥsu / ahassu"
+],
+[
+"ahaḥ",
+"ahnī / ahanī",
+"ahāni"
+]
+]
+},
+"pattern": "n-stem neuter ahan (\"day\"), irregular",
+"note": "The nominative is also seen as ahar. Day: ahan. The stem shortens (ahn-) before vowel endings."
+},
+"mahat": {
+"id": "mahat",
+"kind": "noun",
+"stem": "mahat",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"mahān",
+"mahāntau",
+"mahāntaḥ"
+],
+[
+"mahāntam",
+"mahāntau",
+"mahataḥ"
+],
+[
+"mahatā",
+"mahadbhyām",
+"mahadbhiḥ"
+],
+[
+"mahate",
+"mahadbhyām",
+"mahadbhyaḥ"
+],
+[
+"mahataḥ",
+"mahadbhyām",
+"mahadbhyaḥ"
+],
+[
+"mahataḥ",
+"mahatoḥ",
+"mahatām"
+],
+[
+"mahati",
+"mahatoḥ",
+"mahatsu"
+],
+[
+"mahan",
+"mahāntau",
+"mahāntaḥ"
+]
+],
+"n": [
+[
+"mahat",
+"mahatī",
+"mahānti"
+],
+[
+"mahat",
+"mahatī",
+"mahānti"
+],
+[
+"mahatā",
+"mahadbhyām",
+"mahadbhiḥ"
+],
+[
+"mahate",
+"mahadbhyām",
+"mahadbhyaḥ"
+],
+[
+"mahataḥ",
+"mahadbhyām",
+"mahadbhyaḥ"
+],
+[
+"mahataḥ",
+"mahatoḥ",
+"mahatām"
+],
+[
+"mahati",
+"mahatoḥ",
+"mahatsu"
+],
+[
+"mahat",
+"mahatī",
+"mahānti"
+]
+]
+},
+"pattern": "t-stem adjective mahat (\"great\")",
+"note": "Adjectives take the gender, case and number of the noun they describe. Feminine: mahatī."
+},
+"kr_pres": {
+"id": "kr_pres",
+"kind": "verb",
+"root": "√kṛ",
+"meaning": "to do, make",
+"tense": "laṭ (present)",
+"voice": "parasmaipada",
+"gana": "8th class (tanādi)",
+"forms": {
+"x": [
+[
+"karoti",
+"kurutaḥ",
+"kurvanti"
+],
+[
+"karoṣi",
+"kurutaḥ",
+"kurutha"
+],
+[
+"karomi",
+"kurvaḥ",
+"kurmaḥ"
+]
+]
+},
+"note": "The root changes shape: kar- (strong) and kur- (weak).",
+"prefix": ""
+},
+"kr_opt": {
+"id": "kr_opt",
+"kind": "verb",
+"root": "√kṛ",
+"meaning": "to do, make",
+"tense": "vidhiliṅ (optative: \"should/may\")",
+"voice": "parasmaipada",
+"gana": "8th class (tanādi)",
+"forms": {
+"x": [
+[
+"kuryāt",
+"kuryātām",
+"kuryuḥ"
+],
+[
+"kuryāḥ",
+"kuryātam",
+"kuryāta"
+],
+[
+"kuryām",
+"kuryāva",
+"kuryāma"
+]
+]
+},
+"note": "The optative expresses wish, possibility or \"should\".",
+"prefix": ""
+},
+"vac_fut": {
+"id": "vac_fut",
+"kind": "verb",
+"root": "√vac",
+"meaning": "to speak",
+"tense": "lṛṭ (future)",
+"voice": "parasmaipada",
+"gana": "2nd class (adādi)",
+"forms": {
+"x": [
+[
+"vakṣyati",
+"vakṣyataḥ",
+"vakṣyanti"
+],
+[
+"vakṣyasi",
+"vakṣyathaḥ",
+"vakṣyatha"
+],
+[
+"vakṣyāmi",
+"vakṣyāvaḥ",
+"vakṣyāmaḥ"
+]
+]
+},
+"note": "In the verse the prefix pra- is added: pra-vakṣyāmi.",
+"prefix": "pra"
+},
+"gam_pres": {
+"id": "gam_pres",
+"kind": "verb",
+"root": "√gam",
+"meaning": "to go",
+"tense": "laṭ (present)",
+"voice": "parasmaipada",
+"gana": "1st class (bhvādi)",
+"forms": {
+"x": [
+[
+"gacchati",
+"gacchataḥ",
+"gacchanti"
+],
+[
+"gacchasi",
+"gacchathaḥ",
+"gacchatha"
+],
+[
+"gacchāmi",
+"gacchāvaḥ",
+"gacchāmaḥ"
+]
+]
+},
+"note": "The root gam- becomes gaccha- before endings.",
+"prefix": ""
+},
+"is_pres": {
+"id": "is_pres",
+"kind": "verb",
+"root": "√iṣ",
+"meaning": "to wish",
+"tense": "laṭ (present)",
+"voice": "parasmaipada",
+"gana": "6th class (tudādi)",
+"forms": {
+"x": [
+[
+"icchati",
+"icchataḥ",
+"icchanti"
+],
+[
+"icchasi",
+"icchathaḥ",
+"icchatha"
+],
+[
+"icchāmi",
+"icchāvaḥ",
+"icchāmaḥ"
+]
+]
+},
+"note": "The root iṣ- becomes iccha- before endings.",
+"prefix": ""
+},
+"bhu_pres": {
+"id": "bhu_pres",
+"kind": "verb",
+"root": "√bhū",
+"meaning": "to be, become",
+"tense": "laṭ (present)",
+"voice": "parasmaipada",
+"gana": "1st class (bhvādi)",
+"forms": {
+"x": [
+[
+"bhavati",
+"bhavataḥ",
+"bhavanti"
+],
+[
+"bhavasi",
+"bhavathaḥ",
+"bhavatha"
+],
+[
+"bhavāmi",
+"bhavāvaḥ",
+"bhavāmaḥ"
+]
+]
+},
+"note": "The vowel strengthens: bhū → bhav-.",
+"prefix": ""
+},
+"as_pres": {
+"id": "as_pres",
+"kind": "verb",
+"root": "√as",
+"meaning": "to be",
+"tense": "laṭ (present)",
+"voice": "parasmaipada",
+"gana": "2nd class (adādi)",
+"forms": {
+"x": [
+[
+"asti",
+"staḥ",
+"santi"
+],
+[
+"asi",
+"sthaḥ",
+"stha"
+],
+[
+"asmi",
+"svaḥ",
+"smaḥ"
+]
+]
+},
+"note": "Irregular: the a of the root drops in many forms (staḥ, santi).",
+"prefix": ""
+},
+"as_opt": {
+"id": "as_opt",
+"kind": "verb",
+"root": "√as",
+"meaning": "to be",
+"tense": "vidhiliṅ (optative: \"should/may\")",
+"voice": "parasmaipada",
+"gana": "2nd class (adādi)",
+"forms": {
+"x": [
+[
+"syāt",
+"syātām",
+"syuḥ"
+],
+[
+"syāḥ",
+"syātam",
+"syāta"
+],
+[
+"syām",
+"syāva",
+"syāma"
+]
+]
+},
+"note": "Here the root appears only as s-.",
+"prefix": ""
+},
+"as_imp": {
+"id": "as_imp",
+"kind": "verb",
+"root": "√as",
+"meaning": "to be",
+"tense": "loṭ (imperative: \"let it be\")",
+"voice": "parasmaipada",
+"gana": "2nd class (adādi)",
+"forms": {
+"x": [
+[
+"astu",
+"stām",
+"santu"
+],
+[
+"edhi",
+"stam",
+"sta"
+],
+[
+"asāni",
+"asāva",
+"asāma"
+]
+]
+},
+"note": "Command, blessing or permission: \"let it be\".",
+"prefix": ""
+},
+"siks_opt": {
+"id": "siks_opt",
+"kind": "verb",
+"root": "√śikṣ",
+"meaning": "to learn (wish to be able)",
+"tense": "vidhiliṅ (optative: \"should/may\")",
+"voice": "ātmanepada",
+"gana": "1st class (bhvādi)",
+"forms": {
+"x": [
+[
+"śikṣeta",
+"śikṣeyātām",
+"śikṣeran"
+],
+[
+"śikṣethāḥ",
+"śikṣeyāthām",
+"śikṣedhvam"
+],
+[
+"śikṣeya",
+"śikṣevahi",
+"śikṣemahi"
+]
+]
+},
+"note": "Ātmanepada endings: the action is \"for oneself\".",
+"prefix": ""
+},
+"a_n:bhāratavarṣa": {
+"id": "a_n:bhāratavarṣa",
+"kind": "noun",
+"stem": "bhāratavarṣa",
+"gender": "n",
+"forms": {
+"n": [
+[
+"bhāratavarṣam",
+"bhāratavarṣe",
+"bhāratavarṣāṇi"
+],
+[
+"bhāratavarṣam",
+"bhāratavarṣe",
+"bhāratavarṣāṇi"
+],
+[
+"bhāratavarṣeṇa",
+"bhāratavarṣābhyām",
+"bhāratavarṣaiḥ"
+],
+[
+"bhāratavarṣāya",
+"bhāratavarṣābhyām",
+"bhāratavarṣebhyaḥ"
+],
+[
+"bhāratavarṣāt",
+"bhāratavarṣābhyām",
+"bhāratavarṣebhyaḥ"
+],
+[
+"bhāratavarṣasya",
+"bhāratavarṣayoḥ",
+"bhāratavarṣāṇām"
+],
+[
+"bhāratavarṣe",
+"bhāratavarṣayoḥ",
+"bhāratavarṣeṣu"
+],
+[
+"bhāratavarṣa",
+"bhāratavarṣe",
+"bhāratavarṣāṇi"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"aa_f:gīrvāṇabhāṣā": {
+"id": "aa_f:gīrvāṇabhāṣā",
+"kind": "noun",
+"stem": "gīrvāṇabhāṣā",
+"gender": "f",
+"forms": {
+"f": [
+[
+"gīrvāṇabhāṣā",
+"gīrvāṇabhāṣe",
+"gīrvāṇabhāṣāḥ"
+],
+[
+"gīrvāṇabhāṣām",
+"gīrvāṇabhāṣe",
+"gīrvāṇabhāṣāḥ"
+],
+[
+"gīrvāṇabhāṣayā",
+"gīrvāṇabhāṣābhyām",
+"gīrvāṇabhāṣābhiḥ"
+],
+[
+"gīrvāṇabhāṣāyai",
+"gīrvāṇabhāṣābhyām",
+"gīrvāṇabhāṣābhyaḥ"
+],
+[
+"gīrvāṇabhāṣāyāḥ",
+"gīrvāṇabhāṣābhyām",
+"gīrvāṇabhāṣābhyaḥ"
+],
+[
+"gīrvāṇabhāṣāyāḥ",
+"gīrvāṇabhāṣayoḥ",
+"gīrvāṇabhāṣāṇām"
+],
+[
+"gīrvāṇabhāṣāyām",
+"gīrvāṇabhāṣayoḥ",
+"gīrvāṇabhāṣāsu"
+],
+[
+"gīrvāṇabhāṣe",
+"gīrvāṇabhāṣe",
+"gīrvāṇabhāṣāḥ"
+]
+]
+},
+"pattern": "ā-stem feminine (like latā)",
+"note": ""
+},
+"a_n:vyavahārādika": {
+"id": "a_n:vyavahārādika",
+"kind": "noun",
+"stem": "vyavahārādika",
+"gender": "n",
+"forms": {
+"n": [
+[
+"vyavahārādikam",
+"vyavahārādike",
+"vyavahārādikāni"
+],
+[
+"vyavahārādikam",
+"vyavahārādike",
+"vyavahārādikāni"
+],
+[
+"vyavahārādikena",
+"vyavahārādikābhyām",
+"vyavahārādikaiḥ"
+],
+[
+"vyavahārādikāya",
+"vyavahārādikābhyām",
+"vyavahārādikebhyaḥ"
+],
+[
+"vyavahārādikāt",
+"vyavahārādikābhyām",
+"vyavahārādikebhyaḥ"
+],
+[
+"vyavahārādikasya",
+"vyavahārādikayoḥ",
+"vyavahārādikānām"
+],
+[
+"vyavahārādike",
+"vyavahārādikayoḥ",
+"vyavahārādikeṣu"
+],
+[
+"vyavahārādika",
+"vyavahārādike",
+"vyavahārādikāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:kartavya": {
+"id": "a_n:kartavya",
+"kind": "noun",
+"stem": "kartavya",
+"gender": "n",
+"forms": {
+"n": [
+[
+"kartavyam",
+"kartavye",
+"kartavyāni"
+],
+[
+"kartavyam",
+"kartavye",
+"kartavyāni"
+],
+[
+"kartavyena",
+"kartavyābhyām",
+"kartavyaiḥ"
+],
+[
+"kartavyāya",
+"kartavyābhyām",
+"kartavyebhyaḥ"
+],
+[
+"kartavyāt",
+"kartavyābhyām",
+"kartavyebhyaḥ"
+],
+[
+"kartavyasya",
+"kartavyayoḥ",
+"kartavyānām"
+],
+[
+"kartavye",
+"kartavyayoḥ",
+"kartavyeṣu"
+],
+[
+"kartavya",
+"kartavye",
+"kartavyāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_m:vāgvyāpāra": {
+"id": "a_m:vāgvyāpāra",
+"kind": "noun",
+"stem": "vāgvyāpāra",
+"gender": "m",
+"forms": {
+"m": [
+[
+"vāgvyāpāraḥ",
+"vāgvyāpārau",
+"vāgvyāpārāḥ"
+],
+[
+"vāgvyāpāram",
+"vāgvyāpārau",
+"vāgvyāpārān"
+],
+[
+"vāgvyāpāreṇa",
+"vāgvyāpārābhyām",
+"vāgvyāpāraiḥ"
+],
+[
+"vāgvyāpārāya",
+"vāgvyāpārābhyām",
+"vāgvyāpārebhyaḥ"
+],
+[
+"vāgvyāpārāt",
+"vāgvyāpārābhyām",
+"vāgvyāpārebhyaḥ"
+],
+[
+"vāgvyāpārasya",
+"vāgvyāpārayoḥ",
+"vāgvyāpārāṇām"
+],
+[
+"vāgvyāpāre",
+"vāgvyāpārayoḥ",
+"vāgvyāpāreṣu"
+],
+[
+"vāgvyāpāra",
+"vāgvyāpārau",
+"vāgvyāpārāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"aa_f:mlecchabhāṣā": {
+"id": "aa_f:mlecchabhāṣā",
+"kind": "noun",
+"stem": "mlecchabhāṣā",
+"gender": "f",
+"forms": {
+"f": [
+[
+"mlecchabhāṣā",
+"mlecchabhāṣe",
+"mlecchabhāṣāḥ"
+],
+[
+"mlecchabhāṣām",
+"mlecchabhāṣe",
+"mlecchabhāṣāḥ"
+],
+[
+"mlecchabhāṣayā",
+"mlecchabhāṣābhyām",
+"mlecchabhāṣābhiḥ"
+],
+[
+"mlecchabhāṣāyai",
+"mlecchabhāṣābhyām",
+"mlecchabhāṣābhyaḥ"
+],
+[
+"mlecchabhāṣāyāḥ",
+"mlecchabhāṣābhyām",
+"mlecchabhāṣābhyaḥ"
+],
+[
+"mlecchabhāṣāyāḥ",
+"mlecchabhāṣayoḥ",
+"mlecchabhāṣāṇām"
+],
+[
+"mlecchabhāṣāyām",
+"mlecchabhāṣayoḥ",
+"mlecchabhāṣāsu"
+],
+[
+"mlecchabhāṣe",
+"mlecchabhāṣe",
+"mlecchabhāṣāḥ"
+]
+]
+},
+"pattern": "ā-stem feminine (like latā)",
+"note": ""
+},
+"aa_f:kṣamā": {
+"id": "aa_f:kṣamā",
+"kind": "noun",
+"stem": "kṣamā",
+"gender": "f",
+"forms": {
+"f": [
+[
+"kṣamā",
+"kṣame",
+"kṣamāḥ"
+],
+[
+"kṣamām",
+"kṣame",
+"kṣamāḥ"
+],
+[
+"kṣamayā",
+"kṣamābhyām",
+"kṣamābhiḥ"
+],
+[
+"kṣamāyai",
+"kṣamābhyām",
+"kṣamābhyaḥ"
+],
+[
+"kṣamāyāḥ",
+"kṣamābhyām",
+"kṣamābhyaḥ"
+],
+[
+"kṣamāyāḥ",
+"kṣamayoḥ",
+"kṣamāṇām"
+],
+[
+"kṣamāyām",
+"kṣamayoḥ",
+"kṣamāsu"
+],
+[
+"kṣame",
+"kṣame",
+"kṣamāḥ"
+]
+]
+},
+"pattern": "ā-stem feminine (like latā)",
+"note": ""
+},
+"a_m:puṇyatama": {
+"id": "a_m:puṇyatama",
+"kind": "noun",
+"stem": "puṇyatama",
+"gender": "m",
+"forms": {
+"m": [
+[
+"puṇyatamaḥ",
+"puṇyatamau",
+"puṇyatamāḥ"
+],
+[
+"puṇyatamam",
+"puṇyatamau",
+"puṇyatamān"
+],
+[
+"puṇyatamena",
+"puṇyatamābhyām",
+"puṇyatamaiḥ"
+],
+[
+"puṇyatamāya",
+"puṇyatamābhyām",
+"puṇyatamebhyaḥ"
+],
+[
+"puṇyatamāt",
+"puṇyatamābhyām",
+"puṇyatamebhyaḥ"
+],
+[
+"puṇyatamasya",
+"puṇyatamayoḥ",
+"puṇyatamānām"
+],
+[
+"puṇyatame",
+"puṇyatamayoḥ",
+"puṇyatameṣu"
+],
+[
+"puṇyatama",
+"puṇyatamau",
+"puṇyatamāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:mahābhāga": {
+"id": "a_m:mahābhāga",
+"kind": "noun",
+"stem": "mahābhāga",
+"gender": "m",
+"forms": {
+"m": [
+[
+"mahābhāgaḥ",
+"mahābhāgau",
+"mahābhāgāḥ"
+],
+[
+"mahābhāgam",
+"mahābhāgau",
+"mahābhāgān"
+],
+[
+"mahābhāgena",
+"mahābhāgābhyām",
+"mahābhāgaiḥ"
+],
+[
+"mahābhāgāya",
+"mahābhāgābhyām",
+"mahābhāgebhyaḥ"
+],
+[
+"mahābhāgāt",
+"mahābhāgābhyām",
+"mahābhāgebhyaḥ"
+],
+[
+"mahābhāgasya",
+"mahābhāgayoḥ",
+"mahābhāgānām"
+],
+[
+"mahābhāge",
+"mahābhāgayoḥ",
+"mahābhāgeṣu"
+],
+[
+"mahābhāga",
+"mahābhāgau",
+"mahābhāgāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:maheśasadṛśa": {
+"id": "a_m:maheśasadṛśa",
+"kind": "noun",
+"stem": "maheśasadṛśa",
+"gender": "m",
+"forms": {
+"m": [
+[
+"maheśasadṛśaḥ",
+"maheśasadṛśau",
+"maheśasadṛśāḥ"
+],
+[
+"maheśasadṛśam",
+"maheśasadṛśau",
+"maheśasadṛśān"
+],
+[
+"maheśasadṛśena",
+"maheśasadṛśābhyām",
+"maheśasadṛśaiḥ"
+],
+[
+"maheśasadṛśāya",
+"maheśasadṛśābhyām",
+"maheśasadṛśebhyaḥ"
+],
+[
+"maheśasadṛśāt",
+"maheśasadṛśābhyām",
+"maheśasadṛśebhyaḥ"
+],
+[
+"maheśasadṛśasya",
+"maheśasadṛśayoḥ",
+"maheśasadṛśānām"
+],
+[
+"maheśasadṛśe",
+"maheśasadṛśayoḥ",
+"maheśasadṛśeṣu"
+],
+[
+"maheśasadṛśa",
+"maheśasadṛśau",
+"maheśasadṛśāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:veda": {
+"id": "a_m:veda",
+"kind": "noun",
+"stem": "veda",
+"gender": "m",
+"forms": {
+"m": [
+[
+"vedaḥ",
+"vedau",
+"vedāḥ"
+],
+[
+"vedam",
+"vedau",
+"vedān"
+],
+[
+"vedena",
+"vedābhyām",
+"vedaiḥ"
+],
+[
+"vedāya",
+"vedābhyām",
+"vedebhyaḥ"
+],
+[
+"vedāt",
+"vedābhyām",
+"vedebhyaḥ"
+],
+[
+"vedasya",
+"vedayoḥ",
+"vedānām"
+],
+[
+"vede",
+"vedayoḥ",
+"vedeṣu"
+],
+[
+"veda",
+"vedau",
+"vedāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:deśa": {
+"id": "a_m:deśa",
+"kind": "noun",
+"stem": "deśa",
+"gender": "m",
+"forms": {
+"m": [
+[
+"deśaḥ",
+"deśau",
+"deśāḥ"
+],
+[
+"deśam",
+"deśau",
+"deśān"
+],
+[
+"deśena",
+"deśābhyām",
+"deśaiḥ"
+],
+[
+"deśāya",
+"deśābhyām",
+"deśebhyaḥ"
+],
+[
+"deśāt",
+"deśābhyām",
+"deśebhyaḥ"
+],
+[
+"deśasya",
+"deśayoḥ",
+"deśānām"
+],
+[
+"deśe",
+"deśayoḥ",
+"deśeṣu"
+],
+[
+"deśa",
+"deśau",
+"deśāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:etaddeśaprasūta": {
+"id": "a_m:etaddeśaprasūta",
+"kind": "noun",
+"stem": "etaddeśaprasūta",
+"gender": "m",
+"forms": {
+"m": [
+[
+"etaddeśaprasūtaḥ",
+"etaddeśaprasūtau",
+"etaddeśaprasūtāḥ"
+],
+[
+"etaddeśaprasūtam",
+"etaddeśaprasūtau",
+"etaddeśaprasūtān"
+],
+[
+"etaddeśaprasūtena",
+"etaddeśaprasūtābhyām",
+"etaddeśaprasūtaiḥ"
+],
+[
+"etaddeśaprasūtāya",
+"etaddeśaprasūtābhyām",
+"etaddeśaprasūtebhyaḥ"
+],
+[
+"etaddeśaprasūtāt",
+"etaddeśaprasūtābhyām",
+"etaddeśaprasūtebhyaḥ"
+],
+[
+"etaddeśaprasūtasya",
+"etaddeśaprasūtayoḥ",
+"etaddeśaprasūtānām"
+],
+[
+"etaddeśaprasūte",
+"etaddeśaprasūtayoḥ",
+"etaddeśaprasūteṣu"
+],
+[
+"etaddeśaprasūta",
+"etaddeśaprasūtau",
+"etaddeśaprasūtāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:sakāśa": {
+"id": "a_m:sakāśa",
+"kind": "noun",
+"stem": "sakāśa",
+"gender": "m",
+"forms": {
+"m": [
+[
+"sakāśaḥ",
+"sakāśau",
+"sakāśāḥ"
+],
+[
+"sakāśam",
+"sakāśau",
+"sakāśān"
+],
+[
+"sakāśena",
+"sakāśābhyām",
+"sakāśaiḥ"
+],
+[
+"sakāśāya",
+"sakāśābhyām",
+"sakāśebhyaḥ"
+],
+[
+"sakāśāt",
+"sakāśābhyām",
+"sakāśebhyaḥ"
+],
+[
+"sakāśasya",
+"sakāśayoḥ",
+"sakāśānām"
+],
+[
+"sakāśe",
+"sakāśayoḥ",
+"sakāśeṣu"
+],
+[
+"sakāśa",
+"sakāśau",
+"sakāśāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"n_m:agrajanman": {
+"id": "n_m:agrajanman",
+"kind": "noun",
+"stem": "agrajanman",
+"gender": "m",
+"forms": {
+"m": [
+[
+"agrajanmā",
+"agrajanmānau",
+"agrajanmānaḥ"
+],
+[
+"agrajanmānam",
+"agrajanmānau",
+"agrajanmanaḥ"
+],
+[
+"agrajanmanā",
+"agrajanmabhyām",
+"agrajanmabhiḥ"
+],
+[
+"agrajanmane",
+"agrajanmabhyām",
+"agrajanmabhyaḥ"
+],
+[
+"agrajanmanaḥ",
+"agrajanmabhyām",
+"agrajanmabhyaḥ"
+],
+[
+"agrajanmanaḥ",
+"agrajanmanoḥ",
+"agrajanmanām"
+],
+[
+"agrajanmani",
+"agrajanmanoḥ",
+"agrajanmasu"
+],
+[
+"agrajanman",
+"agrajanmānau",
+"agrajanmānaḥ"
+]
+]
+},
+"pattern": "n-stem masculine (like rājan)",
+"note": ""
+},
+"pron_a:sva": {
+"id": "pron_a:sva",
+"kind": "noun",
+"stem": "sva",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"svaḥ",
+"svau",
+"sve"
+],
+[
+"svam",
+"svau",
+"svān"
+],
+[
+"svena",
+"svābhyām",
+"svaiḥ"
+],
+[
+"svasmai",
+"svābhyām",
+"svebhyaḥ"
+],
+[
+"svasmāt",
+"svābhyām",
+"svebhyaḥ"
+],
+[
+"svasya",
+"svayoḥ",
+"sveṣām"
+],
+[
+"svasmin",
+"svayoḥ",
+"sveṣu"
+],
+[
+"sva",
+"svau",
+"sve"
+]
+],
+"n": [
+[
+"svam",
+"sve",
+"svāni"
+],
+[
+"svam",
+"sve",
+"svāni"
+],
+[
+"svena",
+"svābhyām",
+"svaiḥ"
+],
+[
+"svasmai",
+"svābhyām",
+"svebhyaḥ"
+],
+[
+"svasmāt",
+"svābhyām",
+"svebhyaḥ"
+],
+[
+"svasya",
+"svayoḥ",
+"sveṣām"
+],
+[
+"svasmin",
+"svayoḥ",
+"sveṣu"
+],
+[
+"sva",
+"sve",
+"svāni"
+]
+]
+},
+"pattern": "pronominal adjective (sva), pronoun-like endings in dative/ablative/locative",
+"note": "Feminine forms follow the ā-stem pattern with pronoun-style endings, e.g. sarvasyai."
+},
+"a_n:caritra": {
+"id": "a_n:caritra",
+"kind": "noun",
+"stem": "caritra",
+"gender": "n",
+"forms": {
+"n": [
+[
+"caritram",
+"caritre",
+"caritrāṇi"
+],
+[
+"caritram",
+"caritre",
+"caritrāṇi"
+],
+[
+"caritreṇa",
+"caritrābhyām",
+"caritraiḥ"
+],
+[
+"caritrāya",
+"caritrābhyām",
+"caritrebhyaḥ"
+],
+[
+"caritrāt",
+"caritrābhyām",
+"caritrebhyaḥ"
+],
+[
+"caritrasya",
+"caritrayoḥ",
+"caritrāṇām"
+],
+[
+"caritre",
+"caritrayoḥ",
+"caritreṣu"
+],
+[
+"caritra",
+"caritre",
+"caritrāṇi"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"ii_f:pṛthivī": {
+"id": "ii_f:pṛthivī",
+"kind": "noun",
+"stem": "pṛthivī",
+"gender": "f",
+"forms": {
+"f": [
+[
+"pṛthivī",
+"pṛthivyau",
+"pṛthivyaḥ"
+],
+[
+"pṛthivīm",
+"pṛthivyau",
+"pṛthivīḥ"
+],
+[
+"pṛthivyā",
+"pṛthivībhyām",
+"pṛthivībhiḥ"
+],
+[
+"pṛthivyai",
+"pṛthivībhyām",
+"pṛthivībhyaḥ"
+],
+[
+"pṛthivyāḥ",
+"pṛthivībhyām",
+"pṛthivībhyaḥ"
+],
+[
+"pṛthivyāḥ",
+"pṛthivyoḥ",
+"pṛthivīnām"
+],
+[
+"pṛthivyām",
+"pṛthivyoḥ",
+"pṛthivīṣu"
+],
+[
+"pṛthivi",
+"pṛthivyau",
+"pṛthivyaḥ"
+]
+]
+},
+"pattern": "ī-stem feminine (like nadī)",
+"note": ""
+},
+"a_m:sarvamānava": {
+"id": "a_m:sarvamānava",
+"kind": "noun",
+"stem": "sarvamānava",
+"gender": "m",
+"forms": {
+"m": [
+[
+"sarvamānavaḥ",
+"sarvamānavau",
+"sarvamānavāḥ"
+],
+[
+"sarvamānavam",
+"sarvamānavau",
+"sarvamānavān"
+],
+[
+"sarvamānavena",
+"sarvamānavābhyām",
+"sarvamānavaiḥ"
+],
+[
+"sarvamānavāya",
+"sarvamānavābhyām",
+"sarvamānavebhyaḥ"
+],
+[
+"sarvamānavāt",
+"sarvamānavābhyām",
+"sarvamānavebhyaḥ"
+],
+[
+"sarvamānavasya",
+"sarvamānavayoḥ",
+"sarvamānavānām"
+],
+[
+"sarvamānave",
+"sarvamānavayoḥ",
+"sarvamānaveṣu"
+],
+[
+"sarvamānava",
+"sarvamānavau",
+"sarvamānavāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"pron_a:sarva": {
+"id": "pron_a:sarva",
+"kind": "noun",
+"stem": "sarva",
+"gender": "mn",
+"forms": {
+"m": [
+[
+"sarvaḥ",
+"sarvau",
+"sarve"
+],
+[
+"sarvam",
+"sarvau",
+"sarvān"
+],
+[
+"sarveṇa",
+"sarvābhyām",
+"sarvaiḥ"
+],
+[
+"sarvasmai",
+"sarvābhyām",
+"sarvebhyaḥ"
+],
+[
+"sarvasmāt",
+"sarvābhyām",
+"sarvebhyaḥ"
+],
+[
+"sarvasya",
+"sarvayoḥ",
+"sarveṣām"
+],
+[
+"sarvasmin",
+"sarvayoḥ",
+"sarveṣu"
+],
+[
+"sarva",
+"sarvau",
+"sarve"
+]
+],
+"n": [
+[
+"sarvam",
+"sarve",
+"sarvāṇi"
+],
+[
+"sarvam",
+"sarve",
+"sarvāṇi"
+],
+[
+"sarveṇa",
+"sarvābhyām",
+"sarvaiḥ"
+],
+[
+"sarvasmai",
+"sarvābhyām",
+"sarvebhyaḥ"
+],
+[
+"sarvasmāt",
+"sarvābhyām",
+"sarvebhyaḥ"
+],
+[
+"sarvasya",
+"sarvayoḥ",
+"sarveṣām"
+],
+[
+"sarvasmin",
+"sarvayoḥ",
+"sarveṣu"
+],
+[
+"sarva",
+"sarve",
+"sarvāṇi"
+]
+]
+},
+"pattern": "pronominal adjective (sarva), pronoun-like endings in dative/ablative/locative",
+"note": "Feminine forms follow the ā-stem pattern with pronoun-style endings, e.g. sarvasyai."
+},
+"a_m:śabda": {
+"id": "a_m:śabda",
+"kind": "noun",
+"stem": "śabda",
+"gender": "m",
+"forms": {
+"m": [
+[
+"śabdaḥ",
+"śabdau",
+"śabdāḥ"
+],
+[
+"śabdam",
+"śabdau",
+"śabdān"
+],
+[
+"śabdena",
+"śabdābhyām",
+"śabdaiḥ"
+],
+[
+"śabdāya",
+"śabdābhyām",
+"śabdebhyaḥ"
+],
+[
+"śabdāt",
+"śabdābhyām",
+"śabdebhyaḥ"
+],
+[
+"śabdasya",
+"śabdayoḥ",
+"śabdānām"
+],
+[
+"śabde",
+"śabdayoḥ",
+"śabdeṣu"
+],
+[
+"śabda",
+"śabdau",
+"śabdāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:svārtha": {
+"id": "a_m:svārtha",
+"kind": "noun",
+"stem": "svārtha",
+"gender": "m",
+"forms": {
+"m": [
+[
+"svārthaḥ",
+"svārthau",
+"svārthāḥ"
+],
+[
+"svārtham",
+"svārthau",
+"svārthān"
+],
+[
+"svārthena",
+"svārthābhyām",
+"svārthaiḥ"
+],
+[
+"svārthāya",
+"svārthābhyām",
+"svārthebhyaḥ"
+],
+[
+"svārthāt",
+"svārthābhyām",
+"svārthebhyaḥ"
+],
+[
+"svārthasya",
+"svārthayoḥ",
+"svārthānām"
+],
+[
+"svārthe",
+"svārthayoḥ",
+"svārtheṣu"
+],
+[
+"svārtha",
+"svārthau",
+"svārthāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"i_f:śakti": {
+"id": "i_f:śakti",
+"kind": "noun",
+"stem": "śakti",
+"gender": "f",
+"forms": {
+"f": [
+[
+"śaktiḥ",
+"śaktī",
+"śaktayaḥ"
+],
+[
+"śaktim",
+"śaktī",
+"śaktīḥ"
+],
+[
+"śaktyā",
+"śaktibhyām",
+"śaktibhiḥ"
+],
+[
+"śaktyai / śaktaye",
+"śaktibhyām",
+"śaktibhyaḥ"
+],
+[
+"śaktyāḥ / śakteḥ",
+"śaktibhyām",
+"śaktibhyaḥ"
+],
+[
+"śaktyāḥ / śakteḥ",
+"śaktyoḥ",
+"śaktīnām"
+],
+[
+"śaktyām / śaktau",
+"śaktyoḥ",
+"śaktiṣu"
+],
+[
+"śakte",
+"śaktī",
+"śaktayaḥ"
+]
+]
+},
+"pattern": "i-stem feminine (like mati)",
+"note": ""
+},
+"a_n:labhya": {
+"id": "a_n:labhya",
+"kind": "noun",
+"stem": "labhya",
+"gender": "n",
+"forms": {
+"n": [
+[
+"labhyam",
+"labhye",
+"labhyāni"
+],
+[
+"labhyam",
+"labhye",
+"labhyāni"
+],
+[
+"labhyena",
+"labhyābhyām",
+"labhyaiḥ"
+],
+[
+"labhyāya",
+"labhyābhyām",
+"labhyebhyaḥ"
+],
+[
+"labhyāt",
+"labhyābhyām",
+"labhyebhyaḥ"
+],
+[
+"labhyasya",
+"labhyayoḥ",
+"labhyānām"
+],
+[
+"labhye",
+"labhyayoḥ",
+"labhyeṣu"
+],
+[
+"labhya",
+"labhye",
+"labhyāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:phala": {
+"id": "a_n:phala",
+"kind": "noun",
+"stem": "phala",
+"gender": "n",
+"forms": {
+"n": [
+[
+"phalam",
+"phale",
+"phalāni"
+],
+[
+"phalam",
+"phale",
+"phalāni"
+],
+[
+"phalena",
+"phalābhyām",
+"phalaiḥ"
+],
+[
+"phalāya",
+"phalābhyām",
+"phalebhyaḥ"
+],
+[
+"phalāt",
+"phalābhyām",
+"phalebhyaḥ"
+],
+[
+"phalasya",
+"phalayoḥ",
+"phalānām"
+],
+[
+"phale",
+"phalayoḥ",
+"phaleṣu"
+],
+[
+"phala",
+"phale",
+"phalāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"i_f:kṛṣi": {
+"id": "i_f:kṛṣi",
+"kind": "noun",
+"stem": "kṛṣi",
+"gender": "f",
+"forms": {
+"f": [
+[
+"kṛṣiḥ",
+"kṛṣī",
+"kṛṣayaḥ"
+],
+[
+"kṛṣim",
+"kṛṣī",
+"kṛṣīḥ"
+],
+[
+"kṛṣyā",
+"kṛṣibhyām",
+"kṛṣibhiḥ"
+],
+[
+"kṛṣyai / kṛṣaye",
+"kṛṣibhyām",
+"kṛṣibhyaḥ"
+],
+[
+"kṛṣyāḥ / kṛṣeḥ",
+"kṛṣibhyām",
+"kṛṣibhyaḥ"
+],
+[
+"kṛṣyāḥ / kṛṣeḥ",
+"kṛṣyoḥ",
+"kṛṣīṇām"
+],
+[
+"kṛṣyām / kṛṣau",
+"kṛṣyoḥ",
+"kṛṣiṣu"
+],
+[
+"kṛṣe",
+"kṛṣī",
+"kṛṣayaḥ"
+]
+]
+},
+"pattern": "i-stem feminine (like mati)",
+"note": ""
+},
+"a_n:ślokārdha": {
+"id": "a_n:ślokārdha",
+"kind": "noun",
+"stem": "ślokārdha",
+"gender": "n",
+"forms": {
+"n": [
+[
+"ślokārdham",
+"ślokārdhe",
+"ślokārdhāni"
+],
+[
+"ślokārdham",
+"ślokārdhe",
+"ślokārdhāni"
+],
+[
+"ślokārdhena",
+"ślokārdhābhyām",
+"ślokārdhaiḥ"
+],
+[
+"ślokārdhāya",
+"ślokārdhābhyām",
+"ślokārdhebhyaḥ"
+],
+[
+"ślokārdhāt",
+"ślokārdhābhyām",
+"ślokārdhebhyaḥ"
+],
+[
+"ślokārdhasya",
+"ślokārdhayoḥ",
+"ślokārdhānām"
+],
+[
+"ślokārdhe",
+"ślokārdhayoḥ",
+"ślokārdheṣu"
+],
+[
+"ślokārdha",
+"ślokārdhe",
+"ślokārdhāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:ukta": {
+"id": "a_n:ukta",
+"kind": "noun",
+"stem": "ukta",
+"gender": "n",
+"forms": {
+"n": [
+[
+"uktam",
+"ukte",
+"uktāni"
+],
+[
+"uktam",
+"ukte",
+"uktāni"
+],
+[
+"uktena",
+"uktābhyām",
+"uktaiḥ"
+],
+[
+"uktāya",
+"uktābhyām",
+"uktebhyaḥ"
+],
+[
+"uktāt",
+"uktābhyām",
+"uktebhyaḥ"
+],
+[
+"uktasya",
+"uktayoḥ",
+"uktānām"
+],
+[
+"ukte",
+"uktayoḥ",
+"ukteṣu"
+],
+[
+"ukta",
+"ukte",
+"uktāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"i_f:granthakoṭi": {
+"id": "i_f:granthakoṭi",
+"kind": "noun",
+"stem": "granthakoṭi",
+"gender": "f",
+"forms": {
+"f": [
+[
+"granthakoṭiḥ",
+"granthakoṭī",
+"granthakoṭayaḥ"
+],
+[
+"granthakoṭim",
+"granthakoṭī",
+"granthakoṭīḥ"
+],
+[
+"granthakoṭyā",
+"granthakoṭibhyām",
+"granthakoṭibhiḥ"
+],
+[
+"granthakoṭyai / granthakoṭaye",
+"granthakoṭibhyām",
+"granthakoṭibhyaḥ"
+],
+[
+"granthakoṭyāḥ / granthakoṭeḥ",
+"granthakoṭibhyām",
+"granthakoṭibhyaḥ"
+],
+[
+"granthakoṭyāḥ / granthakoṭeḥ",
+"granthakoṭyoḥ",
+"granthakoṭīnām"
+],
+[
+"granthakoṭyām / granthakoṭau",
+"granthakoṭyoḥ",
+"granthakoṭiṣu"
+],
+[
+"granthakoṭe",
+"granthakoṭī",
+"granthakoṭayaḥ"
+]
+]
+},
+"pattern": "i-stem feminine (like mati)",
+"note": ""
+},
+"a_m:paropakāra": {
+"id": "a_m:paropakāra",
+"kind": "noun",
+"stem": "paropakāra",
+"gender": "m",
+"forms": {
+"m": [
+[
+"paropakāraḥ",
+"paropakārau",
+"paropakārāḥ"
+],
+[
+"paropakāram",
+"paropakārau",
+"paropakārān"
+],
+[
+"paropakāreṇa",
+"paropakārābhyām",
+"paropakāraiḥ"
+],
+[
+"paropakārāya",
+"paropakārābhyām",
+"paropakārebhyaḥ"
+],
+[
+"paropakārāt",
+"paropakārābhyām",
+"paropakārebhyaḥ"
+],
+[
+"paropakārasya",
+"paropakārayoḥ",
+"paropakārāṇām"
+],
+[
+"paropakāre",
+"paropakārayoḥ",
+"paropakāreṣu"
+],
+[
+"paropakāra",
+"paropakārau",
+"paropakārāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_n:puṇya": {
+"id": "a_n:puṇya",
+"kind": "noun",
+"stem": "puṇya",
+"gender": "n",
+"forms": {
+"n": [
+[
+"puṇyam",
+"puṇye",
+"puṇyāni"
+],
+[
+"puṇyam",
+"puṇye",
+"puṇyāni"
+],
+[
+"puṇyena",
+"puṇyābhyām",
+"puṇyaiḥ"
+],
+[
+"puṇyāya",
+"puṇyābhyām",
+"puṇyebhyaḥ"
+],
+[
+"puṇyāt",
+"puṇyābhyām",
+"puṇyebhyaḥ"
+],
+[
+"puṇyasya",
+"puṇyayoḥ",
+"puṇyānām"
+],
+[
+"puṇye",
+"puṇyayoḥ",
+"puṇyeṣu"
+],
+[
+"puṇya",
+"puṇye",
+"puṇyāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:pāpa": {
+"id": "a_n:pāpa",
+"kind": "noun",
+"stem": "pāpa",
+"gender": "n",
+"forms": {
+"n": [
+[
+"pāpam",
+"pāpe",
+"pāpāni"
+],
+[
+"pāpam",
+"pāpe",
+"pāpāni"
+],
+[
+"pāpena",
+"pāpābhyām",
+"pāpaiḥ"
+],
+[
+"pāpāya",
+"pāpābhyām",
+"pāpebhyaḥ"
+],
+[
+"pāpāt",
+"pāpābhyām",
+"pāpebhyaḥ"
+],
+[
+"pāpasya",
+"pāpayoḥ",
+"pāpānām"
+],
+[
+"pāpe",
+"pāpayoḥ",
+"pāpeṣu"
+],
+[
+"pāpa",
+"pāpe",
+"pāpāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:parapīḍana": {
+"id": "a_n:parapīḍana",
+"kind": "noun",
+"stem": "parapīḍana",
+"gender": "n",
+"forms": {
+"n": [
+[
+"parapīḍanam",
+"parapīḍane",
+"parapīḍanāni"
+],
+[
+"parapīḍanam",
+"parapīḍane",
+"parapīḍanāni"
+],
+[
+"parapīḍanena",
+"parapīḍanābhyām",
+"parapīḍanaiḥ"
+],
+[
+"parapīḍanāya",
+"parapīḍanābhyām",
+"parapīḍanebhyaḥ"
+],
+[
+"parapīḍanāt",
+"parapīḍanābhyām",
+"parapīḍanebhyaḥ"
+],
+[
+"parapīḍanasya",
+"parapīḍanayoḥ",
+"parapīḍanānām"
+],
+[
+"parapīḍane",
+"parapīḍanayoḥ",
+"parapīḍaneṣu"
+],
+[
+"parapīḍana",
+"parapīḍane",
+"parapīḍanāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"i_f:mukti": {
+"id": "i_f:mukti",
+"kind": "noun",
+"stem": "mukti",
+"gender": "f",
+"forms": {
+"f": [
+[
+"muktiḥ",
+"muktī",
+"muktayaḥ"
+],
+[
+"muktim",
+"muktī",
+"muktīḥ"
+],
+[
+"muktyā",
+"muktibhyām",
+"muktibhiḥ"
+],
+[
+"muktyai / muktaye",
+"muktibhyām",
+"muktibhyaḥ"
+],
+[
+"muktyāḥ / mukteḥ",
+"muktibhyām",
+"muktibhyaḥ"
+],
+[
+"muktyāḥ / mukteḥ",
+"muktyoḥ",
+"muktīnām"
+],
+[
+"muktyām / muktau",
+"muktyoḥ",
+"muktiṣu"
+],
+[
+"mukte",
+"muktī",
+"muktayaḥ"
+]
+]
+},
+"pattern": "i-stem feminine (like mati)",
+"note": ""
+},
+"a_n:anyathārūpa": {
+"id": "a_n:anyathārūpa",
+"kind": "noun",
+"stem": "anyathārūpa",
+"gender": "n",
+"forms": {
+"n": [
+[
+"anyathārūpam",
+"anyathārūpe",
+"anyathārūpāṇi"
+],
+[
+"anyathārūpam",
+"anyathārūpe",
+"anyathārūpāṇi"
+],
+[
+"anyathārūpeṇa",
+"anyathārūpābhyām",
+"anyathārūpaiḥ"
+],
+[
+"anyathārūpāya",
+"anyathārūpābhyām",
+"anyathārūpebhyaḥ"
+],
+[
+"anyathārūpāt",
+"anyathārūpābhyām",
+"anyathārūpebhyaḥ"
+],
+[
+"anyathārūpasya",
+"anyathārūpayoḥ",
+"anyathārūpāṇām"
+],
+[
+"anyathārūpe",
+"anyathārūpayoḥ",
+"anyathārūpeṣu"
+],
+[
+"anyathārūpa",
+"anyathārūpe",
+"anyathārūpāṇi"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:svarūpa": {
+"id": "a_n:svarūpa",
+"kind": "noun",
+"stem": "svarūpa",
+"gender": "n",
+"forms": {
+"n": [
+[
+"svarūpam",
+"svarūpe",
+"svarūpāṇi"
+],
+[
+"svarūpam",
+"svarūpe",
+"svarūpāṇi"
+],
+[
+"svarūpeṇa",
+"svarūpābhyām",
+"svarūpaiḥ"
+],
+[
+"svarūpāya",
+"svarūpābhyām",
+"svarūpebhyaḥ"
+],
+[
+"svarūpāt",
+"svarūpābhyām",
+"svarūpebhyaḥ"
+],
+[
+"svarūpasya",
+"svarūpayoḥ",
+"svarūpāṇām"
+],
+[
+"svarūpe",
+"svarūpayoḥ",
+"svarūpeṣu"
+],
+[
+"svarūpa",
+"svarūpe",
+"svarūpāṇi"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"i_f:vyavasthiti": {
+"id": "i_f:vyavasthiti",
+"kind": "noun",
+"stem": "vyavasthiti",
+"gender": "f",
+"forms": {
+"f": [
+[
+"vyavasthitiḥ",
+"vyavasthitī",
+"vyavasthitayaḥ"
+],
+[
+"vyavasthitim",
+"vyavasthitī",
+"vyavasthitīḥ"
+],
+[
+"vyavasthityā",
+"vyavasthitibhyām",
+"vyavasthitibhiḥ"
+],
+[
+"vyavasthityai / vyavasthitaye",
+"vyavasthitibhyām",
+"vyavasthitibhyaḥ"
+],
+[
+"vyavasthityāḥ / vyavasthiteḥ",
+"vyavasthitibhyām",
+"vyavasthitibhyaḥ"
+],
+[
+"vyavasthityāḥ / vyavasthiteḥ",
+"vyavasthityoḥ",
+"vyavasthitīnām"
+],
+[
+"vyavasthityām / vyavasthitau",
+"vyavasthityoḥ",
+"vyavasthitiṣu"
+],
+[
+"vyavasthite",
+"vyavasthitī",
+"vyavasthitayaḥ"
+]
+]
+},
+"pattern": "i-stem feminine (like mati)",
+"note": ""
+},
+"a_n:amṛtatva": {
+"id": "a_n:amṛtatva",
+"kind": "noun",
+"stem": "amṛtatva",
+"gender": "n",
+"forms": {
+"n": [
+[
+"amṛtatvam",
+"amṛtatve",
+"amṛtatvāni"
+],
+[
+"amṛtatvam",
+"amṛtatve",
+"amṛtatvāni"
+],
+[
+"amṛtatvena",
+"amṛtatvābhyām",
+"amṛtatvaiḥ"
+],
+[
+"amṛtatvāya",
+"amṛtatvābhyām",
+"amṛtatvebhyaḥ"
+],
+[
+"amṛtatvāt",
+"amṛtatvābhyām",
+"amṛtatvebhyaḥ"
+],
+[
+"amṛtatvasya",
+"amṛtatvayoḥ",
+"amṛtatvānām"
+],
+[
+"amṛtatve",
+"amṛtatvayoḥ",
+"amṛtatveṣu"
+],
+[
+"amṛtatva",
+"amṛtatve",
+"amṛtatvāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"aa_f:āśā": {
+"id": "aa_f:āśā",
+"kind": "noun",
+"stem": "āśā",
+"gender": "f",
+"forms": {
+"f": [
+[
+"āśā",
+"āśe",
+"āśāḥ"
+],
+[
+"āśām",
+"āśe",
+"āśāḥ"
+],
+[
+"āśayā",
+"āśābhyām",
+"āśābhiḥ"
+],
+[
+"āśāyai",
+"āśābhyām",
+"āśābhyaḥ"
+],
+[
+"āśāyāḥ",
+"āśābhyām",
+"āśābhyaḥ"
+],
+[
+"āśāyāḥ",
+"āśayoḥ",
+"āśānām"
+],
+[
+"āśāyām",
+"āśayoḥ",
+"āśāsu"
+],
+[
+"āśe",
+"āśe",
+"āśāḥ"
+]
+]
+},
+"pattern": "ā-stem feminine (like latā)",
+"note": ""
+},
+"a_n:vitta": {
+"id": "a_n:vitta",
+"kind": "noun",
+"stem": "vitta",
+"gender": "n",
+"forms": {
+"n": [
+[
+"vittam",
+"vitte",
+"vittāni"
+],
+[
+"vittam",
+"vitte",
+"vittāni"
+],
+[
+"vittena",
+"vittābhyām",
+"vittaiḥ"
+],
+[
+"vittāya",
+"vittābhyām",
+"vittebhyaḥ"
+],
+[
+"vittāt",
+"vittābhyām",
+"vittebhyaḥ"
+],
+[
+"vittasya",
+"vittayoḥ",
+"vittānām"
+],
+[
+"vitte",
+"vittayoḥ",
+"vitteṣu"
+],
+[
+"vitta",
+"vitte",
+"vittāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"aa_f:amṛtā": {
+"id": "aa_f:amṛtā",
+"kind": "noun",
+"stem": "amṛtā",
+"gender": "f",
+"forms": {
+"f": [
+[
+"amṛtā",
+"amṛte",
+"amṛtāḥ"
+],
+[
+"amṛtām",
+"amṛte",
+"amṛtāḥ"
+],
+[
+"amṛtayā",
+"amṛtābhyām",
+"amṛtābhiḥ"
+],
+[
+"amṛtāyai",
+"amṛtābhyām",
+"amṛtābhyaḥ"
+],
+[
+"amṛtāyāḥ",
+"amṛtābhyām",
+"amṛtābhyaḥ"
+],
+[
+"amṛtāyāḥ",
+"amṛtayoḥ",
+"amṛtānām"
+],
+[
+"amṛtāyām",
+"amṛtayoḥ",
+"amṛtāsu"
+],
+[
+"amṛte",
+"amṛte",
+"amṛtāḥ"
+]
+]
+},
+"pattern": "ā-stem feminine (like latā)",
+"note": ""
+},
+"a_n:jīvita": {
+"id": "a_n:jīvita",
+"kind": "noun",
+"stem": "jīvita",
+"gender": "n",
+"forms": {
+"n": [
+[
+"jīvitam",
+"jīvite",
+"jīvitāni"
+],
+[
+"jīvitam",
+"jīvite",
+"jīvitāni"
+],
+[
+"jīvitena",
+"jīvitābhyām",
+"jīvitaiḥ"
+],
+[
+"jīvitāya",
+"jīvitābhyām",
+"jīvitebhyaḥ"
+],
+[
+"jīvitāt",
+"jīvitābhyām",
+"jīvitebhyaḥ"
+],
+[
+"jīvitasya",
+"jīvitayoḥ",
+"jīvitānām"
+],
+[
+"jīvite",
+"jīvitayoḥ",
+"jīviteṣu"
+],
+[
+"jīvita",
+"jīvite",
+"jīvitāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:alpa": {
+"id": "a_n:alpa",
+"kind": "noun",
+"stem": "alpa",
+"gender": "n",
+"forms": {
+"n": [
+[
+"alpam",
+"alpe",
+"alpāni"
+],
+[
+"alpam",
+"alpe",
+"alpāni"
+],
+[
+"alpena",
+"alpābhyām",
+"alpaiḥ"
+],
+[
+"alpāya",
+"alpābhyām",
+"alpebhyaḥ"
+],
+[
+"alpāt",
+"alpābhyām",
+"alpebhyaḥ"
+],
+[
+"alpasya",
+"alpayoḥ",
+"alpānām"
+],
+[
+"alpe",
+"alpayoḥ",
+"alpeṣu"
+],
+[
+"alpa",
+"alpe",
+"alpāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_m:vāha": {
+"id": "a_m:vāha",
+"kind": "noun",
+"stem": "vāha",
+"gender": "m",
+"forms": {
+"m": [
+[
+"vāhaḥ",
+"vāhau",
+"vāhāḥ"
+],
+[
+"vāham",
+"vāhau",
+"vāhān"
+],
+[
+"vāhena",
+"vāhābhyām",
+"vāhaiḥ"
+],
+[
+"vāhāya",
+"vāhābhyām",
+"vāhebhyaḥ"
+],
+[
+"vāhāt",
+"vāhābhyām",
+"vāhebhyaḥ"
+],
+[
+"vāhasya",
+"vāhayoḥ",
+"vāhānām"
+],
+[
+"vāhe",
+"vāhayoḥ",
+"vāheṣu"
+],
+[
+"vāha",
+"vāhau",
+"vāhāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_n:nṛtyagīta": {
+"id": "a_n:nṛtyagīta",
+"kind": "noun",
+"stem": "nṛtyagīta",
+"gender": "n",
+"forms": {
+"n": [
+[
+"nṛtyagītam",
+"nṛtyagīte",
+"nṛtyagītāni"
+],
+[
+"nṛtyagītam",
+"nṛtyagīte",
+"nṛtyagītāni"
+],
+[
+"nṛtyagītena",
+"nṛtyagītābhyām",
+"nṛtyagītaiḥ"
+],
+[
+"nṛtyagītāya",
+"nṛtyagītābhyām",
+"nṛtyagītebhyaḥ"
+],
+[
+"nṛtyagītāt",
+"nṛtyagītābhyām",
+"nṛtyagītebhyaḥ"
+],
+[
+"nṛtyagītasya",
+"nṛtyagītayoḥ",
+"nṛtyagītānām"
+],
+[
+"nṛtyagīte",
+"nṛtyagītayoḥ",
+"nṛtyagīteṣu"
+],
+[
+"nṛtyagīta",
+"nṛtyagīte",
+"nṛtyagītāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:bhūta": {
+"id": "a_n:bhūta",
+"kind": "noun",
+"stem": "bhūta",
+"gender": "n",
+"forms": {
+"n": [
+[
+"bhūtam",
+"bhūte",
+"bhūtāni"
+],
+[
+"bhūtam",
+"bhūte",
+"bhūtāni"
+],
+[
+"bhūtena",
+"bhūtābhyām",
+"bhūtaiḥ"
+],
+[
+"bhūtāya",
+"bhūtābhyām",
+"bhūtebhyaḥ"
+],
+[
+"bhūtāt",
+"bhūtābhyām",
+"bhūtebhyaḥ"
+],
+[
+"bhūtasya",
+"bhūtayoḥ",
+"bhūtānām"
+],
+[
+"bhūte",
+"bhūtayoḥ",
+"bhūteṣu"
+],
+[
+"bhūta",
+"bhūte",
+"bhūtāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_m:yamālaya": {
+"id": "a_m:yamālaya",
+"kind": "noun",
+"stem": "yamālaya",
+"gender": "m",
+"forms": {
+"m": [
+[
+"yamālayaḥ",
+"yamālayau",
+"yamālayāḥ"
+],
+[
+"yamālayam",
+"yamālayau",
+"yamālayān"
+],
+[
+"yamālayena",
+"yamālayābhyām",
+"yamālayaiḥ"
+],
+[
+"yamālayāya",
+"yamālayābhyām",
+"yamālayebhyaḥ"
+],
+[
+"yamālayāt",
+"yamālayābhyām",
+"yamālayebhyaḥ"
+],
+[
+"yamālayasya",
+"yamālayayoḥ",
+"yamālayānām"
+],
+[
+"yamālaye",
+"yamālayayoḥ",
+"yamālayeṣu"
+],
+[
+"yamālaya",
+"yamālayau",
+"yamālayāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:śeṣa": {
+"id": "a_m:śeṣa",
+"kind": "noun",
+"stem": "śeṣa",
+"gender": "m",
+"forms": {
+"m": [
+[
+"śeṣaḥ",
+"śeṣau",
+"śeṣāḥ"
+],
+[
+"śeṣam",
+"śeṣau",
+"śeṣān"
+],
+[
+"śeṣeṇa",
+"śeṣābhyām",
+"śeṣaiḥ"
+],
+[
+"śeṣāya",
+"śeṣābhyām",
+"śeṣebhyaḥ"
+],
+[
+"śeṣāt",
+"śeṣābhyām",
+"śeṣebhyaḥ"
+],
+[
+"śeṣasya",
+"śeṣayoḥ",
+"śeṣāṇām"
+],
+[
+"śeṣe",
+"śeṣayoḥ",
+"śeṣeṣu"
+],
+[
+"śeṣa",
+"śeṣau",
+"śeṣāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:sthāvara": {
+"id": "a_m:sthāvara",
+"kind": "noun",
+"stem": "sthāvara",
+"gender": "m",
+"forms": {
+"m": [
+[
+"sthāvaraḥ",
+"sthāvarau",
+"sthāvarāḥ"
+],
+[
+"sthāvaram",
+"sthāvarau",
+"sthāvarān"
+],
+[
+"sthāvareṇa",
+"sthāvarābhyām",
+"sthāvaraiḥ"
+],
+[
+"sthāvarāya",
+"sthāvarābhyām",
+"sthāvarebhyaḥ"
+],
+[
+"sthāvarāt",
+"sthāvarābhyām",
+"sthāvarebhyaḥ"
+],
+[
+"sthāvarasya",
+"sthāvarayoḥ",
+"sthāvarāṇām"
+],
+[
+"sthāvare",
+"sthāvarayoḥ",
+"sthāvareṣu"
+],
+[
+"sthāvara",
+"sthāvarau",
+"sthāvarāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_n:āścarya": {
+"id": "a_n:āścarya",
+"kind": "noun",
+"stem": "āścarya",
+"gender": "n",
+"forms": {
+"n": [
+[
+"āścaryam",
+"āścarye",
+"āścaryāṇi"
+],
+[
+"āścaryam",
+"āścarye",
+"āścaryāṇi"
+],
+[
+"āścaryeṇa",
+"āścaryābhyām",
+"āścaryaiḥ"
+],
+[
+"āścaryāya",
+"āścaryābhyām",
+"āścaryebhyaḥ"
+],
+[
+"āścaryāt",
+"āścaryābhyām",
+"āścaryebhyaḥ"
+],
+[
+"āścaryasya",
+"āścaryayoḥ",
+"āścaryāṇām"
+],
+[
+"āścarye",
+"āścaryayoḥ",
+"āścaryeṣu"
+],
+[
+"āścarya",
+"āścarye",
+"āścaryāṇi"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_n:bhāgya": {
+"id": "a_n:bhāgya",
+"kind": "noun",
+"stem": "bhāgya",
+"gender": "n",
+"forms": {
+"n": [
+[
+"bhāgyam",
+"bhāgye",
+"bhāgyāni"
+],
+[
+"bhāgyam",
+"bhāgye",
+"bhāgyāni"
+],
+[
+"bhāgyena",
+"bhāgyābhyām",
+"bhāgyaiḥ"
+],
+[
+"bhāgyāya",
+"bhāgyābhyām",
+"bhāgyebhyaḥ"
+],
+[
+"bhāgyāt",
+"bhāgyābhyām",
+"bhāgyebhyaḥ"
+],
+[
+"bhāgyasya",
+"bhāgyayoḥ",
+"bhāgyānām"
+],
+[
+"bhāgye",
+"bhāgyayoḥ",
+"bhāgyeṣu"
+],
+[
+"bhāgya",
+"bhāgye",
+"bhāgyāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+},
+"a_m:īdṛśa": {
+"id": "a_m:īdṛśa",
+"kind": "noun",
+"stem": "īdṛśa",
+"gender": "m",
+"forms": {
+"m": [
+[
+"īdṛśaḥ",
+"īdṛśau",
+"īdṛśāḥ"
+],
+[
+"īdṛśam",
+"īdṛśau",
+"īdṛśān"
+],
+[
+"īdṛśena",
+"īdṛśābhyām",
+"īdṛśaiḥ"
+],
+[
+"īdṛśāya",
+"īdṛśābhyām",
+"īdṛśebhyaḥ"
+],
+[
+"īdṛśāt",
+"īdṛśābhyām",
+"īdṛśebhyaḥ"
+],
+[
+"īdṛśasya",
+"īdṛśayoḥ",
+"īdṛśānām"
+],
+[
+"īdṛśe",
+"īdṛśayoḥ",
+"īdṛśeṣu"
+],
+[
+"īdṛśa",
+"īdṛśau",
+"īdṛśāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:puruṣa": {
+"id": "a_m:puruṣa",
+"kind": "noun",
+"stem": "puruṣa",
+"gender": "m",
+"forms": {
+"m": [
+[
+"puruṣaḥ",
+"puruṣau",
+"puruṣāḥ"
+],
+[
+"puruṣam",
+"puruṣau",
+"puruṣān"
+],
+[
+"puruṣeṇa",
+"puruṣābhyām",
+"puruṣaiḥ"
+],
+[
+"puruṣāya",
+"puruṣābhyām",
+"puruṣebhyaḥ"
+],
+[
+"puruṣāt",
+"puruṣābhyām",
+"puruṣebhyaḥ"
+],
+[
+"puruṣasya",
+"puruṣayoḥ",
+"puruṣāṇām"
+],
+[
+"puruṣe",
+"puruṣayoḥ",
+"puruṣeṣu"
+],
+[
+"puruṣa",
+"puruṣau",
+"puruṣāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_m:śrīkṛṣṇa": {
+"id": "a_m:śrīkṛṣṇa",
+"kind": "noun",
+"stem": "śrīkṛṣṇa",
+"gender": "m",
+"forms": {
+"m": [
+[
+"śrīkṛṣṇaḥ",
+"śrīkṛṣṇau",
+"śrīkṛṣṇāḥ"
+],
+[
+"śrīkṛṣṇam",
+"śrīkṛṣṇau",
+"śrīkṛṣṇān"
+],
+[
+"śrīkṛṣṇena",
+"śrīkṛṣṇābhyām",
+"śrīkṛṣṇaiḥ"
+],
+[
+"śrīkṛṣṇāya",
+"śrīkṛṣṇābhyām",
+"śrīkṛṣṇebhyaḥ"
+],
+[
+"śrīkṛṣṇāt",
+"śrīkṛṣṇābhyām",
+"śrīkṛṣṇebhyaḥ"
+],
+[
+"śrīkṛṣṇasya",
+"śrīkṛṣṇayoḥ",
+"śrīkṛṣṇānām"
+],
+[
+"śrīkṛṣṇe",
+"śrīkṛṣṇayoḥ",
+"śrīkṛṣṇeṣu"
+],
+[
+"śrīkṛṣṇa",
+"śrīkṛṣṇau",
+"śrīkṛṣṇāḥ"
+]
+]
+},
+"pattern": "a-stem masculine (like deva)",
+"note": ""
+},
+"a_n:arpaṇa": {
+"id": "a_n:arpaṇa",
+"kind": "noun",
+"stem": "arpaṇa",
+"gender": "n",
+"forms": {
+"n": [
+[
+"arpaṇam",
+"arpaṇe",
+"arpaṇāni"
+],
+[
+"arpaṇam",
+"arpaṇe",
+"arpaṇāni"
+],
+[
+"arpaṇena",
+"arpaṇābhyām",
+"arpaṇaiḥ"
+],
+[
+"arpaṇāya",
+"arpaṇābhyām",
+"arpaṇebhyaḥ"
+],
+[
+"arpaṇāt",
+"arpaṇābhyām",
+"arpaṇebhyaḥ"
+],
+[
+"arpaṇasya",
+"arpaṇayoḥ",
+"arpaṇānām"
+],
+[
+"arpaṇe",
+"arpaṇayoḥ",
+"arpaṇeṣu"
+],
+[
+"arpaṇa",
+"arpaṇe",
+"arpaṇāni"
+]
+]
+},
+"pattern": "a-stem neuter (like phala)",
+"note": ""
+}
+},
+"words": {
+"V1:0:0": {
+"pos": "indeclinable",
+"use": "although",
+"note": "yad + api: \"even what\", i.e. \"although\".",
+"cmp": "yad + api",
+"form": "yadyapi",
+"label": "indeclinable"
+},
+"V1:0:1": {
+"pos": "indeclinable",
+"use": "everywhere",
+"note": "sarva + -tra: the -tra ending makes \"in/at\" adverbs (tatra \"there\", atra \"here\").",
+"cmp": "",
+"form": "sarvatra",
+"label": "indeclinable"
+},
+"V1:0:2": {
+"pos": "noun",
+"use": "in Bharatavarsha: the place where the action happens.",
+"note": "",
+"cmp": "bhārata + varṣa (the \"region of Bharata\")",
+"pd": "a_n:bhāratavarṣa",
+"hit": [
+[
+6,
+0
+]
+],
+"gk": "n",
+"case": "loc",
+"num": "sg",
+"gen": "n",
+"label": "Loc. sg. n.",
+"stem": "bhāratavarṣa",
+"form": "bhāratavarṣe"
+},
+"V1:0:3": {
+"pos": "pronoun",
+"use": "by us: with a \"should be done\" verb, the doer takes the instrumental.",
+"note": "asmad = \"we\" (first-person pronoun).",
+"cmp": "",
+"pd": "asmad",
+"hit": [
+[
+2,
+2
+]
+],
+"gk": "x",
+"case": "ins",
+"num": "pl",
+"gen": null,
+"label": "Instr. pl.",
+"stem": "asmad",
+"form": "asmābhiḥ"
+},
+"V1:0:4": {
+"pos": "indeclinable",
+"use": "always",
+"note": "sarva + -dā: the -dā ending makes \"at the time\" adverbs (tadā \"then\", yadā \"when\").",
+"cmp": "",
+"form": "sarvadā",
+"label": "indeclinable"
+},
+"V1:0:5": {
+"pos": "noun",
+"use": "by means of the language of the gods: the instrument.",
+"note": "",
+"cmp": "gīrvāṇa + bhāṣā",
+"pd": "aa_f:gīrvāṇabhāṣā",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "f",
+"case": "ins",
+"num": "sg",
+"gen": "f",
+"label": "Instr. sg. f.",
+"stem": "gīrvāṇabhāṣā",
+"form": "gīrvāṇabhāṣayā"
+},
+"V1:0:6": {
+"pos": "adjective",
+"use": "dealings and so on: the thing that ought to be done (subject of the passive).",
+"note": "",
+"cmp": "vyavahāra + ādika (\"beginning with\")",
+"pd": "a_n:vyavahārādika",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "vyavahārādika",
+"form": "vyavahārādikam"
+},
+"V1:0:7": {
+"pos": "gerundive",
+"use": "ought to be done: -tavya makes a \"should be done\" adjective from √kṛ.",
+"note": "Gerundive (kṛtya): √kṛ + -tavya.",
+"cmp": "",
+"pd": "a_n:kartavya",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "kartavya",
+"form": "kartavyam"
+},
+"V1:1:0": {
+"pos": "pronoun",
+"use": "therefore: \"from that\", i.e. for that reason.",
+"note": "The ablative of tad is used as \"therefore\".",
+"cmp": "",
+"pd": "tad",
+"hit": [
+[
+4,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+4,
+0
+]
+],
+"case": "abl",
+"num": "sg",
+"gen": "n",
+"label": "Abl. sg. n.",
+"stem": "tad",
+"form": "tasmāt"
+},
+"V1:1:1": {
+"pos": "pronoun",
+"use": "I: the doer.",
+"note": "",
+"cmp": "",
+"pd": "asmad",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "x",
+"case": "nom",
+"num": "sg",
+"gen": null,
+"label": "Nom. sg.",
+"stem": "asmad",
+"form": "aham"
+},
+"V1:1:2": {
+"pos": "indeclinable",
+"use": "now",
+"note": "From idam (\"this\") + a time ending.",
+"cmp": "",
+"form": "idānīm",
+"label": "indeclinable"
+},
+"V1:1:3": {
+"pos": "noun",
+"use": "the work of speech: the thing being done (object).",
+"note": "",
+"cmp": "vāc + vyāpāra",
+"pd": "a_m:vāgvyāpāra",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "m",
+"case": "acc",
+"num": "sg",
+"gen": "m",
+"label": "Acc. sg. m.",
+"stem": "vāgvyāpāra",
+"form": "vāgvyāpāram"
+},
+"V1:1:4": {
+"pos": "noun",
+"use": "in/with a mleccha tongue: the means.",
+"note": "",
+"cmp": "mleccha + bhāṣā",
+"pd": "aa_f:mlecchabhāṣā",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "f",
+"case": "ins",
+"num": "sg",
+"gen": "f",
+"label": "Instr. sg. f.",
+"stem": "mlecchabhāṣā",
+"form": "mlecchabhāṣayā"
+},
+"V1:1:5": {
+"pos": "verb",
+"pd": "kr_pres",
+"hit": [
+[
+2,
+0
+]
+],
+"use": "I do: first person singular, present.",
+"note": "",
+"cmp": "",
+"form": "karomi",
+"root": "√kṛ",
+"label": "laṭ 1sg.",
+"person": "1",
+"num": "sg"
+},
+"V1:2:0": {
+"pos": "noun",
+"use": "pardon: what is being begged (object of yācitvā).",
+"note": "",
+"cmp": "",
+"pd": "aa_f:kṣamā",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "f",
+"case": "acc",
+"num": "sg",
+"gen": "f",
+"label": "Acc. sg. f.",
+"stem": "kṣamā",
+"form": "kṣamām"
+},
+"V1:2:1": {
+"pos": "gerund",
+"use": "having begged",
+"note": "√yāc + -tvā: the \"having done\" ending makes a gerund (absolutive). It never changes form.",
+"cmp": "",
+"form": "yācitvā",
+"label": "gerund"
+},
+"V2:0:0": {
+"pos": "adjective",
+"use": "the most meritorious ones: subject.",
+"note": "Written puṇyatamā before a voiced sound (visarga drops).",
+"cmp": "puṇya + -tama (\"most\")",
+"pd": "a_m:puṇyatama",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "puṇyatama",
+"form": "puṇyatamāḥ"
+},
+"V2:0:1": {
+"pos": "adjective",
+"use": "the greatly fortunate ones: subject.",
+"note": "",
+"cmp": "mahā + bhāga",
+"pd": "a_m:mahābhāga",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "mahābhāga",
+"form": "mahābhāgāḥ"
+},
+"V2:0:2": {
+"pos": "adjective",
+"use": "like Maheśa: describes the same people.",
+"note": "",
+"cmp": "maheśa + sadṛśa",
+"pd": "a_m:maheśasadṛśa",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "maheśasadṛśa",
+"form": "maheśasadṛśāḥ"
+},
+"V2:0:3": {
+"pos": "pronoun",
+"use": "who: the relative pronoun; links the clause to the people described.",
+"note": "",
+"cmp": "",
+"pd": "yad",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "yad",
+"form": "ye"
+},
+"V2:0:4": {
+"pos": "noun",
+"use": "the Veda: object (of the dedication).",
+"note": "",
+"cmp": "",
+"pd": "a_m:veda",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "m",
+"case": "acc",
+"num": "sg",
+"gen": "m",
+"label": "Acc. sg. m.",
+"stem": "veda",
+"form": "vedam"
+},
+"V3:0:0": {
+"pos": "pronoun",
+"use": "this: first member of the compound etad-deśa-prasūta.",
+"note": "In a compound, the first members appear in their bare stem form; only the last member takes the case ending. The ending on prasūtasya applies to the whole compound.",
+"cmp": "etad + deśa + prasūta",
+"pd": "etad",
+"stem": "etad",
+"form": "etad"
+},
+"V3:0:1": {
+"pos": "noun",
+"use": "land: second member of the compound.",
+"note": "Bare stem inside a compound. Shown: how deśa declines on its own.",
+"cmp": "",
+"pd": "a_m:deśa",
+"stem": "deśa",
+"form": "deśa"
+},
+"V3:0:2": {
+"pos": "participle",
+"use": "of one born in this land: the genitive for the whole compound.",
+"note": "prasūta = pra + √sū + -ta (\"born\"), a past participle. The compound qualifies agrajanmanaḥ.",
+"cmp": "etad + deśa + prasūta",
+"pd": "a_m:etaddeśaprasūta",
+"hit": [
+[
+5,
+0
+]
+],
+"gk": "m",
+"case": "gen",
+"num": "sg",
+"gen": "m",
+"label": "Gen. sg. m.",
+"stem": "etaddeśaprasūta",
+"form": "etaddeśaprasūtasya"
+},
+"V3:0:3": {
+"pos": "noun",
+"use": "from the presence of: the source one learns from.",
+"note": "sakāśāt functions almost like a postposition \"from\".",
+"cmp": "",
+"pd": "a_m:sakāśa",
+"hit": [
+[
+4,
+0
+]
+],
+"gk": "m",
+"case": "abl",
+"num": "sg",
+"gen": "m",
+"label": "Abl. sg. m.",
+"stem": "sakāśa",
+"form": "sakāśāt"
+},
+"V3:0:4": {
+"pos": "noun",
+"use": "of the foremost-born: whose presence it is.",
+"note": "Genitive and ablative singular are spelled the same here. The sense is \"of the foremost-born\".",
+"cmp": "agra + janman",
+"pd": "n_m:agrajanman",
+"hit": [
+[
+5,
+0
+]
+],
+"gk": "m",
+"alt": [
+[
+4,
+0
+]
+],
+"case": "gen",
+"num": "sg",
+"gen": "m",
+"label": "Gen. sg. m.",
+"stem": "agrajanman",
+"form": "agrajanmanaḥ"
+},
+"V3:1:0": {
+"pos": "pronoun",
+"use": "each their own: repeating a word means \"each one’s\".",
+"note": "The repetition svaṁ svam means \"each their own\".",
+"cmp": "",
+"pd": "pron_a:sva",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "n",
+"case": "acc",
+"num": "sg",
+"gen": "n",
+"label": "Acc. sg. n.",
+"stem": "sva",
+"form": "svam"
+},
+"V3:1:1": {
+"pos": "noun",
+"use": "conduct: what is to be learned (object).",
+"note": "",
+"cmp": "",
+"pd": "a_n:caritra",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "n",
+"case": "acc",
+"num": "sg",
+"gen": "n",
+"label": "Acc. sg. n.",
+"stem": "caritra",
+"form": "caritram"
+},
+"V3:1:2": {
+"pos": "verb",
+"pd": "siks_opt",
+"hit": [
+[
+0,
+2
+]
+],
+"use": "should learn: \"let them learn\".",
+"note": "",
+"cmp": "",
+"form": "śikṣeran",
+"root": "√śikṣ",
+"label": "vidhiliṅ 3pl.",
+"person": "3",
+"num": "pl"
+},
+"V3:1:3": {
+"pos": "noun",
+"use": "on the earth: location.",
+"note": "",
+"cmp": "",
+"pd": "ii_f:pṛthivī",
+"hit": [
+[
+6,
+0
+]
+],
+"gk": "f",
+"case": "loc",
+"num": "sg",
+"gen": "f",
+"label": "Loc. sg. f.",
+"stem": "pṛthivī",
+"form": "pṛthivyām"
+},
+"V3:1:4": {
+"pos": "adjective",
+"use": "all humans: the learners (subject).",
+"note": "",
+"cmp": "sarva + mānava",
+"pd": "a_m:sarvamānava",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "sarvamānava",
+"form": "sarvamānavāḥ"
+},
+"V4:0:0": {
+"pos": "pronoun",
+"use": "of all: relates the power to the words.",
+"note": "Same spelling in the neuter.",
+"cmp": "",
+"pd": "pron_a:sarva",
+"hit": [
+[
+5,
+2
+]
+],
+"gk": "m",
+"case": "gen",
+"num": "pl",
+"gen": "m",
+"label": "Gen. pl. m.",
+"stem": "sarva",
+"form": "sarveṣām"
+},
+"V4:0:1": {
+"pos": "noun",
+"use": "of words: whose power it is.",
+"note": "",
+"cmp": "",
+"pd": "a_m:śabda",
+"hit": [
+[
+5,
+2
+]
+],
+"gk": "m",
+"case": "gen",
+"num": "pl",
+"gen": "m",
+"label": "Gen. pl. m.",
+"stem": "śabda",
+"form": "śabdānām"
+},
+"V4:0:2": {
+"pos": "noun",
+"use": "in their own meaning: where the power lies.",
+"note": "",
+"cmp": "sva + artha",
+"pd": "a_m:svārtha",
+"hit": [
+[
+6,
+0
+]
+],
+"gk": "m",
+"case": "loc",
+"num": "sg",
+"gen": "m",
+"label": "Loc. sg. m.",
+"stem": "svārtha",
+"form": "svārthe"
+},
+"V4:0:3": {
+"pos": "noun",
+"use": "power: the subject of the statement.",
+"note": "",
+"cmp": "",
+"pd": "i_f:śakti",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "f",
+"case": "nom",
+"num": "sg",
+"gen": "f",
+"label": "Nom. sg. f.",
+"stem": "śakti",
+"form": "śaktiḥ"
+},
+"V5:0:0": {
+"pos": "participle",
+"use": "obtainable: -ya makes a \"can be obtained\" adjective from √labh.",
+"note": "Potential passive participle: √labh + -ya.",
+"cmp": "",
+"pd": "a_n:labhya",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "labhya",
+"form": "labhyam"
+},
+"V5:0:1": {
+"pos": "indeclinable",
+"use": "even",
+"note": "api",
+"cmp": "",
+"form": "api",
+"label": "indeclinable"
+},
+"V5:0:2": {
+"pos": "composite",
+"multi": [
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "na",
+"use": "not",
+"note": ""
+},
+{
+"pos": "pronoun",
+"use": "of this",
+"note": "",
+"cmp": "",
+"pd": "idam",
+"hit": [
+[
+5,
+0
+]
+],
+"gk": "n",
+"case": "gen",
+"num": "sg",
+"gen": "n",
+"label": "Gen. sg. n.",
+"stem": "idam",
+"form": "asya"
+}
+],
+"use": "not of this",
+"form": "na asya"
+},
+"V5:0:3": {
+"pos": "noun",
+"use": "fruit: the subject.",
+"note": "",
+"cmp": "",
+"pd": "a_n:phala",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "phala",
+"form": "phalam"
+},
+"V5:0:4": {
+"pos": "verb",
+"pd": "bhu_pres",
+"hit": [
+[
+0,
+0
+]
+],
+"use": "is / becomes: third person singular, present.",
+"note": "",
+"cmp": "",
+"form": "bhavati",
+"root": "√bhū",
+"label": "laṭ 3sg.",
+"person": "3",
+"num": "sg"
+},
+"V5:1:0": {
+"pos": "noun",
+"use": "farming: first member of the compound.",
+"note": "Bare stem inside a compound. Shown: how kṛṣi declines on its own.",
+"cmp": "",
+"pd": "i_f:kṛṣi",
+"stem": "kṛṣi",
+"form": "kṛṣi"
+},
+"V5:1:1": {
+"pos": "compound member",
+"use": "straw: second member of the compound.",
+"note": "palāla: straw or chaff (it can be masculine or neuter). In the recording the ending is unclear, so no table is shown.",
+"form": "palāla",
+"label": "compound member"
+},
+"V6:0:0": {
+"pos": "noun",
+"use": "with half a verse: the means.",
+"note": "ardha as \"a half\" in this kind of compound is neuter (Pāṇini 2.2.2).",
+"cmp": "śloka + ardha",
+"pd": "a_n:ślokārdha",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "n",
+"case": "ins",
+"num": "sg",
+"gen": "n",
+"label": "Instr. sg. n.",
+"stem": "ślokārdha",
+"form": "ślokārdhena"
+},
+"V6:0:1": {
+"pos": "verb",
+"pd": "vac_fut",
+"hit": [
+[
+2,
+0
+]
+],
+"use": "I shall tell: first person singular, future.",
+"note": "Full verse form: pra-vakṣyāmi (prefix pra- “forth”). The table shows the root without the prefix.",
+"cmp": "pra + √vac",
+"form": "vakṣyāmi",
+"root": "√vac",
+"label": "lṛṭ 1sg.",
+"person": "1",
+"num": "sg"
+},
+"V6:0:2": {
+"pos": "pronoun",
+"use": "what: the thing that has been said.",
+"note": "yat becomes yad before a vowel (yad uktam).",
+"cmp": "",
+"pd": "yad",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "yad",
+"form": "yat"
+},
+"V6:0:3": {
+"pos": "participle",
+"use": "said: past participle of √vac.",
+"note": "√vac + -ta, with the vowel change vac → uk.",
+"cmp": "",
+"pd": "a_n:ukta",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "ukta",
+"form": "uktam"
+},
+"V6:0:4": {
+"pos": "noun",
+"use": "by crores of books: who/what has said it (the agent of the passive).",
+"note": "",
+"cmp": "grantha + koṭi",
+"pd": "i_f:granthakoṭi",
+"hit": [
+[
+2,
+2
+]
+],
+"gk": "f",
+"case": "ins",
+"num": "pl",
+"gen": "f",
+"label": "Instr. pl. f.",
+"stem": "granthakoṭi",
+"form": "granthakoṭibhiḥ"
+},
+"V6:1:0": {
+"pos": "noun",
+"use": "helping others: the subject.",
+"note": "",
+"cmp": "para + upakāra",
+"pd": "a_m:paropakāra",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "sg",
+"gen": "m",
+"label": "Nom. sg. m.",
+"stem": "paropakāra",
+"form": "paropakāraḥ"
+},
+"V6:1:1": {
+"pos": "noun",
+"use": "for merit: the purpose or result.",
+"note": "",
+"cmp": "",
+"pd": "a_n:puṇya",
+"hit": [
+[
+3,
+0
+]
+],
+"gk": "n",
+"case": "dat",
+"num": "sg",
+"gen": "n",
+"label": "Dat. sg. n.",
+"stem": "puṇya",
+"form": "puṇyāya"
+},
+"V6:1:2": {
+"pos": "noun",
+"use": "for sin: the purpose or result.",
+"note": "",
+"cmp": "",
+"pd": "a_n:pāpa",
+"hit": [
+[
+3,
+0
+]
+],
+"gk": "n",
+"case": "dat",
+"num": "sg",
+"gen": "n",
+"label": "Dat. sg. n.",
+"stem": "pāpa",
+"form": "pāpāya"
+},
+"V6:1:3": {
+"pos": "noun",
+"use": "hurting others: the subject of the second half.",
+"note": "",
+"cmp": "para + pīḍana",
+"pd": "a_n:parapīḍana",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "parapīḍana",
+"form": "parapīḍanam"
+},
+"V7:0:0": {
+"pos": "noun",
+"use": "liberation: the subject of the definition.",
+"note": "",
+"cmp": "",
+"pd": "i_f:mukti",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "f",
+"case": "nom",
+"num": "sg",
+"gen": "f",
+"label": "Nom. sg. f.",
+"stem": "mukti",
+"form": "muktiḥ"
+},
+"V7:0:1": {
+"pos": "gerund",
+"use": "having abandoned",
+"note": "√hā + -tvā: hā becomes hi- before -tvā. Gerunds never change form.",
+"cmp": "",
+"form": "hitvā",
+"label": "gerund"
+},
+"V7:0:2": {
+"pos": "noun",
+"use": "the other forms: what is given up (object of hitvā).",
+"note": "",
+"cmp": "anyathā + rūpa",
+"pd": "a_n:anyathārūpa",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "n",
+"case": "acc",
+"num": "sg",
+"gen": "n",
+"label": "Acc. sg. n.",
+"stem": "anyathārūpa",
+"form": "anyathārūpam"
+},
+"V7:0:3": {
+"pos": "noun",
+"use": "in/by one’s own form: the state one rests in.",
+"note": "ṇ: after r, the n of -ena turns into ṇ (rūpeṇa).",
+"cmp": "sva + rūpa",
+"pd": "a_n:svarūpa",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "n",
+"case": "ins",
+"num": "sg",
+"gen": "n",
+"label": "Instr. sg. n.",
+"stem": "svarūpa",
+"form": "svarūpeṇa"
+},
+"V7:0:4": {
+"pos": "noun",
+"use": "being established: second part of the definition.",
+"note": "",
+"cmp": "",
+"pd": "i_f:vyavasthiti",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "f",
+"case": "nom",
+"num": "sg",
+"gen": "f",
+"label": "Nom. sg. f.",
+"stem": "vyavasthiti",
+"form": "vyavasthitiḥ"
+},
+"V8a:0:0": {
+"pos": "noun",
+"use": "of immortality: what the hope concerns.",
+"note": "",
+"cmp": "a + mṛta + -tva",
+"pd": "a_n:amṛtatva",
+"hit": [
+[
+5,
+0
+]
+],
+"gk": "n",
+"case": "gen",
+"num": "sg",
+"gen": "n",
+"label": "Gen. sg. n.",
+"stem": "amṛtatva",
+"form": "amṛtatvasya"
+},
+"V8a:0:1": {
+"pos": "indeclinable",
+"use": "but",
+"note": "",
+"cmp": "",
+"form": "tu",
+"label": "indeclinable"
+},
+"V8a:0:2": {
+"pos": "composite",
+"multi": [
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "na",
+"use": "not",
+"note": ""
+},
+{
+"pos": "noun",
+"use": "hope: the subject.",
+"note": "",
+"cmp": "",
+"pd": "aa_f:āśā",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "f",
+"case": "nom",
+"num": "sg",
+"gen": "f",
+"label": "Nom. sg. f.",
+"stem": "āśā",
+"form": "āśā"
+},
+{
+"pos": "verb",
+"pd": "as_pres",
+"hit": [
+[
+0,
+0
+]
+],
+"use": "there is",
+"note": "",
+"cmp": "",
+"form": "asti",
+"root": "√as",
+"label": "laṭ 3sg.",
+"person": "3",
+"num": "sg"
+}
+],
+"use": "there is no hope",
+"form": "na āśā asti"
+},
+"V8a:0:3": {
+"pos": "noun",
+"use": "by means of wealth: the instrument.",
+"note": "vitta = \"obtained\", from √vid (to obtain). Here a neuter noun: wealth.",
+"cmp": "",
+"pd": "a_n:vitta",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "n",
+"case": "ins",
+"num": "sg",
+"gen": "n",
+"label": "Instr. sg. n.",
+"stem": "vitta",
+"form": "vittena"
+},
+"V8b:0:0": {
+"pos": "pronoun",
+"use": "by which: the means through which one might become immortal.",
+"note": "",
+"cmp": "",
+"pd": "yad",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "n",
+"case": "ins",
+"num": "sg",
+"gen": "n",
+"label": "Instr. sg. n.",
+"stem": "yad",
+"form": "yena"
+},
+"V8b:0:1": {
+"pos": "pronoun",
+"use": "I: the doer.",
+"note": "",
+"cmp": "",
+"pd": "asmad",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "x",
+"case": "nom",
+"num": "sg",
+"gen": null,
+"label": "Nom. sg.",
+"stem": "asmad",
+"form": "aham"
+},
+"V8b:0:2": {
+"pos": "composite",
+"multi": [
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "na",
+"use": "not",
+"note": ""
+},
+{
+"pos": "adjective",
+"use": "immortal (feminine: the speaker is Maitreyī).",
+"note": "",
+"cmp": "",
+"pd": "aa_f:amṛtā",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "f",
+"case": "nom",
+"num": "sg",
+"gen": "f",
+"label": "Nom. sg. f.",
+"stem": "amṛtā",
+"form": "amṛtā"
+}
+],
+"use": "not immortal",
+"form": "na amṛtā"
+},
+"V8b:0:3": {
+"pos": "verb",
+"pd": "as_opt",
+"hit": [
+[
+2,
+0
+]
+],
+"use": "I should be: first person optative.",
+"note": "",
+"cmp": "",
+"form": "syām",
+"root": "√as",
+"label": "vidhiliṅ 1sg.",
+"person": "1",
+"num": "sg"
+},
+"V8b:0:4": {
+"pos": "pronoun",
+"use": "what: asks for the object.",
+"note": "",
+"cmp": "",
+"pd": "kim",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "kim",
+"form": "kim"
+},
+"V8b:0:5": {
+"pos": "pronoun",
+"use": "with that: the thing I would use.",
+"note": "",
+"cmp": "",
+"pd": "tad",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "n",
+"case": "ins",
+"num": "sg",
+"gen": "n",
+"label": "Instr. sg. n.",
+"stem": "tad",
+"form": "tena"
+},
+"V8b:0:6": {
+"pos": "verb",
+"pd": "kr_opt",
+"hit": [
+[
+2,
+0
+]
+],
+"use": "should I do: first person optative.",
+"note": "",
+"cmp": "",
+"form": "kuryām",
+"root": "√kṛ",
+"label": "vidhiliṅ 1sg.",
+"person": "1",
+"num": "sg"
+},
+"V9:0:0": {
+"pos": "indeclinable",
+"use": "even",
+"note": "",
+"cmp": "",
+"form": "api",
+"label": "indeclinable"
+},
+"V9:0:1": {
+"pos": "pronoun",
+"use": "all: describes jīvita.",
+"note": "",
+"cmp": "",
+"pd": "pron_a:sarva",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "sarva",
+"form": "sarvam"
+},
+"V9:0:2": {
+"pos": "noun",
+"use": "life: the subject.",
+"note": "√jīv + -ta: a past participle used as a noun, \"lived-ness\", life.",
+"cmp": "",
+"pd": "a_n:jīvita",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "jīvita",
+"form": "jīvitam"
+},
+"V9:0:3": {
+"pos": "adjective",
+"use": "short: describes life.",
+"note": "",
+"cmp": "",
+"pd": "a_n:alpa",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "alpa",
+"form": "alpam"
+},
+"V9:0:4": {
+"pos": "indeclinable",
+"use": "indeed",
+"note": "Emphasises the word before it.",
+"cmp": "",
+"form": "eva",
+"label": "indeclinable"
+},
+"V9:1:0": {
+"pos": "composite",
+"multi": [
+{
+"pos": "pronoun",
+"use": "yours",
+"note": "",
+"cmp": "",
+"pd": "tvad",
+"hit": [
+[
+5,
+0
+]
+],
+"gk": "x",
+"case": "gen",
+"num": "sg",
+"gen": null,
+"label": "Gen. sg.",
+"stem": "tvad",
+"form": "tava"
+},
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "eva",
+"use": "only, alone",
+"note": ""
+}
+],
+"use": "yours alone",
+"form": "tava eva"
+},
+"V9:1:1": {
+"pos": "noun",
+"use": "vehicles (horses, chariots): the things that are yours.",
+"note": "",
+"cmp": "",
+"pd": "a_m:vāha",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "vāha",
+"form": "vāhāḥ"
+},
+"V9:1:2": {
+"pos": "pronoun",
+"use": "your: whose dance and song.",
+"note": "",
+"cmp": "",
+"pd": "tvad",
+"hit": [
+[
+5,
+0
+]
+],
+"gk": "x",
+"case": "gen",
+"num": "sg",
+"gen": null,
+"label": "Gen. sg.",
+"stem": "tvad",
+"form": "tava"
+},
+"V9:1:3": {
+"pos": "noun",
+"use": "dance and song (two things): subject of the second half.",
+"note": "Dual: exactly two things. The ending -e marks dual in the neuter nominative/accusative/vocative.",
+"cmp": "nṛtya + gīta (a pair)",
+"pd": "a_n:nṛtyagīta",
+"hit": [
+[
+0,
+1
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+1
+],
+[
+7,
+1
+]
+],
+"case": "nom",
+"num": "du",
+"gen": "n",
+"label": "Nom. du. n.",
+"stem": "nṛtyagīta",
+"form": "nṛtyagīte"
+},
+"V10:0:0": {
+"pos": "noun",
+"use": "on a day, repeated: \"day after day\".",
+"note": "Repeating a word gives \"each / every\": ahany ahani, day after day.",
+"cmp": "",
+"pd": "ahan",
+"hit": [
+[
+6,
+0
+]
+],
+"gk": "n",
+"case": "loc",
+"num": "sg",
+"gen": "n",
+"label": "Loc. sg. n.",
+"stem": "ahan",
+"form": "ahani"
+},
+"V10:0:1": {
+"pos": "noun",
+"use": "beings: the ones who go.",
+"note": "bhūta = “become, been”: a past participle used as a noun for “beings”.",
+"cmp": "",
+"pd": "a_n:bhūta",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+2
+],
+[
+7,
+2
+]
+],
+"case": "nom",
+"num": "pl",
+"gen": "n",
+"label": "Nom. pl. n.",
+"stem": "bhūta",
+"form": "bhūtāni"
+},
+"V10:0:2": {
+"pos": "verb",
+"pd": "gam_pres",
+"hit": [
+[
+0,
+2
+]
+],
+"use": "they go.",
+"note": "",
+"cmp": "",
+"form": "gacchanti",
+"root": "√gam",
+"label": "laṭ 3pl.",
+"person": "3",
+"num": "pl"
+},
+"V10:0:3": {
+"pos": "indeclinable",
+"use": "here",
+"note": "Related to idam (\"this\").",
+"cmp": "",
+"form": "iha",
+"label": "indeclinable"
+},
+"V10:0:4": {
+"pos": "noun",
+"use": "to Yama’s abode: the destination.",
+"note": "",
+"cmp": "yama + ālaya",
+"pd": "a_m:yamālaya",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "m",
+"case": "acc",
+"num": "sg",
+"gen": "m",
+"label": "Acc. sg. m.",
+"stem": "yamālaya",
+"form": "yamālayam"
+},
+"V10:1:0": {
+"pos": "noun",
+"use": "the remaining ones: the subject.",
+"note": "",
+"cmp": "",
+"pd": "a_m:śeṣa",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "śeṣa",
+"form": "śeṣāḥ"
+},
+"V10:1:1": {
+"pos": "adjective",
+"use": "the permanent state: what they wish for.",
+"note": "sthāvara = “stationary”, from √sthā (to stand). Also seen as neuter.",
+"cmp": "",
+"pd": "a_m:sthāvara",
+"hit": [
+[
+1,
+0
+]
+],
+"gk": "m",
+"case": "acc",
+"num": "sg",
+"gen": "m",
+"label": "Acc. sg. m.",
+"stem": "sthāvara",
+"form": "sthāvaram"
+},
+"V10:1:2": {
+"pos": "verb",
+"pd": "is_pres",
+"hit": [
+[
+0,
+2
+]
+],
+"use": "they wish.",
+"note": "",
+"cmp": "",
+"form": "icchanti",
+"root": "√iṣ",
+"label": "laṭ 3pl.",
+"person": "3",
+"num": "pl"
+},
+"V10:1:3": {
+"pos": "pronoun",
+"use": "what: asks which wonder.",
+"note": "",
+"cmp": "",
+"pd": "kim",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "kim",
+"form": "kim"
+},
+"V10:1:4": {
+"pos": "noun",
+"use": "a wonder: what is being asked about.",
+"note": "",
+"cmp": "",
+"pd": "a_n:āścarya",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"alt": [
+[
+1,
+0
+]
+],
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "āścarya",
+"form": "āścaryam"
+},
+"V10:1:5": {
+"pos": "composite",
+"multi": [
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "ataḥ",
+"use": "from this, therefore",
+"note": ""
+},
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "param",
+"use": "beyond",
+"note": "param is actually the neuter singular of para (“other, beyond”) used as an adverb."
+}
+],
+"use": "beyond this",
+"form": "ataḥ param"
+},
+"V11:0:0": {
+"pos": "adjective",
+"use": "by great: describes bhāgya.",
+"note": "",
+"cmp": "",
+"pd": "mahat",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "n",
+"case": "ins",
+"num": "sg",
+"gen": "n",
+"label": "Instr. sg. n.",
+"stem": "mahat",
+"form": "mahatā"
+},
+"V11:0:1": {
+"pos": "noun",
+"use": "by fortune: the cause.",
+"note": "",
+"cmp": "",
+"pd": "a_n:bhāgya",
+"hit": [
+[
+2,
+0
+]
+],
+"gk": "n",
+"case": "ins",
+"num": "sg",
+"gen": "n",
+"label": "Instr. sg. n.",
+"stem": "bhāgya",
+"form": "bhāgyena"
+},
+"V11:0:2": {
+"pos": "adjective",
+"use": "such: describes puruṣāḥ.",
+"note": "",
+"cmp": "",
+"pd": "a_m:īdṛśa",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "īdṛśa",
+"form": "īdṛśāḥ"
+},
+"V11:0:3": {
+"pos": "noun",
+"use": "men, persons: the subject.",
+"note": "",
+"cmp": "",
+"pd": "a_m:puruṣa",
+"hit": [
+[
+0,
+2
+]
+],
+"gk": "m",
+"case": "nom",
+"num": "pl",
+"gen": "m",
+"label": "Nom. pl. m.",
+"stem": "puruṣa",
+"form": "puruṣāḥ"
+},
+"V11:0:4": {
+"pos": "composite",
+"multi": [
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "adya",
+"use": "today",
+"note": ""
+},
+{
+"pos": "indeclinable",
+"label": "indeclinable",
+"form": "api",
+"use": "even",
+"note": ""
+}
+],
+"use": "even today",
+"form": "adya api"
+},
+"V11:0:5": {
+"pos": "verb",
+"pd": "as_pres",
+"hit": [
+[
+0,
+2
+]
+],
+"use": "they are.",
+"note": "",
+"cmp": "",
+"form": "santi",
+"root": "√as",
+"label": "laṭ 3pl.",
+"person": "3",
+"num": "pl"
+},
+"V12:0:0": {
+"pos": "noun",
+"use": "Śrī Kṛṣṇa: first member of the compound.",
+"note": "Bare stem inside a compound (śrī + kṛṣṇa). Shown: how kṛṣṇa declines on its own.",
+"cmp": "śrī + kṛṣṇa",
+"pd": "a_m:śrīkṛṣṇa",
+"stem": "śrīkṛṣṇa",
+"form": "śrīkṛṣṇa"
+},
+"V12:0:1": {
+"pos": "noun",
+"use": "an offering: the subject of \"let it be\".",
+"note": "",
+"cmp": "",
+"pd": "a_n:arpaṇa",
+"hit": [
+[
+0,
+0
+]
+],
+"gk": "n",
+"case": "nom",
+"num": "sg",
+"gen": "n",
+"label": "Nom. sg. n.",
+"stem": "arpaṇa",
+"form": "arpaṇam"
+},
+"V12:0:2": {
+"pos": "verb",
+"pd": "as_imp",
+"hit": [
+[
+0,
+0
+]
+],
+"use": "let it be.",
+"note": "",
+"cmp": "",
+"form": "astu",
+"root": "√as",
+"label": "loṭ 3sg.",
+"person": "3",
+"num": "sg"
+}
+}
+}

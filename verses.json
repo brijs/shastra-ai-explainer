@@ -1,399 +1,1377 @@
 {
-"verses": [
-{
- "id": "V1", "short": "Opening apology", "time": "1:02",
- "source": "The speaker's own improvised Sanskrit", "conf": "low",
- "confNote": "Reconstructed from auto-captions, so the wording is approximate. The sense is clear.",
- "lines": [
-  {"dev": "यद्यपि सर्वत्र भारतवर्षे अस्माभिः सर्वदा गीर्वाणभाषया व्यवहारादिकं कर्तव्यम्",
-   "iast": "yadyapi sarvatra bhāratavarṣe asmābhiḥ sarvadā gīrvāṇabhāṣayā vyavahārādikaṁ kartavyam",
+ "verses": [
+  {
+   "id": "V1",
+   "short": "Opening apology",
+   "time": "1:02",
+   "source": "The speaker's own improvised Sanskrit",
+   "conf": "low",
+   "confNote": "Reconstructed from auto-captions, so the wording is approximate. The sense is clear.",
+   "lines": [
+    {
+     "dev": "यद्यपि सर्वत्र भारतवर्षे अस्माभिः सर्वदा गीर्वाणभाषया व्यवहारादिकं कर्तव्यम्",
+     "iast": "yadyapi sarvatra bhāratavarṣe asmābhiḥ sarvadā gīrvāṇabhāṣayā vyavahārādikaṁ kartavyam",
+     "words": [
+      {
+       "d": "यद्यपि",
+       "t": "yadyapi",
+       "m": "although"
+      },
+      {
+       "d": "सर्वत्र",
+       "t": "sarvatra",
+       "m": "everywhere"
+      },
+      {
+       "d": "भारतवर्षे",
+       "t": "bhāratavarṣe",
+       "m": "in Bharatavarsha (India)"
+      },
+      {
+       "d": "अस्माभिः",
+       "t": "asmābhiḥ",
+       "m": "by us",
+       "n": "Instrumental plural of the pronoun 'we'."
+      },
+      {
+       "d": "सर्वदा",
+       "t": "sarvadā",
+       "m": "always"
+      },
+      {
+       "d": "गीर्वाणभाषया",
+       "t": "gīrvāṇabhāṣayā",
+       "m": "by the language of the gods (Sanskrit)",
+       "r": "√gṝ (to utter, praise) + √bhāṣ (to speak)",
+       "n": "gīrvāṇa = 'god', literally one whose speech is praised. A traditional name for Sanskrit is 'language of the gods'."
+      },
+      {
+       "d": "व्यवहारादिकम्",
+       "t": "vyavahārādikam",
+       "m": "dealings and so on",
+       "r": "vi + ava + √hṛ (to carry on, conduct)"
+      },
+      {
+       "d": "कर्तव्यम्",
+       "t": "kartavyam",
+       "m": "ought to be done",
+       "r": "√kṛ (to do) + -tavya ('should be')"
+      }
+     ]
+    },
+    {
+     "dev": "तस्मात् अहम् इदानीं वाग्व्यापारं म्लेच्छभाषया करोमि",
+     "iast": "tasmāt aham idānīṁ vāgvyāpāraṁ mlecchabhāṣayā karomi",
+     "words": [
+      {
+       "d": "तस्मात्",
+       "t": "tasmāt",
+       "m": "therefore"
+      },
+      {
+       "d": "अहम्",
+       "t": "aham",
+       "m": "I"
+      },
+      {
+       "d": "इदानीम्",
+       "t": "idānīm",
+       "m": "now"
+      },
+      {
+       "d": "वाग्व्यापारम्",
+       "t": "vāgvyāpāram",
+       "m": "the work of speech, i.e. speaking",
+       "r": "vāc ← √vac (to speak); vyāpāra ← vi + ā + √pṛ (to be engaged)"
+      },
+      {
+       "d": "म्लेच्छभाषया",
+       "t": "mlecchabhāṣayā",
+       "m": "in a 'mleccha' tongue",
+       "r": "√mlecch (to speak indistinctly)",
+       "n": "Traditionally the word for a non-Sanskrit speaker. He says it about himself and English, with humility."
+      },
+      {
+       "d": "करोमि",
+       "t": "karomi",
+       "m": "I do",
+       "r": "√kṛ (to do, make)"
+      }
+     ]
+    },
+    {
+     "dev": "क्षमां याचित्वा",
+     "iast": "kṣamāṁ yācitvā",
+     "words": [
+      {
+       "d": "क्षमाम्",
+       "t": "kṣamām",
+       "m": "forgiveness, pardon",
+       "r": "√kṣam (to bear, forgive)"
+      },
+      {
+       "d": "याचित्वा",
+       "t": "yācitvā",
+       "m": "having begged",
+       "r": "√yāc (to ask, beg) + -tvā ('having done')",
+       "n": "-tvā is the 'having…' ending that links two actions."
+      }
+     ]
+    }
+   ],
+   "sandhi": [],
+   "meaning": "Everywhere in Bharat we ought to conduct our dealings in the language of the gods. But, with time, that is no longer so. Therefore I will now speak in a foreign tongue, begging your pardon.",
+   "why": "He opens with reverence for Sanskrit and humility about English. The apology also sets his theme: something precious has slipped out of daily life, and he wants us to notice what we lost."
+  },
+  {
+   "id": "V2",
+   "short": "Those who give their lives to the Veda",
+   "time": "2:54",
+   "source": "Not identified",
+   "conf": "low",
+   "confNote": "I could not match this verse to any source online. Only the clearly heard words are decoded.",
+   "lines": [
+    {
+     "dev": "पुण्यतमा महाभागा महेशसदृशा ये वेदं",
+     "iast": "puṇyatamā mahābhāgā maheśasadṛśā ye vedaṁ",
+     "words": [
+      {
+       "d": "पुण्यतमाः",
+       "t": "puṇyatamāḥ",
+       "m": "most meritorious",
+       "r": "puṇya (merit) + -tama (the 'most' ending)"
+      },
+      {
+       "d": "महाभागाः",
+       "t": "mahābhāgāḥ",
+       "m": "greatly fortunate",
+       "r": "mahā (great) + bhāga ← √bhaj (to share, apportion)"
+      },
+      {
+       "d": "महेशसदृशाः",
+       "t": "maheśasadṛśāḥ",
+       "m": "like Maheśa (Śiva)",
+       "r": "sa-dṛśa ← √dṛś (to see): 'looking alike'"
+      },
+      {
+       "d": "ये",
+       "t": "ye",
+       "m": "who"
+      },
+      {
+       "d": "वेदम्",
+       "t": "vedam",
+       "m": "the Veda",
+       "r": "√vid (to know)",
+       "n": "Veda is literally 'knowledge'. Related English words: wit, wise, video."
+      }
+     ]
+    }
+   ],
+   "sandhi": [],
+   "meaning": "Most meritorious and greatly fortunate, like Śiva himself, are those who [give their lives to the Veda]. The rest of the line is unclear in the recording.",
+   "why": "He honours the people who dedicate their whole lives to Vedic study, and then says: that cannot be everyone, but a basic grounding in the Shastras should be for all."
+  },
+  {
+   "id": "V3",
+   "short": "Learn conduct from the foremost teachers",
+   "time": "3:19",
+   "source": "Manusmṛti 2.20",
+   "conf": "ok",
+   "confNote": "Matches the standard text. Social readings of this verse are debated; here we look at its language and how he uses it.",
+   "lines": [
+    {
+     "dev": "एतद्देशप्रसूतस्य सकाशादग्रजन्मनः",
+     "iast": "etaddeśaprasūtasya sakāśād agrajanmanaḥ",
+     "words": [
+      {
+       "d": "एतद्",
+       "t": "etad",
+       "m": "this",
+       "n": "Becomes 'etad' before the voiced 'd' of deśa."
+      },
+      {
+       "d": "देश",
+       "t": "deśa",
+       "m": "region, land",
+       "r": "√diś (to point out)"
+      },
+      {
+       "d": "प्रसूतस्य",
+       "t": "prasūtasya",
+       "m": "of one born",
+       "r": "pra + √sū (to bring forth)"
+      },
+      {
+       "d": "सकाशात्",
+       "t": "sakāśāt",
+       "m": "from the presence of",
+       "r": "sa + √kāś (to shine, appear)"
+      },
+      {
+       "d": "अग्रजन्मनः",
+       "t": "agrajanmanaḥ",
+       "m": "of the foremost-born (the eldest, the leading teacher)",
+       "r": "agra (front) + √jan (to be born)"
+      }
+     ]
+    },
+    {
+     "dev": "स्वं स्वं चरित्रं शिक्षेरन् पृथिव्यां सर्वमानवाः",
+     "iast": "svaṁ svaṁ caritraṁ śikṣeran pṛthivyāṁ sarvamānavāḥ",
+     "words": [
+      {
+       "d": "स्वं स्वम्",
+       "t": "svaṁ svam",
+       "m": "each their own"
+      },
+      {
+       "d": "चरित्रम्",
+       "t": "caritram",
+       "m": "conduct, character",
+       "r": "√car (to move, behave) + -tra"
+      },
+      {
+       "d": "शिक्षेरन्",
+       "t": "śikṣeran",
+       "m": "should learn",
+       "r": "√śikṣ, the 'wish to be able' form of √śak (to be able)",
+       "n": "To learn = to wish to become able. Third person plural, 'would/should'."
+      },
+      {
+       "d": "पृथिव्याम्",
+       "t": "pṛthivyām",
+       "m": "on the earth"
+      },
+      {
+       "d": "सर्वमानवाः",
+       "t": "sarvamānavāḥ",
+       "m": "all humans",
+       "r": "sarva (all) + mānava (descendants of Manu, people)"
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "etat + deśa",
+     "to": "etaddeśa",
+     "rule": "A final t turns into d before a voiced sound."
+    },
+    {
+     "from": "sakāśāt + agra",
+     "to": "sakāśād agra",
+     "rule": "The same: t becomes d before a vowel."
+    }
+   ],
+   "meaning": "From the foremost teachers born in this land, let all people on earth learn their own conduct.",
+   "why": "He uses it to say the Shastras are not parochial. The learning is for every person on earth, which is why he calls their study 'non-negotiable'."
+  },
+  {
+   "id": "V4",
+   "short": "Words get power in relation to each other",
+   "time": "5:10",
+   "source": "Not identified (the idea is anvitābhidhāna, from Mīmāṃsā)",
+   "conf": "low",
+   "confNote": "Exact wording not matched to any source. The idea behind it is a real doctrine of Prābhākara Mīmāṃsā.",
+   "lines": [
+    {
+     "dev": "सर्वेषां शब्दानां स्वार्थे शक्तिः",
+     "iast": "sarveṣāṁ śabdānāṁ svārthe śaktiḥ",
+     "words": [
+      {
+       "d": "सर्वेषाम्",
+       "t": "sarveṣām",
+       "m": "of all"
+      },
+      {
+       "d": "शब्दानाम्",
+       "t": "śabdānām",
+       "m": "of words",
+       "r": "√śabd (to sound)"
+      },
+      {
+       "d": "स्वार्थे",
+       "t": "svārthe",
+       "m": "in their own meaning",
+       "r": "sva (own) + artha ← √ṛ (to reach, aim at)"
+      },
+      {
+       "d": "शक्तिः",
+       "t": "śaktiḥ",
+       "m": "power, capacity",
+       "r": "√śak (to be able)",
+       "n": "The 'śakti' of a word is its power to point to a meaning."
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "sva + arthe",
+     "to": "svārthe",
+     "rule": "a + a join into a long ā."
+    }
+   ],
+   "meaning": "In all words lies the power [to express] their own meaning. A word in the recording between 'words' and 'meaning' is unclear, so I leave it out.",
+   "why": "He says: if I tell you this in Sanskrit, you call it scripture; if I say each token's embedding is a mix of the others, you call it great technology. The idea that words gain meaning from their neighbours is old (anvitābhidhāna). It is a resemblance with Transformers, not a proof."
+  },
+  {
+   "id": "V5",
+   "short": "Science as a by-product, like straw in farming",
+   "time": "5:48",
+   "source": "Not identified",
+   "conf": "low",
+   "confNote": "Could not be matched to any source. Only the clearly heard words are decoded.",
+   "lines": [
+    {
+     "dev": "लभ्यमपि नास्य फलं भवति",
+     "iast": "labhyam api nāsya phalaṁ bhavati",
+     "words": [
+      {
+       "d": "लभ्यम्",
+       "t": "labhyam",
+       "m": "obtainable",
+       "r": "√labh (to obtain)"
+      },
+      {
+       "d": "अपि",
+       "t": "api",
+       "m": "even"
+      },
+      {
+       "d": "न अस्य",
+       "t": "na asya",
+       "m": "not of this",
+       "n": "Joins as 'nāsya' (a + a → ā)."
+      },
+      {
+       "d": "फलम्",
+       "t": "phalam",
+       "m": "fruit, result",
+       "r": "√phal (to bear fruit)"
+      },
+      {
+       "d": "भवति",
+       "t": "bhavati",
+       "m": "is, becomes",
+       "r": "√bhū (to be)"
+      }
+     ]
+    },
+    {
+     "dev": "कृषिपलाल",
+     "iast": "kṛṣipalāla",
+     "words": [
+      {
+       "d": "कृषि",
+       "t": "kṛṣi",
+       "m": "farming",
+       "r": "√kṛṣ (to plough, draw)"
+      },
+      {
+       "d": "पलाल",
+       "t": "palāla",
+       "m": "straw, chaff",
+       "n": "He translates it as 'weed'. The Sanskrit word means straw, but his point is the same: a by-product of the crop."
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "na + asya",
+     "to": "nāsya",
+     "rule": "a + a join into a long ā."
+    }
+   ],
+   "meaning": "[Even if some of it] is obtainable, it is no fruit of this; like the straw in farming. (The middle of the verse is unclear in the recording.)",
+   "why": "His warning: don't go searching for modern science in the Shastras. Whatever science turns up is a by-product, like straw from a crop. You plant for the grain, which is the real aim."
+  },
+  {
+   "id": "V6",
+   "short": "Help others is merit, harm is sin",
+   "time": "7:04",
+   "source": "Traditionally cited from Vyāsa (Mahābhārata / Purāṇas)",
+   "conf": "mid",
+   "confNote": "A famous verse; the wording is standard. Attribution to a particular text varies.",
+   "lines": [
+    {
+     "dev": "श्लोकार्धेन प्रवक्ष्यामि यदुक्तं ग्रन्थकोटिभिः",
+     "iast": "ślokārdhena pravakṣyāmi yad uktaṁ granthakoṭibhiḥ",
+     "words": [
+      {
+       "d": "श्लोकार्धेन",
+       "t": "ślokārdhena",
+       "m": "with half a verse",
+       "r": "śloka (verse) + ardha (half)"
+      },
+      {
+       "d": "प्रवक्ष्यामि",
+       "t": "pravakṣyāmi",
+       "m": "I shall tell",
+       "r": "pra + √vac (to speak), future tense"
+      },
+      {
+       "d": "यद्",
+       "t": "yad",
+       "m": "what"
+      },
+      {
+       "d": "उक्तम्",
+       "t": "uktam",
+       "m": "has been said",
+       "r": "√vac, past participle (vac → ukta)"
+      },
+      {
+       "d": "ग्रन्थकोटिभिः",
+       "t": "granthakoṭibhiḥ",
+       "m": "by crores of books",
+       "r": "grantha ← √granth (to string together) + koṭi (ten million)"
+      }
+     ]
+    },
+    {
+     "dev": "परोपकारः पुण्याय पापाय परपीडनम्",
+     "iast": "paropakāraḥ puṇyāya pāpāya parapīḍanam",
+     "words": [
+      {
+       "d": "परोपकारः",
+       "t": "paropakāraḥ",
+       "m": "helping others",
+       "r": "para (other) + upa + √kṛ (to do)"
+      },
+      {
+       "d": "पुण्याय",
+       "t": "puṇyāya",
+       "m": "for merit",
+       "n": "Dative case: 'leads to'."
+      },
+      {
+       "d": "पापाय",
+       "t": "pāpāya",
+       "m": "for sin",
+       "n": "Dative case again."
+      },
+      {
+       "d": "परपीडनम्",
+       "t": "parapīḍanam",
+       "m": "tormenting others",
+       "r": "para + √pīḍ (to press, torment)"
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "śloka + ardhena",
+     "to": "ślokārdhena",
+     "rule": "a + a join into a long ā."
+    },
+    {
+     "from": "yat + uktam",
+     "to": "yad uktam",
+     "rule": "t becomes d before a vowel."
+    },
+    {
+     "from": "para + upakāraḥ",
+     "to": "paropakāraḥ",
+     "rule": "a + u join into o."
+    }
+   ],
+   "meaning": "In half a verse I will say what crores of books have said: helping others brings merit; hurting others brings sin.",
+   "why": "AI is a force we do not know how to handle. This verse says the test of any tool is simple: does it help or harm? So build every algorithm to help."
+  },
+  {
+   "id": "V7",
+   "short": "Mukti: standing in one's own nature",
+   "time": "8:12",
+   "source": "Śrīmad Bhāgavata 2.10.6",
+   "conf": "ok",
+   "confNote": "Matches the standard text.",
+   "lines": [
+    {
+     "dev": "मुक्तिर्हित्वान्यथारूपं स्वरूपेण व्यवस्थितिः",
+     "iast": "muktir hitvānyathārūpaṁ svarūpeṇa vyavasthitiḥ",
+     "words": [
+      {
+       "d": "मुक्तिः",
+       "t": "muktiḥ",
+       "m": "liberation",
+       "r": "√muc (to release) + -ti"
+      },
+      {
+       "d": "हित्वा",
+       "t": "hitvā",
+       "m": "having abandoned",
+       "r": "√hā (to abandon) + -tvā ('having')"
+      },
+      {
+       "d": "अन्यथारूपम्",
+       "t": "anyathārūpam",
+       "m": "the other (non-self) forms",
+       "r": "anyathā (otherwise) + rūpa (form)"
+      },
+      {
+       "d": "स्वरूपेण",
+       "t": "svarūpeṇa",
+       "m": "in one's own form",
+       "r": "sva (own) + rūpa (form)",
+       "n": "Instrumental case: 'by/in'."
+      },
+      {
+       "d": "व्यवस्थितिः",
+       "t": "vyavasthitiḥ",
+       "m": "being established",
+       "r": "vi + ava + √sthā (to stand) + -ti"
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "muktiḥ + hitvā",
+     "to": "muktir hitvā",
+     "rule": "A visarga becomes r before a voiced sound."
+    },
+    {
+     "from": "hitvā + anyathā",
+     "to": "hitvānyathā",
+     "rule": "ā + a join into a long ā."
+    }
+   ],
+   "meaning": "Liberation is giving up the other forms and being established in one's own form.",
+   "why": "Today's world says: take everything you can from nature. The scriptures say the opposite: let go of what is not you. Happiness is internal, so there's no need to exploit nature to find it."
+  },
+  {
+   "id": "V8a",
+   "short": "No hope of immortality through wealth",
+   "time": "9:35",
+   "source": "Bṛhadāraṇyaka Upaniṣad 2.4.2 / 4.5.3",
+   "conf": "ok",
+   "confNote": "Matches the standard text.",
+   "lines": [
+    {
+     "dev": "अमृतत्वस्य तु नाशास्ति वित्तेन",
+     "iast": "amṛtatvasya tu nāśāsti vittena",
+     "words": [
+      {
+       "d": "अमृतत्वस्य",
+       "t": "amṛtatvasya",
+       "m": "of immortality",
+       "r": "a (not) + mṛta ← √mṛ (to die) + -tva (state of)",
+       "n": "A-mṛta is 'not-dead'. English cousins: mortal, murder, even Greek ambrosia."
+      },
+      {
+       "d": "तु",
+       "t": "tu",
+       "m": "but"
+      },
+      {
+       "d": "न आशा अस्ति",
+       "t": "na āśā asti",
+       "m": "there is no hope",
+       "r": "asti ← √as (to be)"
+      },
+      {
+       "d": "वित्तेन",
+       "t": "vittena",
+       "m": "through wealth",
+       "r": "vitta ← √vid (to obtain)",
+       "n": "Instrumental case: 'by means of'."
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "na + āśā",
+     "to": "nāśā",
+     "rule": "a + ā join into a long ā."
+    }
+   ],
+   "meaning": "But there is no hope of immortality through wealth.",
+   "why": "Yājñavalkya tells his wife wealth can make her comfortable, but not deathless. That's the pivot of the whole talk: the real ambition is something wealth cannot buy."
+  },
+  {
+   "id": "V8b",
+   "short": "What shall I do with what won't make me immortal?",
+   "time": "9:49",
+   "source": "Bṛhadāraṇyaka Upaniṣad 2.4.3 (Maitreyī)",
+   "conf": "ok",
+   "confNote": "Matches the standard text.",
+   "lines": [
+    {
+     "dev": "येनाहं नामृता स्यां किमहं तेन कुर्याम्",
+     "iast": "yenāhaṁ nāmṛtā syāṁ kim ahaṁ tena kuryām",
+     "words": [
+      {
+       "d": "येन",
+       "t": "yena",
+       "m": "by which"
+      },
+      {
+       "d": "अहम्",
+       "t": "aham",
+       "m": "I"
+      },
+      {
+       "d": "न अमृता",
+       "t": "na amṛtā",
+       "m": "not immortal",
+       "r": "a-mṛta ← √mṛ (to die)"
+      },
+      {
+       "d": "स्याम्",
+       "t": "syām",
+       "m": "I should be",
+       "r": "√as (to be), 'wish/should' form"
+      },
+      {
+       "d": "किम्",
+       "t": "kim",
+       "m": "what"
+      },
+      {
+       "d": "तेन",
+       "t": "tena",
+       "m": "with that"
+      },
+      {
+       "d": "कुर्याम्",
+       "t": "kuryām",
+       "m": "should I do",
+       "r": "√kṛ (to do), 'should' form"
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "yena + aham",
+     "to": "yenāham",
+     "rule": "a + a join into a long ā."
+    },
+    {
+     "from": "na + amṛtā",
+     "to": "nāmṛtā",
+     "rule": "a + a join into a long ā."
+    }
+   ],
+   "meaning": "What shall I do with that by which I would not become immortal?",
+   "why": "He calls this the most beautiful line he has ever read. It is a complete test for every goal in life: will this carry me beyond death? If not, why chase it?"
+  },
+  {
+   "id": "V9",
+   "short": "All life is short; keep your chariots, song and dance",
+   "time": "10:09",
+   "source": "Kaṭha Upaniṣad 1.1.26 (second half)",
+   "conf": "ok",
+   "confNote": "Matches the standard text. The speaker quotes only the second half.",
+   "lines": [
+    {
+     "dev": "अपि सर्वं जीवितमल्पमेव",
+     "iast": "api sarvaṁ jīvitam alpam eva",
+     "words": [
+      {
+       "d": "अपि",
+       "t": "api",
+       "m": "even"
+      },
+      {
+       "d": "सर्वम्",
+       "t": "sarvam",
+       "m": "all"
+      },
+      {
+       "d": "जीवितम्",
+       "t": "jīvitam",
+       "m": "life",
+       "r": "√jīv (to live)",
+       "n": "English cousins: quick (as in 'the quick and the dead'), vivid."
+      },
+      {
+       "d": "अल्पम्",
+       "t": "alpam",
+       "m": "little, short"
+      },
+      {
+       "d": "एव",
+       "t": "eva",
+       "m": "indeed"
+      }
+     ]
+    },
+    {
+     "dev": "तवैव वाहास्तव नृत्यगीते",
+     "iast": "tavaiva vāhās tava nṛtyagīte",
+     "words": [
+      {
+       "d": "तव एव",
+       "t": "tava eva",
+       "m": "yours alone"
+      },
+      {
+       "d": "वाहाः",
+       "t": "vāhāḥ",
+       "m": "vehicles (horses, chariots)",
+       "r": "√vah (to carry)"
+      },
+      {
+       "d": "तव",
+       "t": "tava",
+       "m": "your"
+      },
+      {
+       "d": "नृत्यगीते",
+       "t": "nṛtyagīte",
+       "m": "dance and song",
+       "r": "nṛtya ← √nṛt (to dance); gīta ← √gā (to sing)"
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "tava + eva",
+     "to": "tavaiva",
+     "rule": "a + e join into ai."
+    }
+   ],
+   "meaning": "Even a whole life is short indeed. Keep your chariots, your dance and song.",
+   "why": "Nachiketa refuses Yama's offers. The speaker, a mathematician, adds: even if you give me a billion years, it ends, and whatever ends is not what I want."
+  },
+  {
+   "id": "V10",
+   "short": "The greatest wonder",
+   "time": "11:15",
+   "source": "Mahābhārata, Vana Parva (Yakṣa-praśna)",
+   "conf": "ok",
+   "confNote": "Matches the standard text.",
+   "lines": [
+    {
+     "dev": "अहन्यहनि भूतानि गच्छन्तीह यमालयम्",
+     "iast": "ahany ahani bhūtāni gacchantīha yamālayam",
+     "words": [
+      {
+       "d": "अहनि अहनि",
+       "t": "ahani ahani",
+       "m": "day after day"
+      },
+      {
+       "d": "भूतानि",
+       "t": "bhūtāni",
+       "m": "beings",
+       "r": "√bhū (to be, become)",
+       "n": "English cousins: be, become."
+      },
+      {
+       "d": "गच्छन्ति",
+       "t": "gacchanti",
+       "m": "go",
+       "r": "√gam (to go)",
+       "n": "English cousin: come."
+      },
+      {
+       "d": "इह",
+       "t": "iha",
+       "m": "here"
+      },
+      {
+       "d": "यमालयम्",
+       "t": "yamālayam",
+       "m": "Yama's abode",
+       "r": "Yama + ālaya ← ā + √lī (to dwell, cling)"
+      }
+     ]
+    },
+    {
+     "dev": "शेषाः स्थावरमिच्छन्ति किमाश्चर्यमतः परम्",
+     "iast": "śeṣāḥ sthāvaram icchanti kim āścaryam ataḥ param",
+     "words": [
+      {
+       "d": "शेषाः",
+       "t": "śeṣāḥ",
+       "m": "the remaining ones"
+      },
+      {
+       "d": "स्थावरम्",
+       "t": "sthāvaram",
+       "m": "the stationary, the permanent",
+       "r": "√sthā (to stand)",
+       "n": "English cousins: stand, station, state."
+      },
+      {
+       "d": "इच्छन्ति",
+       "t": "icchanti",
+       "m": "wish",
+       "r": "√iṣ (to wish)"
+      },
+      {
+       "d": "किम्",
+       "t": "kim",
+       "m": "what"
+      },
+      {
+       "d": "आश्चर्यम्",
+       "t": "āścaryam",
+       "m": "a wonder",
+       "r": "traditionally explained from ā + √car (to move, behave)"
+      },
+      {
+       "d": "अतः परम्",
+       "t": "ataḥ param",
+       "m": "beyond this"
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "ahani + ahani",
+     "to": "ahany ahani",
+     "rule": "i turns into y before a different vowel."
+    },
+    {
+     "from": "gacchanti + iha",
+     "to": "gacchantīha",
+     "rule": "i + i join into a long ī."
+    },
+    {
+     "from": "yama + ālayam",
+     "to": "yamālayam",
+     "rule": "a + ā join into a long ā."
+    }
+   ],
+   "meaning": "Day after day, beings go to Yama's abode, yet those who remain wish to be permanent. What is a greater wonder than this?",
+   "why": "Yudhiṣṭhira's answer to the Yaksha. The speaker's point: we do everything in life as if we will stay forever, and the Shastras exist to wake us from that assumption."
+  },
+  {
+   "id": "V11",
+   "short": "Such people still exist today",
+   "time": "16:02",
+   "source": "Not identified",
+   "conf": "low",
+   "confNote": "Heavily garbled in the captions and not matched to any source. Only a few words are decoded.",
+   "lines": [
+    {
+     "dev": "महता भाग्येन ईदृशाः पुरुषाः अद्यापि सन्ति",
+     "iast": "mahatā bhāgyena īdṛśāḥ puruṣāḥ adyāpi santi",
+     "words": [
+      {
+       "d": "महता",
+       "t": "mahatā",
+       "m": "by great"
+      },
+      {
+       "d": "भाग्येन",
+       "t": "bhāgyena",
+       "m": "by fortune",
+       "r": "bhāgya ← √bhaj (to share, apportion)"
+      },
+      {
+       "d": "ईदृशाः",
+       "t": "īdṛśāḥ",
+       "m": "such",
+       "r": "ī + √dṛś (to see): 'looking like this'"
+      },
+      {
+       "d": "पुरुषाः",
+       "t": "puruṣāḥ",
+       "m": "men, persons"
+      },
+      {
+       "d": "अद्य अपि",
+       "t": "adya api",
+       "m": "even today"
+      },
+      {
+       "d": "सन्ति",
+       "t": "santi",
+       "m": "they are",
+       "r": "√as (to be)"
+      }
+     ]
+    }
+   ],
+   "sandhi": [],
+   "meaning": "By great fortune, such people still exist even today. (This is my best guess at the sense; the words are unclear in the recording.)",
+   "why": "Near the end he says the real question is why we are not studying the scriptures, and he thanks those who keep the tradition alive."
+  },
+  {
+   "id": "V12",
+   "short": "Offered to Śrī Kṛṣṇa",
+   "time": "16:45",
+   "source": "Traditional closing offering",
+   "conf": "ok",
+   "confNote": "A standard traditional closing.",
+   "lines": [
+    {
+     "dev": "श्रीकृष्णार्पणमस्तु",
+     "iast": "śrīkṛṣṇārpaṇam astu",
+     "words": [
+      {
+       "d": "श्रीकृष्ण",
+       "t": "śrīkṛṣṇa",
+       "m": "Śrī Kṛṣṇa",
+       "r": "kṛṣṇa, traditionally linked to √kṛṣ (to draw, attract)"
+      },
+      {
+       "d": "अर्पणम्",
+       "t": "arpaṇam",
+       "m": "an offering",
+       "r": "√ṛ (to go), 'to make go to' = to offer"
+      },
+      {
+       "d": "अस्तु",
+       "t": "astu",
+       "m": "let it be",
+       "r": "√as (to be), command form"
+      }
+     ]
+    }
+   ],
+   "sandhi": [
+    {
+     "from": "kṛṣṇa + arpaṇam",
+     "to": "kṛṣṇārpaṇam",
+     "rule": "a + a join into a long ā."
+    },
+    {
+     "from": "arpaṇam + astu",
+     "to": "arpaṇam astu",
+     "rule": "Written together as one word in the traditional form."
+    }
+   ],
+   "meaning": "Let this be an offering to Śrī Kṛṣṇa.",
+   "why": "He dedicates what he said to his Gurus and to Krishna. Study is an offering and a gift, not a possession."
+  }
+ ],
+ "terms": [
+  {
+   "id": "T-nyaya",
+   "dev": "न्यायशास्त्र",
+   "iast": "nyāyaśāstra",
+   "meaning": "the science of logic and reasoning",
+   "parts": [
+    {
+     "d": "न्याय",
+     "t": "nyāya",
+     "m": "reasoning, method",
+     "r": "ni + √i (to go, lead): that which leads the mind to a conclusion"
+    },
+    {
+     "d": "शास्त्र",
+     "t": "śāstra",
+     "m": "a treatise, a body of teaching",
+     "r": "√śās (to instruct) + -tra (tool): 'the tool of instruction'"
+    }
+   ],
+   "why": "The auto-captions said 'jurisprudence'. He means Nyāya, the logic tradition. He says 12 years of it prepares the mind for any hard subject."
+  },
+  {
+   "id": "T-vaisadya",
+   "dev": "बुद्धिवैशद्य",
+   "iast": "buddhivaiśadya",
+   "meaning": "clarity of the intellect",
+   "parts": [
+    {
+     "d": "बुद्धि",
+     "t": "buddhi",
+     "m": "intellect, understanding",
+     "r": "√budh (to wake, know)"
+    },
+    {
+     "d": "वैशद्य",
+     "t": "vaiśadya",
+     "m": "clarity, brightness",
+     "r": "from viśada (clear, distinct)"
+    }
+   ],
+   "why": "What he says Shastra study gives: not facts, but a clear, sharp mind. 'Buddha' comes from the same root as buddhi: the awakened one."
+  },
+  {
+   "id": "T-santushti",
+   "dev": "यदृच्छासन्तुष्टि",
+   "iast": "yadṛcchāsantuṣṭi",
+   "meaning": "contentment with whatever comes",
+   "parts": [
+    {
+     "d": "यदृच्छा",
+     "t": "yadṛcchā",
+     "m": "whatever comes by chance",
+     "r": "yad (what) + ṛcchā ← √ṛ (to go, reach)"
+    },
+    {
+     "d": "सन्तुष्टि",
+     "t": "santuṣṭi",
+     "m": "contentment",
+     "r": "sam (fully) + √tuṣ (to be pleased) + -ti"
+    }
+   ],
+   "why": "He says today's world has lost this. People are unhappy because success is measured by producing and consuming more."
+  },
+  {
+   "id": "T-mumuksha",
+   "dev": "मुमुक्षा",
+   "iast": "mumukṣā",
+   "meaning": "the desire to be liberated",
+   "parts": [
+    {
+     "d": "मुमुक्ष",
+     "t": "mumukṣ",
+     "m": "wish to be freed",
+     "r": "√muc (to release) in the 'wishing' form: mu-muc-ṣ"
+    },
+    {
+     "d": "-आ",
+     "t": "-ā",
+     "m": "makes it a noun"
+    }
+   ],
+   "why": "His name for the biggest ambition a person can have: to be happy for eternity. The same root gave us 'mukti' in V7."
+  },
+  {
+   "id": "T-atindriya",
+   "dev": "अतीन्द्रिय",
+   "iast": "atīndriya",
+   "meaning": "beyond the senses",
+   "parts": [
+    {
+     "d": "अति",
+     "t": "ati",
+     "m": "beyond"
+    },
+    {
+     "d": "इन्द्रिय",
+     "t": "indriya",
+     "m": "a sense organ, a faculty"
+    }
+   ],
+   "why": "He says asking for instant proof of things beyond the senses is like asking a physicist to prove quantum entanglement in five minutes. It takes years of preparation first."
+  },
+  {
+   "id": "T-dharma",
+   "dev": "धर्म",
+   "iast": "dharma",
+   "meaning": "that which holds; duty, right order",
+   "parts": [
+    {
+     "d": "धर्म",
+     "t": "dharma",
+     "m": "what upholds; duty, righteousness",
+     "r": "√dhṛ (to hold, support)"
+    }
+   ],
+   "why": "He warns about powerful tools in the hands of someone with no background of Dharma and Shastra."
+  }
+ ],
+ "roots": [
+  {
+   "r": "√mṛ",
+   "dev": "मृ",
+   "m": "to die",
    "words": [
-    {"d": "यद्यपि", "t": "yadyapi", "m": "although"},
-    {"d": "सर्वत्र", "t": "sarvatra", "m": "everywhere"},
-    {"d": "भारतवर्षे", "t": "bhāratavarṣe", "m": "in Bharatavarsha (India)"},
-    {"d": "अस्माभिः", "t": "asmābhiḥ", "m": "by us", "n": "Instrumental plural of the pronoun 'we'."},
-    {"d": "सर्वदा", "t": "sarvadā", "m": "always"},
-    {"d": "गीर्वाणभाषया", "t": "gīrvāṇabhāṣayā", "m": "by the language of the gods (Sanskrit)", "r": "√gṝ (to utter, praise) + √bhāṣ (to speak)", "n": "gīrvāṇa = 'god', literally one whose speech is praised. A traditional name for Sanskrit is 'language of the gods'."},
-    {"d": "व्यवहारादिकम्", "t": "vyavahārādikam", "m": "dealings and so on", "r": "vi + ava + √hṛ (to carry on, conduct)"},
-    {"d": "कर्तव्यम्", "t": "kartavyam", "m": "ought to be done", "r": "√kṛ (to do) + -tavya ('should be')"}
-   ]},
-  {"dev": "तस्मात् अहम् इदानीं वाग्व्यापारं म्लेच्छभाषया करोमि",
-   "iast": "tasmāt aham idānīṁ vāgvyāpāraṁ mlecchabhāṣayā karomi",
+    "amṛta (V8a, V8b)",
+    "amṛtatva (V8a)"
+   ],
+   "en": "mortal, murder; Greek ambrosia"
+  },
+  {
+   "r": "√muc",
+   "dev": "मुच्",
+   "m": "to release",
    "words": [
-    {"d": "तस्मात्", "t": "tasmāt", "m": "therefore"},
-    {"d": "अहम्", "t": "aham", "m": "I"},
-    {"d": "इदानीम्", "t": "idānīm", "m": "now"},
-    {"d": "वाग्व्यापारम्", "t": "vāgvyāpāram", "m": "the work of speech, i.e. speaking", "r": "vāc ← √vac (to speak); vyāpāra ← vi + ā + √pṛ (to be engaged)"},
-    {"d": "म्लेच्छभाषया", "t": "mlecchabhāṣayā", "m": "in a 'mleccha' tongue", "r": "√mlecch (to speak indistinctly)", "n": "Traditionally the word for a non-Sanskrit speaker. He says it about himself and English, with humility."},
-    {"d": "करोमि", "t": "karomi", "m": "I do", "r": "√kṛ (to do, make)"}
-   ]},
-  {"dev": "क्षमां याचित्वा",
-   "iast": "kṣamāṁ yācitvā",
+    "mukti (V7)",
+    "mumukṣā"
+   ],
+   "en": "—"
+  },
+  {
+   "r": "√kṛ",
+   "dev": "कृ",
+   "m": "to do, make",
    "words": [
-    {"d": "क्षमाम्", "t": "kṣamām", "m": "forgiveness, pardon", "r": "√kṣam (to bear, forgive)"},
-    {"d": "याचित्वा", "t": "yācitvā", "m": "having begged", "r": "√yāc (to ask, beg) + -tvā ('having done')", "n": "-tvā is the 'having…' ending that links two actions."}
-   ]}
- ],
- "sandhi": [],
- "meaning": "Everywhere in Bharat we ought to conduct our dealings in the language of the gods. But, with time, that is no longer so. Therefore I will now speak in a foreign tongue, begging your pardon.",
- "why": "He opens with reverence for Sanskrit and humility about English. The apology also sets his theme: something precious has slipped out of daily life, and he wants us to notice what we lost."
-},
-{
- "id": "V2", "short": "Those who give their lives to the Veda", "time": "2:54",
- "source": "Not identified", "conf": "low",
- "confNote": "I could not match this verse to any source online. Only the clearly heard words are decoded.",
- "lines": [
-  {"dev": "पुण्यतमा महाभागा महेशसदृशा ये वेदं",
-   "iast": "puṇyatamā mahābhāgā maheśasadṛśā ye vedaṁ",
+    "karomi (V1)",
+    "kartavya (V1)",
+    "upakāra (V6)",
+    "kuryām (V8b)"
+   ],
+   "en": "karma, kriyā (loanwords)"
+  },
+  {
+   "r": "√vac",
+   "dev": "वच्",
+   "m": "to speak",
    "words": [
-    {"d": "पुण्यतमाः", "t": "puṇyatamāḥ", "m": "most meritorious", "r": "puṇya (merit) + -tama (the 'most' ending)"},
-    {"d": "महाभागाः", "t": "mahābhāgāḥ", "m": "greatly fortunate", "r": "mahā (great) + bhāga ← √bhaj (to share, apportion)"},
-    {"d": "महेशसदृशाः", "t": "maheśasadṛśāḥ", "m": "like Maheśa (Śiva)", "r": "sa-dṛśa ← √dṛś (to see): 'looking alike'"},
-    {"d": "ये", "t": "ye", "m": "who"},
-    {"d": "वेदम्", "t": "vedam", "m": "the Veda", "r": "√vid (to know)", "n": "Veda is literally 'knowledge'. Related English words: wit, wise, video."}
-   ]}
- ],
- "sandhi": [],
- "meaning": "Most meritorious and greatly fortunate, like Śiva himself, are those who [give their lives to the Veda]. The rest of the line is unclear in the recording.",
- "why": "He honours the people who dedicate their whole lives to Vedic study, and then says: that cannot be everyone, but a basic grounding in the Shastras should be for all."
-},
-{
- "id": "V3", "short": "Learn conduct from the foremost teachers", "time": "3:19",
- "source": "Manusmṛti 2.20", "conf": "ok",
- "confNote": "Matches the standard text. Social readings of this verse are debated; here we look at its language and how he uses it.",
- "lines": [
-  {"dev": "एतद्देशप्रसूतस्य सकाशादग्रजन्मनः",
-   "iast": "etaddeśaprasūtasya sakāśād agrajanmanaḥ",
+    "vāc (V1)",
+    "pravakṣyāmi (V6)",
+    "ukta (V6)"
+   ],
+   "en": "voice, vocal, vowel"
+  },
+  {
+   "r": "√gam",
+   "dev": "गम्",
+   "m": "to go",
    "words": [
-    {"d": "एतद्", "t": "etad", "m": "this", "n": "Becomes 'etad' before the voiced 'd' of deśa."},
-    {"d": "देश", "t": "deśa", "m": "region, land", "r": "√diś (to point out)"},
-    {"d": "प्रसूतस्य", "t": "prasūtasya", "m": "of one born", "r": "pra + √sū (to bring forth)"},
-    {"d": "सकाशात्", "t": "sakāśāt", "m": "from the presence of", "r": "sa + √kāś (to shine, appear)"},
-    {"d": "अग्रजन्मनः", "t": "agrajanmanaḥ", "m": "of the foremost-born (the eldest, the leading teacher)", "r": "agra (front) + √jan (to be born)"}
-   ]},
-  {"dev": "स्वं स्वं चरित्रं शिक्षेरन् पृथिव्यां सर्वमानवाः",
-   "iast": "svaṁ svaṁ caritraṁ śikṣeran pṛthivyāṁ sarvamānavāḥ",
+    "gacchanti (V10)"
+   ],
+   "en": "come"
+  },
+  {
+   "r": "√bhū",
+   "dev": "भू",
+   "m": "to be, become",
    "words": [
-    {"d": "स्वं स्वम्", "t": "svaṁ svam", "m": "each their own"},
-    {"d": "चरित्रम्", "t": "caritram", "m": "conduct, character", "r": "√car (to move, behave) + -tra"},
-    {"d": "शिक्षेरन्", "t": "śikṣeran", "m": "should learn", "r": "√śikṣ, the 'wish to be able' form of √śak (to be able)", "n": "To learn = to wish to become able. Third person plural, 'would/should'."},
-    {"d": "पृथिव्याम्", "t": "pṛthivyām", "m": "on the earth"},
-    {"d": "सर्वमानवाः", "t": "sarvamānavāḥ", "m": "all humans", "r": "sarva (all) + mānava (descendants of Manu, people)"}
-   ]}
- ],
- "sandhi": [
-  {"from": "etat + deśa", "to": "etaddeśa", "rule": "A final t turns into d before a voiced sound."},
-  {"from": "sakāśāt + agra", "to": "sakāśād agra", "rule": "The same: t becomes d before a vowel."}
- ],
- "meaning": "From the foremost teachers born in this land, let all people on earth learn their own conduct.",
- "why": "He uses it to say the Shastras are not parochial. The learning is for every person on earth, which is why he calls their study 'non-negotiable'."
-},
-{
- "id": "V4", "short": "Words get power in relation to each other", "time": "5:10",
- "source": "Not identified (the idea is anvitābhidhāna, from Mīmāṃsā)", "conf": "low",
- "confNote": "Exact wording not matched to any source. The idea behind it is a real doctrine of Prābhākara Mīmāṃsā.",
- "lines": [
-  {"dev": "सर्वेषां शब्दानां स्वार्थे शक्तिः",
-   "iast": "sarveṣāṁ śabdānāṁ svārthe śaktiḥ",
+    "bhūtāni (V10)",
+    "bhavati (V5)"
+   ],
+   "en": "be, become"
+  },
+  {
+   "r": "√as",
+   "dev": "अस्",
+   "m": "to be",
    "words": [
-    {"d": "सर्वेषाम्", "t": "sarveṣām", "m": "of all"},
-    {"d": "शब्दानाम्", "t": "śabdānām", "m": "of words", "r": "√śabd (to sound)"},
-    {"d": "स्वार्थे", "t": "svārthe", "m": "in their own meaning", "r": "sva (own) + artha ← √ṛ (to reach, aim at)"},
-    {"d": "शक्तिः", "t": "śaktiḥ", "m": "power, capacity", "r": "√śak (to be able)", "n": "The 'śakti' of a word is its power to point to a meaning."}
-   ]}
- ],
- "sandhi": [
-  {"from": "sva + arthe", "to": "svārthe", "rule": "a + a join into a long ā."}
- ],
- "meaning": "In all words lies the power [to express] their own meaning. A word in the recording between 'words' and 'meaning' is unclear, so I leave it out.",
- "why": "He says: if I tell you this in Sanskrit, you call it scripture; if I say each token's embedding is a mix of the others, you call it great technology. The idea that words gain meaning from their neighbours is old (anvitābhidhāna). It is a resemblance with Transformers, not a proof."
-},
-{
- "id": "V5", "short": "Science as a by-product, like straw in farming", "time": "5:48",
- "source": "Not identified", "conf": "low",
- "confNote": "Could not be matched to any source. Only the clearly heard words are decoded.",
- "lines": [
-  {"dev": "लभ्यमपि नास्य फलं भवति",
-   "iast": "labhyam api nāsya phalaṁ bhavati",
+    "asti (V8a)",
+    "syām (V8b)",
+    "astu (V12)",
+    "santi (V11)"
+   ],
+   "en": "is"
+  },
+  {
+   "r": "√sthā",
+   "dev": "स्था",
+   "m": "to stand",
    "words": [
-    {"d": "लभ्यम्", "t": "labhyam", "m": "obtainable", "r": "√labh (to obtain)"},
-    {"d": "अपि", "t": "api", "m": "even"},
-    {"d": "न अस्य", "t": "na asya", "m": "not of this", "n": "Joins as 'nāsya' (a + a → ā)."},
-    {"d": "फलम्", "t": "phalam", "m": "fruit, result", "r": "√phal (to bear fruit)"},
-    {"d": "भवति", "t": "bhavati", "m": "is, becomes", "r": "√bhū (to be)"}
-   ]},
-  {"dev": "कृषिपलाल",
-   "iast": "kṛṣipalāla",
+    "vyavasthiti (V7)",
+    "sthāvara (V10)"
+   ],
+   "en": "stand, station, state"
+  },
+  {
+   "r": "√vid",
+   "dev": "विद्",
+   "m": "to know / to obtain",
    "words": [
-    {"d": "कृषि", "t": "kṛṣi", "m": "farming", "r": "√kṛṣ (to plough, draw)"},
-    {"d": "पलाल", "t": "palāla", "m": "straw, chaff", "n": "He translates it as 'weed'. The Sanskrit word means straw, but his point is the same: a by-product of the crop."}
-   ]}
- ],
- "sandhi": [
-  {"from": "na + asya", "to": "nāsya", "rule": "a + a join into a long ā."}
- ],
- "meaning": "[Even if some of it] is obtainable, it is no fruit of this; like the straw in farming. (The middle of the verse is unclear in the recording.)",
- "why": "His warning: don't go searching for modern science in the Shastras. Whatever science turns up is a by-product, like straw from a crop. You plant for the grain, which is the real aim."
-},
-{
- "id": "V6", "short": "Help others is merit, harm is sin", "time": "7:04",
- "source": "Traditionally cited from Vyāsa (Mahābhārata / Purāṇas)", "conf": "mid",
- "confNote": "A famous verse; the wording is standard. Attribution to a particular text varies.",
- "lines": [
-  {"dev": "श्लोकार्धेन प्रवक्ष्यामि यदुक्तं ग्रन्थकोटिभिः",
-   "iast": "ślokārdhena pravakṣyāmi yad uktaṁ granthakoṭibhiḥ",
+    "veda (V2)",
+    "vitta (V8a)"
+   ],
+   "en": "wit, wise, video"
+  },
+  {
+   "r": "√śak",
+   "dev": "शक्",
+   "m": "to be able",
    "words": [
-    {"d": "श्लोकार्धेन", "t": "ślokārdhena", "m": "with half a verse", "r": "śloka (verse) + ardha (half)"},
-    {"d": "प्रवक्ष्यामि", "t": "pravakṣyāmi", "m": "I shall tell", "r": "pra + √vac (to speak), future tense"},
-    {"d": "यद्", "t": "yad", "m": "what"},
-    {"d": "उक्तम्", "t": "uktam", "m": "has been said", "r": "√vac, past participle (vac → ukta)"},
-    {"d": "ग्रन्थकोटिभिः", "t": "granthakoṭibhiḥ", "m": "by crores of books", "r": "grantha ← √granth (to string together) + koṭi (ten million)"}
-   ]},
-  {"dev": "परोपकारः पुण्याय पापाय परपीडनम्",
-   "iast": "paropakāraḥ puṇyāya pāpāya parapīḍanam",
+    "śakti (V4)",
+    "śikṣeran (V3)"
+   ],
+   "en": "—"
+  },
+  {
+   "r": "√jīv",
+   "dev": "जीव्",
+   "m": "to live",
    "words": [
-    {"d": "परोपकारः", "t": "paropakāraḥ", "m": "helping others", "r": "para (other) + upa + √kṛ (to do)"},
-    {"d": "पुण्याय", "t": "puṇyāya", "m": "for merit", "n": "Dative case: 'leads to'."},
-    {"d": "पापाय", "t": "pāpāya", "m": "for sin", "n": "Dative case again."},
-    {"d": "परपीडनम्", "t": "parapīḍanam", "m": "tormenting others", "r": "para + √pīḍ (to press, torment)"}
-   ]}
- ],
- "sandhi": [
-  {"from": "śloka + ardhena", "to": "ślokārdhena", "rule": "a + a join into a long ā."},
-  {"from": "yat + uktam", "to": "yad uktam", "rule": "t becomes d before a vowel."},
-  {"from": "para + upakāraḥ", "to": "paropakāraḥ", "rule": "a + u join into o."}
- ],
- "meaning": "In half a verse I will say what crores of books have said: helping others brings merit; hurting others brings sin.",
- "why": "AI is a force we do not know how to handle. This verse says the test of any tool is simple: does it help or harm? So build every algorithm to help."
-},
-{
- "id": "V7", "short": "Mukti: standing in one's own nature", "time": "8:12",
- "source": "Śrīmad Bhāgavata 2.10.6", "conf": "ok",
- "confNote": "Matches the standard text.",
- "lines": [
-  {"dev": "मुक्तिर्हित्वान्यथारूपं स्वरूपेण व्यवस्थितिः",
-   "iast": "muktir hitvānyathārūpaṁ svarūpeṇa vyavasthitiḥ",
+    "jīvita (V9)"
+   ],
+   "en": "quick (as in 'the quick and the dead'), vivid"
+  },
+  {
+   "r": "√dṛś",
+   "dev": "दृश्",
+   "m": "to see",
    "words": [
-    {"d": "मुक्तिः", "t": "muktiḥ", "m": "liberation", "r": "√muc (to release) + -ti"},
-    {"d": "हित्वा", "t": "hitvā", "m": "having abandoned", "r": "√hā (to abandon) + -tvā ('having')"},
-    {"d": "अन्यथारूपम्", "t": "anyathārūpam", "m": "the other (non-self) forms", "r": "anyathā (otherwise) + rūpa (form)"},
-    {"d": "स्वरूपेण", "t": "svarūpeṇa", "m": "in one's own form", "r": "sva (own) + rūpa (form)", "n": "Instrumental case: 'by/in'."},
-    {"d": "व्यवस्थितिः", "t": "vyavasthitiḥ", "m": "being established", "r": "vi + ava + √sthā (to stand) + -ti"}
-   ]}
- ],
- "sandhi": [
-  {"from": "muktiḥ + hitvā", "to": "muktir hitvā", "rule": "A visarga becomes r before a voiced sound."},
-  {"from": "hitvā + anyathā", "to": "hitvānyathā", "rule": "ā + a join into a long ā."}
- ],
- "meaning": "Liberation is giving up the other forms and being established in one's own form.",
- "why": "Today's world says: take everything you can from nature. The scriptures say the opposite: let go of what is not you. Happiness is internal, so there's no need to exploit nature to find it."
-},
-{
- "id": "V8a", "short": "No hope of immortality through wealth", "time": "9:35",
- "source": "Bṛhadāraṇyaka Upaniṣad 2.4.2 / 4.5.3", "conf": "ok",
- "confNote": "Matches the standard text.",
- "lines": [
-  {"dev": "अमृतत्वस्य तु नाशास्ति वित्तेन",
-   "iast": "amṛtatvasya tu nāśāsti vittena",
+    "sadṛśa (V2)",
+    "īdṛśa (V11)"
+   ],
+   "en": "—"
+  },
+  {
+   "r": "√bhaj",
+   "dev": "भज्",
+   "m": "to share, apportion",
    "words": [
-    {"d": "अमृतत्वस्य", "t": "amṛtatvasya", "m": "of immortality", "r": "a (not) + mṛta ← √mṛ (to die) + -tva (state of)", "n": "A-mṛta is 'not-dead'. English cousins: mortal, murder, even Greek ambrosia."},
-    {"d": "तु", "t": "tu", "m": "but"},
-    {"d": "न आशा अस्ति", "t": "na āśā asti", "m": "there is no hope", "r": "asti ← √as (to be)"},
-    {"d": "वित्तेन", "t": "vittena", "m": "through wealth", "r": "vitta ← √vid (to obtain)", "n": "Instrumental case: 'by means of'."}
-   ]}
- ],
- "sandhi": [
-  {"from": "na + āśā", "to": "nāśā", "rule": "a + ā join into a long ā."}
- ],
- "meaning": "But there is no hope of immortality through wealth.",
- "why": "Yājñavalkya tells his wife wealth can make her comfortable, but not deathless. That's the pivot of the whole talk: the real ambition is something wealth cannot buy."
-},
-{
- "id": "V8b", "short": "What shall I do with what won't make me immortal?", "time": "9:49",
- "source": "Bṛhadāraṇyaka Upaniṣad 2.4.3 (Maitreyī)", "conf": "ok",
- "confNote": "Matches the standard text.",
- "lines": [
-  {"dev": "येनाहं नामृता स्यां किमहं तेन कुर्याम्",
-   "iast": "yenāhaṁ nāmṛtā syāṁ kim ahaṁ tena kuryām",
+    "bhāga (V2)",
+    "bhāgya (V11)"
+   ],
+   "en": "—"
+  },
+  {
+   "r": "√car",
+   "dev": "चर्",
+   "m": "to move, behave",
    "words": [
-    {"d": "येन", "t": "yena", "m": "by which"},
-    {"d": "अहम्", "t": "aham", "m": "I"},
-    {"d": "न अमृता", "t": "na amṛtā", "m": "not immortal", "r": "a-mṛta ← √mṛ (to die)"},
-    {"d": "स्याम्", "t": "syām", "m": "I should be", "r": "√as (to be), 'wish/should' form"},
-    {"d": "किम्", "t": "kim", "m": "what"},
-    {"d": "तेन", "t": "tena", "m": "with that"},
-    {"d": "कुर्याम्", "t": "kuryām", "m": "should I do", "r": "√kṛ (to do), 'should' form"}
-   ]}
- ],
- "sandhi": [
-  {"from": "yena + aham", "to": "yenāham", "rule": "a + a join into a long ā."},
-  {"from": "na + amṛtā", "to": "nāmṛtā", "rule": "a + a join into a long ā."}
- ],
- "meaning": "What shall I do with that by which I would not become immortal?",
- "why": "He calls this the most beautiful line he has ever read. It is a complete test for every goal in life: will this carry me beyond death? If not, why chase it?"
-},
-{
- "id": "V9", "short": "All life is short; keep your chariots, song and dance", "time": "10:09",
- "source": "Kaṭha Upaniṣad 1.1.26 (second half)", "conf": "ok",
- "confNote": "Matches the standard text. The speaker quotes only the second half.",
- "lines": [
-  {"dev": "अपि सर्वं जीवितमल्पमेव",
-   "iast": "api sarvaṁ jīvitam alpam eva",
+    "caritra (V3)",
+    "āścarya (V10)"
+   ],
+   "en": "—"
+  },
+  {
+   "r": "√hā",
+   "dev": "हा",
+   "m": "to abandon",
    "words": [
-    {"d": "अपि", "t": "api", "m": "even"},
-    {"d": "सर्वम्", "t": "sarvam", "m": "all"},
-    {"d": "जीवितम्", "t": "jīvitam", "m": "life", "r": "√jīv (to live)", "n": "English cousins: quick (as in 'the quick and the dead'), vivid."},
-    {"d": "अल्पम्", "t": "alpam", "m": "little, short"},
-    {"d": "एव", "t": "eva", "m": "indeed"}
-   ]},
-  {"dev": "तवैव वाहास्तव नृत्यगीते",
-   "iast": "tavaiva vāhās tava nṛtyagīte",
+    "hitvā (V7)"
+   ],
+   "en": "—"
+  },
+  {
+   "r": "√yāc",
+   "dev": "याच्",
+   "m": "to ask, beg",
    "words": [
-    {"d": "तव एव", "t": "tava eva", "m": "yours alone"},
-    {"d": "वाहाः", "t": "vāhāḥ", "m": "vehicles (horses, chariots)", "r": "√vah (to carry)"},
-    {"d": "तव", "t": "tava", "m": "your"},
-    {"d": "नृत्यगीते", "t": "nṛtyagīte", "m": "dance and song", "r": "nṛtya ← √nṛt (to dance); gīta ← √gā (to sing)"}
-   ]}
+    "yācitvā (V1)"
+   ],
+   "en": "—"
+  }
  ],
- "sandhi": [
-  {"from": "tava + eva", "to": "tavaiva", "rule": "a + e join into ai."}
- ],
- "meaning": "Even a whole life is short indeed. Keep your chariots, your dance and song.",
- "why": "Nachiketa refuses Yama's offers. The speaker, a mathematician, adds: even if you give me a billion years, it ends, and whatever ends is not what I want."
-},
-{
- "id": "V10", "short": "The greatest wonder", "time": "11:15",
- "source": "Mahābhārata, Vana Parva (Yakṣa-praśna)", "conf": "ok",
- "confNote": "Matches the standard text.",
- "lines": [
-  {"dev": "अहन्यहनि भूतानि गच्छन्तीह यमालयम्",
-   "iast": "ahany ahani bhūtāni gacchantīha yamālayam",
-   "words": [
-    {"d": "अहनि अहनि", "t": "ahani ahani", "m": "day after day"},
-    {"d": "भूतानि", "t": "bhūtāni", "m": "beings", "r": "√bhū (to be, become)", "n": "English cousins: be, become."},
-    {"d": "गच्छन्ति", "t": "gacchanti", "m": "go", "r": "√gam (to go)", "n": "English cousin: come."},
-    {"d": "इह", "t": "iha", "m": "here"},
-    {"d": "यमालयम्", "t": "yamālayam", "m": "Yama's abode", "r": "Yama + ālaya ← ā + √lī (to dwell, cling)"}
-   ]},
-  {"dev": "शेषाः स्थावरमिच्छन्ति किमाश्चर्यमतः परम्",
-   "iast": "śeṣāḥ sthāvaram icchanti kim āścaryam ataḥ param",
-   "words": [
-    {"d": "शेषाः", "t": "śeṣāḥ", "m": "the remaining ones"},
-    {"d": "स्थावरम्", "t": "sthāvaram", "m": "the stationary, the permanent", "r": "√sthā (to stand)", "n": "English cousins: stand, station, state."},
-    {"d": "इच्छन्ति", "t": "icchanti", "m": "wish", "r": "√iṣ (to wish)"},
-    {"d": "किम्", "t": "kim", "m": "what"},
-    {"d": "आश्चर्यम्", "t": "āścaryam", "m": "a wonder", "r": "traditionally explained from ā + √car (to move, behave)"},
-    {"d": "अतः परम्", "t": "ataḥ param", "m": "beyond this"}
-   ]}
- ],
- "sandhi": [
-  {"from": "ahani + ahani", "to": "ahany ahani", "rule": "i turns into y before a different vowel."},
-  {"from": "gacchanti + iha", "to": "gacchantīha", "rule": "i + i join into a long ī."},
-  {"from": "yama + ālayam", "to": "yamālayam", "rule": "a + ā join into a long ā."}
- ],
- "meaning": "Day after day, beings go to Yama's abode, yet those who remain wish to be permanent. What is a greater wonder than this?",
- "why": "Yudhiṣṭhira's answer to the Yaksha. The speaker's point: we do everything in life as if we will stay forever, and the Shastras exist to wake us from that assumption."
-},
-{
- "id": "V11", "short": "Such people still exist today", "time": "16:02",
- "source": "Not identified", "conf": "low",
- "confNote": "Heavily garbled in the captions and not matched to any source. Only a few words are decoded.",
- "lines": [
-  {"dev": "महता भाग्येन ईदृशाः पुरुषाः अद्यापि सन्ति",
-   "iast": "mahatā bhāgyena īdṛśāḥ puruṣāḥ adyāpi santi",
-   "words": [
-    {"d": "महता", "t": "mahatā", "m": "by great"},
-    {"d": "भाग्येन", "t": "bhāgyena", "m": "by fortune", "r": "bhāgya ← √bhaj (to share, apportion)"},
-    {"d": "ईदृशाः", "t": "īdṛśāḥ", "m": "such", "r": "ī + √dṛś (to see): 'looking like this'"},
-    {"d": "पुरुषाः", "t": "puruṣāḥ", "m": "men, persons"},
-    {"d": "अद्य अपि", "t": "adya api", "m": "even today"},
-    {"d": "सन्ति", "t": "santi", "m": "they are", "r": "√as (to be)"}
-   ]}
- ],
- "sandhi": [],
- "meaning": "By great fortune, such people still exist even today. (This is my best guess at the sense; the words are unclear in the recording.)",
- "why": "Near the end he says the real question is why we are not studying the scriptures, and he thanks those who keep the tradition alive."
-},
-{
- "id": "V12", "short": "Offered to Śrī Kṛṣṇa", "time": "16:45",
- "source": "Traditional closing offering", "conf": "ok",
- "confNote": "A standard traditional closing.",
- "lines": [
-  {"dev": "श्रीकृष्णार्पणमस्तु",
-   "iast": "śrīkṛṣṇārpaṇam astu",
-   "words": [
-    {"d": "श्रीकृष्ण", "t": "śrīkṛṣṇa", "m": "Śrī Kṛṣṇa", "r": "kṛṣṇa, traditionally linked to √kṛṣ (to draw, attract)"},
-    {"d": "अर्पणम्", "t": "arpaṇam", "m": "an offering", "r": "√ṛ (to go), 'to make go to' = to offer"},
-    {"d": "अस्तु", "t": "astu", "m": "let it be", "r": "√as (to be), command form"}
-   ]}
- ],
- "sandhi": [
-  {"from": "kṛṣṇa + arpaṇam", "to": "kṛṣṇārpaṇam", "rule": "a + a join into a long ā."},
-  {"from": "arpaṇam + astu", "to": "arpaṇam astu", "rule": "Written together as one word in the traditional form."}
- ],
- "meaning": "Let this be an offering to Śrī Kṛṣṇa.",
- "why": "He dedicates what he said to his Gurus and to Krishna. Study is an offering and a gift, not a possession."
-}
-],
-"terms": [
-{"id": "T-nyaya", "dev": "न्यायशास्त्र", "iast": "nyāyaśāstra", "meaning": "the science of logic and reasoning",
- "parts": [
-  {"d": "न्याय", "t": "nyāya", "m": "reasoning, method", "r": "ni + √i (to go, lead): that which leads the mind to a conclusion"},
-  {"d": "शास्त्र", "t": "śāstra", "m": "a treatise, a body of teaching", "r": "√śās (to instruct) + -tra (tool): 'the tool of instruction'"}
- ], "why": "The auto-captions said 'jurisprudence'. He means Nyāya, the logic tradition. He says 12 years of it prepares the mind for any hard subject."},
-{"id": "T-vaisadya", "dev": "बुद्धिवैशद्य", "iast": "buddhivaiśadya", "meaning": "clarity of the intellect",
- "parts": [
-  {"d": "बुद्धि", "t": "buddhi", "m": "intellect, understanding", "r": "√budh (to wake, know)"},
-  {"d": "वैशद्य", "t": "vaiśadya", "m": "clarity, brightness", "r": "from viśada (clear, distinct)"}
- ], "why": "What he says Shastra study gives: not facts, but a clear, sharp mind. 'Buddha' comes from the same root as buddhi: the awakened one."},
-{"id": "T-santushti", "dev": "यदृच्छासन्तुष्टि", "iast": "yadṛcchāsantuṣṭi", "meaning": "contentment with whatever comes",
- "parts": [
-  {"d": "यदृच्छा", "t": "yadṛcchā", "m": "whatever comes by chance", "r": "yad (what) + ṛcchā ← √ṛ (to go, reach)"},
-  {"d": "सन्तुष्टि", "t": "santuṣṭi", "m": "contentment", "r": "sam (fully) + √tuṣ (to be pleased) + -ti"}
- ], "why": "He says today's world has lost this. People are unhappy because success is measured by producing and consuming more."},
-{"id": "T-mumuksha", "dev": "मुमुक्षा", "iast": "mumukṣā", "meaning": "the desire to be liberated",
- "parts": [
-  {"d": "मुमुक्ष", "t": "mumukṣ", "m": "wish to be freed", "r": "√muc (to release) in the 'wishing' form: mu-muc-ṣ"},
-  {"d": "-आ", "t": "-ā", "m": "makes it a noun"}
- ], "why": "His name for the biggest ambition a person can have: to be happy for eternity. The same root gave us 'mukti' in V7."},
-{"id": "T-atindriya", "dev": "अतीन्द्रिय", "iast": "atīndriya", "meaning": "beyond the senses",
- "parts": [
-  {"d": "अति", "t": "ati", "m": "beyond"},
-  {"d": "इन्द्रिय", "t": "indriya", "m": "a sense organ, a faculty"}
- ], "why": "He says asking for instant proof of things beyond the senses is like asking a physicist to prove quantum entanglement in five minutes. It takes years of preparation first."},
-{"id": "T-dharma", "dev": "धर्म", "iast": "dharma", "meaning": "that which holds; duty, right order",
- "parts": [
-  {"d": "धर्म", "t": "dharma", "m": "what upholds; duty, righteousness", "r": "√dhṛ (to hold, support)"}
- ], "why": "He warns about powerful tools in the hands of someone with no background of Dharma and Shastra."}
-],
-"roots": [
- {"r": "√mṛ", "dev": "मृ", "m": "to die", "words": ["amṛta (V8a, V8b)", "amṛtatva (V8a)"], "en": "mortal, murder; Greek ambrosia"},
- {"r": "√muc", "dev": "मुच्", "m": "to release", "words": ["mukti (V7)", "mumukṣā"], "en": "—"},
- {"r": "√kṛ", "dev": "कृ", "m": "to do, make", "words": ["karomi (V1)", "kartavya (V1)", "upakāra (V6)", "kuryām (V8b)"], "en": "karma, kriyā (loanwords)"},
- {"r": "√vac", "dev": "वच्", "m": "to speak", "words": ["vāc (V1)", "pravakṣyāmi (V6)", "ukta (V6)"], "en": "voice, vocal, vowel"},
- {"r": "√gam", "dev": "गम्", "m": "to go", "words": ["gacchanti (V10)"], "en": "come"},
- {"r": "√bhū", "dev": "भू", "m": "to be, become", "words": ["bhūtāni (V10)", "bhavati (V5)"], "en": "be, become"},
- {"r": "√as", "dev": "अस्", "m": "to be", "words": ["asti (V8a)", "syām (V8b)", "astu (V12)", "santi (V11)"], "en": "is"},
- {"r": "√sthā", "dev": "स्था", "m": "to stand", "words": ["vyavasthiti (V7)", "sthāvara (V10)"], "en": "stand, station, state"},
- {"r": "√vid", "dev": "विद्", "m": "to know / to obtain", "words": ["veda (V2)", "vitta (V8a)"], "en": "wit, wise, video"},
- {"r": "√śak", "dev": "शक्", "m": "to be able", "words": ["śakti (V4)", "śikṣeran (V3)"], "en": "—"},
- {"r": "√jīv", "dev": "जीव्", "m": "to live", "words": ["jīvita (V9)"], "en": "quick (as in 'the quick and the dead'), vivid"},
- {"r": "√dṛś", "dev": "दृश्", "m": "to see", "words": ["sadṛśa (V2)", "īdṛśa (V11)"], "en": "—"},
- {"r": "√bhaj", "dev": "भज्", "m": "to share, apportion", "words": ["bhāga (V2)", "bhāgya (V11)"], "en": "—"},
- {"r": "√car", "dev": "चर्", "m": "to move, behave", "words": ["caritra (V3)", "āścarya (V10)"], "en": "—"},
- {"r": "√hā", "dev": "हा", "m": "to abandon", "words": ["hitvā (V7)"], "en": "—"},
- {"r": "√yāc", "dev": "याच्", "m": "to ask, beg", "words": ["yācitvā (V1)"], "en": "—"}
-],
-"quiz": [
- {"q": "What is the 'having done' ending seen in hitvā and yācitvā?", "o": ["-tvā", "-tva", "-ti", "-tra"], "a": 0, "e": "-tvā joins two actions: 'having abandoned' (hitvā), 'having begged' (yācitvā). Don't mix it up with -tva, which makes 'state of' (amṛta-tva)."},
- {"q": "Which root gives both 'mukti' and 'mumukṣā'?", "o": ["√sthā", "√muc", "√kṛ", "√vac"], "a": 1, "e": "√muc means 'to release'. Mukti is release; mumukṣā is the wish for release."},
- {"q": "In V7, what is 'mukti' according to the Bhāgavata?", "o": ["Escaping the world", "Gaining much wealth", "Standing in one's own nature", "Living a long life"], "a": 2, "e": "Hitvā anyathā-rūpaṁ svarūpeṇa vyavasthitiḥ: give up the other forms, and be established in your own."},
- {"q": "What does 'a-mṛta-tva' literally mean?", "o": ["Great wealth", "State of not-dying", "Highest knowledge", "Long journey"], "a": 1, "e": "a (not) + mṛta (dead, from √mṛ) + tva (state of) = the state of not-dying."},
- {"q": "Which sandhi rule makes na + amṛtā into nāmṛtā?", "o": ["a + a → ā", "t → d", "i → y", "visarga → r"], "a": 0, "e": "Two short a's merge into a long ā."},
- {"q": "In the Yakṣa-praśna, what is the greatest wonder?", "o": ["That the sun rises", "That beings die daily, yet the rest wish to live forever", "That rivers flow", "That gold is rare"], "a": 1, "e": "Ahany ahani bhūtāni… we see death daily and still live as if permanent."},
- {"q": "What does he say about finding science in the Shastras?", "o": ["It proves them true", "It is the main purpose", "It is a by-product, like straw in farming", "It is forbidden"], "a": 2, "e": "He says don't go looking for science there; if you find some, it's a by-product."},
- {"q": "Who asked 'yenāhaṁ nāmṛtā syāṁ kim ahaṁ tena kuryām'?", "o": ["Gārgī", "Maitreyī", "Nachiketa", "Yudhiṣṭhira"], "a": 1, "e": "Maitreyī, wife of Yājñavalkya. The speaker says 'Gārgī', but the line is Maitreyī's (Bṛhadāraṇyaka 2.4.3)."},
- {"q": "What does śikṣ (to learn) literally mean?", "o": ["To wish to be able", "To read aloud", "To hold firmly", "To walk toward"], "a": 0, "e": "√śikṣ is the 'wishing' form of √śak (to be able). To learn is to wish to become able."},
- {"q": "What is the biggest ambition, according to the talk?", "o": ["Colonising Mars", "Becoming wealthy", "Being happy for eternity (mumukṣā)", "Winning debates"], "a": 2, "e": "Mumukṣā: the desire for liberation. Everything else ends in death."}
-]
+ "quiz": [
+  {
+   "q": "What is the 'having done' ending seen in hitvā and yācitvā?",
+   "o": [
+    "-tvā",
+    "-tva",
+    "-ti",
+    "-tra"
+   ],
+   "a": 0,
+   "e": "-tvā joins two actions: 'having abandoned' (hitvā), 'having begged' (yācitvā). Don't mix it up with -tva, which makes 'state of' (amṛta-tva)."
+  },
+  {
+   "q": "Which root gives both 'mukti' and 'mumukṣā'?",
+   "o": [
+    "√sthā",
+    "√muc",
+    "√kṛ",
+    "√vac"
+   ],
+   "a": 1,
+   "e": "√muc means 'to release'. Mukti is release; mumukṣā is the wish for release."
+  },
+  {
+   "q": "In V7, what is 'mukti' according to the Bhāgavata?",
+   "o": [
+    "Escaping the world",
+    "Gaining much wealth",
+    "Standing in one's own nature",
+    "Living a long life"
+   ],
+   "a": 2,
+   "e": "Hitvā anyathā-rūpaṁ svarūpeṇa vyavasthitiḥ: give up the other forms, and be established in your own."
+  },
+  {
+   "q": "What does 'a-mṛta-tva' literally mean?",
+   "o": [
+    "Great wealth",
+    "State of not-dying",
+    "Highest knowledge",
+    "Long journey"
+   ],
+   "a": 1,
+   "e": "a (not) + mṛta (dead, from √mṛ) + tva (state of) = the state of not-dying."
+  },
+  {
+   "q": "Which sandhi rule makes na + amṛtā into nāmṛtā?",
+   "o": [
+    "a + a → ā",
+    "t → d",
+    "i → y",
+    "visarga → r"
+   ],
+   "a": 0,
+   "e": "Two short a's merge into a long ā."
+  },
+  {
+   "q": "In the Yakṣa-praśna, what is the greatest wonder?",
+   "o": [
+    "That the sun rises",
+    "That beings die daily, yet the rest wish to live forever",
+    "That rivers flow",
+    "That gold is rare"
+   ],
+   "a": 1,
+   "e": "Ahany ahani bhūtāni… we see death daily and still live as if permanent."
+  },
+  {
+   "q": "What does he say about finding science in the Shastras?",
+   "o": [
+    "It proves them true",
+    "It is the main purpose",
+    "It is a by-product, like straw in farming",
+    "It is forbidden"
+   ],
+   "a": 2,
+   "e": "He says don't go looking for science there; if you find some, it's a by-product."
+  },
+  {
+   "q": "Who asked 'yenāhaṁ nāmṛtā syāṁ kim ahaṁ tena kuryām'?",
+   "o": [
+    "Gārgī",
+    "Maitreyī",
+    "Nachiketa",
+    "Yudhiṣṭhira"
+   ],
+   "a": 1,
+   "e": "Maitreyī, wife of Yājñavalkya. The speaker says 'Gārgī', but the line is Maitreyī's (Bṛhadāraṇyaka 2.4.3)."
+  },
+  {
+   "q": "What does śikṣ (to learn) literally mean?",
+   "o": [
+    "To wish to be able",
+    "To read aloud",
+    "To hold firmly",
+    "To walk toward"
+   ],
+   "a": 0,
+   "e": "√śikṣ is the 'wishing' form of √śak (to be able). To learn is to wish to become able."
+  },
+  {
+   "q": "What is the biggest ambition, according to the talk?",
+   "o": [
+    "Colonising Mars",
+    "Becoming wealthy",
+    "Being happy for eternity (mumukṣā)",
+    "Winning debates"
+   ],
+   "a": 2,
+   "e": "Mumukṣā: the desire for liberation. Everything else ends in death."
+  },
+  {
+   "q": "Which case marks the source (“from”), as in sakāśāt (V3)?",
+   "o": [
+    "Instrumental",
+    "Ablative",
+    "Dative",
+    "Locative"
+   ],
+   "a": 1,
+   "e": "The ablative (pañcamī) marks the source or point of departure: “from the presence of”."
+  },
+  {
+   "q": "In vittena (V8a), the ending -ena marks which case?",
+   "o": [
+    "Genitive",
+    "Accusative",
+    "Instrumental",
+    "Vocative"
+   ],
+   "a": 2,
+   "e": "Instrumental (tṛtīyā): “by means of wealth”."
+  },
+  {
+   "q": "An adjective must agree with its noun in…",
+   "o": [
+    "case, number and gender",
+    "gender only",
+    "case only",
+    "number only"
+   ],
+   "a": 0,
+   "e": "It copies the noun's case, number and gender. That is why puṇyatamāḥ and mahābhāgāḥ in V2 share one ending."
+  }
+ ]
 }

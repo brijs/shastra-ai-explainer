@@ -65,6 +65,80 @@ async function playVerse(vid){
 }
 window.playVerse=playVerse;
 
+
+/* ---------- grammar: tables, transliteration, word blocks ---------- */
+const G=GRAMMAR; const CASEKEYS=['nom','acc','ins','dat','abl','gen','loc','voc']; const NUMN=['Singular','Dual','Plural'];
+const CMAP={k:'क',kh:'ख',g:'ग',gh:'घ','ṅ':'ङ',c:'च',ch:'छ',j:'ज',jh:'झ','ñ':'ञ','ṭ':'ट','ṭh':'ठ','ḍ':'ड','ḍh':'ढ','ṇ':'ण',t:'त',th:'थ',d:'द',dh:'ध',n:'न',p:'प',ph:'फ',b:'ब',bh:'भ',m:'म',y:'य',r:'र',l:'ल',v:'व','ś':'श','ṣ':'ष',s:'स',h:'ह'};
+const VMAP={a:['अ',''],'ā':['आ','ा'],i:['इ','ि'],'ī':['ई','ी'],u:['उ','ु'],'ū':['ऊ','ू'],'ṛ':['ऋ','ृ'],'ṝ':['ॠ','ॄ'],e:['ए','े'],ai:['ऐ','ै'],o:['ओ','ो'],au:['औ','ौ']};
+function toDev(src){
+  const s=src.normalize('NFC'); const out=[]; let i=0; const toks=[];
+  while(i<s.length){
+    const two=s.slice(i,i+2), one=s[i];
+    if(two==='ai'||two==='au'){toks.push(['V',two]);i+=2;continue;}
+    if(CMAP[two]&&two.length===2){toks.push(['C',two]);i+=2;continue;}
+    if(CMAP[one]){toks.push(['C',one]);i++;continue;}
+    if(VMAP[one]){toks.push(['V',one]);i++;continue;}
+    if(one==='ṃ'||one==='ṁ'){toks.push(['M','ं']);i++;continue;} if(one==='ḥ'){toks.push(['M','ः']);i++;continue;}
+    toks.push(['O',one]);i++;
+  }
+  for(let k=0;k<toks.length;k++){const [t,v]=toks[k];
+    if(t==='C'){const nx=toks[k+1]; if(nx&&nx[0]==='V'){out.push(CMAP[v]+VMAP[nx[1]][1]);k++;} else out.push(CMAP[v]+'्');}
+    else if(t==='V')out.push(VMAP[v][0]); else out.push(v);}
+  return out.join('');
+}
+function cellHtml(txt){ if(txt==='—')return '—'; return txt.split(' / ').map(f=>`<span class="fi">${esc(f)}</span><span class="fd">${esc(toDev(f))}</span>`).join(' / '); }
+const CN={nom:['1','Nominative','prathamā','the doer'],acc:['2','Accusative','dvitīyā','the object / goal'],ins:['3','Instrumental','tṛtīyā','by, with'],dat:['4','Dative','caturthī','to, for'],abl:['5','Ablative','pañcamī','from (source)'],gen:['6','Genitive','ṣaṣṭhī','of'],loc:['7','Locative','saptamī','in, on, at'],voc:['8','Vocative','sambodhana','O …!']};
+function gtable(pdId,hit,alt,gk,opts){
+  opts=opts||{}; const P=G.paradigms[pdId]; if(!P)return ''; const keys=Object.keys(P.forms); gk=keys.includes(gk)?gk:keys[0];
+  const hs=new Set((hit||[]).map(x=>x.join(','))), as=new Set((alt||[]).map(x=>x.join(',')));
+  let h=`<div class="gt" data-pd="${esc(pdId)}" data-hit='${JSON.stringify(hit||[])}' data-alt='${JSON.stringify(alt||[])}' data-gk="${gk}">`;
+  if(keys.length>1){h+=`<div class="gtabs" role="group" aria-label="Gender">`+keys.map(k=>`<button class="btn small" data-gtgk="${k}" aria-pressed="${k===gk}">${{m:'Masculine',n:'Neuter',f:'Feminine'}[k]}</button>`).join('')+`</div>`;}
+  const rows=P.forms[gk];
+  if(P.kind==='noun'){
+    h+=`<table class="gtab"><caption>${esc(P.stem)} · ${esc(P.pattern)}${keys.length===1&&{m:1,f:1,n:1}[P.gender]?' · '+{m:'masculine',f:'feminine',n:'neuter'}[P.gender]:''}</caption><thead><tr><th scope="col">Case</th>${NUMN.map(n=>`<th scope="col">${n}</th>`).join('')}</tr></thead><tbody>`;
+    CASEKEYS.forEach((c,r)=>{const m=CN[c];h+=`<tr data-c="${c}"><th scope="row"><span class="cn">${m[0]} ${m[1]}</span><span class="cs">${m[2]} · ${m[3]}</span></th>`;
+      for(let n=0;n<3;n++){const k=r+','+n;h+=`<td data-r="${r}" data-n="${n}" class="${hs.has(k)?'hit':as.has(k)?'alt':''}" tabindex="0">${cellHtml(rows[r][n])}</td>`;}h+='</tr>';});
+    h+='</tbody></table>';
+  } else {
+    h+=`<table class="gtab"><caption>${esc(P.root)} (${esc(P.meaning)}) · ${esc(P.tense)} · ${esc(P.voice)} · ${esc(P.gana)}</caption><thead><tr><th scope="col">Person</th>${NUMN.map(n=>`<th scope="col">${n}</th>`).join('')}</tr></thead><tbody>`;
+    ['prathama · 3rd (he, they)','madhyama · 2nd (you)','uttama · 1st (I, we)'].forEach((p,r)=>{h+=`<tr data-c="verb"><th scope="row"><span class="cn">${p}</span></th>`;
+      for(let n=0;n<3;n++){const k=r+','+n;h+=`<td data-r="${r}" data-n="${n}" class="${hs.has(k)?'hit':''}" tabindex="0">${cellHtml(rows[r][n])}</td>`;}h+='</tr>';});
+    h+='</tbody></table>';
+  }
+  if(P.note)h+=`<p class="gnote">${esc(P.note)}</p>`;
+  h+=`<p class="gcap" aria-live="polite">${opts.cap||'Tap any cell to see what that form means.'}</p></div>`;
+  return h;
+}
+function cellMeaning(gt,r,n){
+  const P=G.paradigms[gt.dataset.pd];
+  if(P.kind==='noun'){const c=CASEKEYS[r],m=CN[c];const num=['one','two','many'][n];return `<b>${m[1]} ${NUMN[n].toLowerCase()}</b> (${m[2]}): ${m[3]}, ${num}. Question: ${(G.cases[r].q)}`;}
+  const t=P.tense.split(' (')[0];return `<b>${t}, ${['3rd','2nd','1st'][r]} person ${NUMN[n].toLowerCase()}</b> of ${P.root}.`;
+}
+function posPill(ent){return `<span class="pill">${esc(ent.pos[0].toUpperCase()+ent.pos.slice(1))}</span>`;}
+function wordGram(ent,open){
+  let h='';
+  if(ent.pos==='composite'){
+    h+=`<p><b>This entry holds ${ent.multi.length} words:</b></p>`;
+    ent.multi.forEach(p=>{h+=`<div class="gsub">`+wordGram(p,false)+`</div>`;});
+    return h;
+  }
+  h+=`<div class="gram">${posPill(ent)}`;
+  if(ent.case)h+=`<span class="pill c" data-c="${ent.case}">${esc(CN[ent.case][1])} · ${esc(NUMN[NUMS(ent.num)].toLowerCase())}${ent.gen?' · '+({m:'masculine',f:'feminine',n:'neuter'}[ent.gen]):''}</span>`;
+  if(ent.person)h+=`<span class="pill">${esc(G.paradigms[ent.pd].tense.split(' (')[0])} · ${{3:'3rd',2:'2nd',1:'1st'}[ent.person]} person · ${esc(NUMN[NUMS(ent.num)].toLowerCase())}</span>`;
+  if(ent.stem)h+=`<span class="pill">stem: ${esc(ent.stem)}</span>`;
+  if(ent.root)h+=`<span class="pill">root: ${esc(ent.root)}</span>`;
+  h+=`</div>`;
+  if(ent.form&&ent.pos!=='verb'&&ent.pos!=='noun')h+='';
+  if(ent.use)h+=`<p class="guse"><b>In this verse:</b> ${esc(ent.use)}</p>`;
+  if(ent.cmp)h+=`<p class="gnote"><b>Built from:</b> ${esc(ent.cmp)}</p>`;
+  if(ent.note)h+=`<p class="gnote">${esc(ent.note)}</p>`;
+  if(ent.pd){h+=`<details class="gdet" ${open?'open':''}><summary>${ent.pos==='verb'?'Full conjugation table':'Full declension table'} <span class="gnote">(the form used here is highlighted)</span></summary>`+gtable(ent.pd,ent.hit,ent.alt,ent.gk||ent.gen)+`</details>`;}
+  if(ent.case)h+=`<button class="btn small" data-guide="cases:${ent.case}">What does the ${esc(CN[ent.case][1].toLowerCase())} case do?</button> `;
+  if(ent.pos==='verb')h+=`<button class="btn small" data-guide="para:${esc(ent.pd)}">All verb tables</button>`;
+  return h;
+}
+const NUMS=n=>({sg:0,du:1,pl:2}[n]||0);
+
 /* ---------- decode cards ---------- */
 const CONF={ok:['●','Verified against a source'],mid:['◐','Recognised verse; wording may differ'],low:['○','Not matched to a source']};
 function decodeCard(vid){
@@ -78,8 +152,8 @@ function decodeCard(vid){
   });
   h+=`<div class="wdetail" aria-live="polite">Tap any word to unpack its meaning and root.</div>`;
   h+=`<div class="row2"><button class="btn small" data-playall="${v.id}">▶ Play whole verse</button></div>`;
-  h+=`<details class="tbl"><summary>Word-by-word table</summary><table class="wt"><tr><th>Word</th><th>Meaning</th><th>Root / build</th></tr>`;
-  v.lines.forEach(l=>l.words.forEach(w=>{h+=`<tr><td>${esc(w.d)}<br><span class="iast" style="font-size:.8rem">${esc(w.t)}</span></td><td>${esc(w.m)}</td><td>${esc(w.r||'—')}</td></tr>`;}));
+  h+=`<details class="tbl"><summary>Word-by-word table</summary><table class="wt"><tr><th>Word</th><th>Meaning</th><th>Grammar</th><th>Root / build</th></tr>`;
+  v.lines.forEach((l,li)=>l.words.forEach((w,wi)=>{const g=G.words[`${v.id}:${li}:${wi}`];const gl=g?(g.pos==='composite'?g.multi.map(p=>p.label||p.pos).join(' + '):(g.label||g.pos)+(g.pos&&g.label&&g.pos!==g.label&&!/^(indecl)/.test(g.label)?' ('+g.pos+')':'')):'—';h+=`<tr><td>${esc(w.d)}<br><span class="iast" style="font-size:.8rem">${esc(w.t)}</span></td><td>${esc(w.m)}</td><td>${esc(gl)}</td><td>${esc(w.r||'—')}</td></tr>`;}));
   h+=`</table></details>`;
   if(v.sandhi&&v.sandhi.length){h+=`<div class="sec">How the words fused (sandhi)</div><ul class="sandhi">`+v.sandhi.map(s=>`<li><code>${esc(s.from)}</code> → <code>${esc(s.to)}</code>: ${esc(s.rule)}</li>`).join('')+`</ul>`;}
   h+=`<p class="meaning"><b>Whole meaning:</b> ${esc(v.meaning)}</p><p class="why"><b>Why he quoted this:</b> ${esc(v.why)}</p><p class="confnote">${c[0]} ${esc(v.confNote)}</p></article>`;
@@ -92,17 +166,22 @@ function termCard(tid){
   h+=`</div></div><div class="wdetail" aria-live="polite">Tap a part to see its root.</div><p class="meaning"><b>Together:</b> ${esc(t.meaning)}</p><p class="why"><b>Why he said it:</b> ${esc(t.why)}</p></article>`;
   return h;
 }
-function showDetail(card,w,big){
+function showDetail(card,w,key){
   const d=$('.wdetail',card);
-  d.innerHTML=`<div class="big">${esc(w.d)}</div><div class="iast">${esc(w.t)}</div><div><b>Means:</b> ${esc(w.m)}</div>`+(w.r?`<div><b>Root / build:</b> ${esc(w.r)}</div>`:'')+(w.n?`<div><b>Note:</b> ${esc(w.n)}</div>`:'');
+  d.innerHTML=`<div class="big">${esc(w.d)}</div><div class="iast">${esc(w.t)}</div><div><b>Means:</b> ${esc(w.m)}</div>`+(w.r?`<div><b>Root / build:</b> ${esc(w.r)}</div>`:'')+(w.n?`<div><b>Note:</b> ${esc(w.n)}</div>`:'')+(key&&G.words[key]?`<div class="gblock"><div class="sec" style="margin-top:.8em">Grammar of this word</div>${wordGram(G.words[key],true)}</div>`:'');
 }
 document.addEventListener('click',e=>{
   const b=e.target.closest('button'); if(!b)return;
-  if(b.dataset.vw){const [id,li,wi]=b.dataset.vw.split(':');const card=b.closest('.card');$$('.wchip',card).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');showDetail(card,V[id].lines[+li].words[+wi]);}
+  if(b.dataset.vw){const [id,li,wi]=b.dataset.vw.split(':');const card=b.closest('.card');$$('.wchip',card).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');showDetail(card,V[id].lines[+li].words[+wi],`${id}:${li}:${wi}`);}
   else if(b.dataset.tw){const [id,wi]=b.dataset.tw.split(':');const card=b.closest('.card');$$('.wchip',card).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');showDetail(card,T[id].parts[+wi]);}
   else if(b.dataset.play){const p=b.dataset.play.split(':');chain={};if(p.length===2)playClip(`v_${p[0]}_${p[1]}`,b.closest('.vline'));else playClip(`t_${p[0]}`,b.closest('.vline'));}
   else if(b.dataset.playall){playVerse(b.dataset.playall);}
+  else if(b.dataset.gtgk){const gt=b.closest('.gt');const html=gtable(gt.dataset.pd,JSON.parse(gt.dataset.hit),JSON.parse(gt.dataset.alt),b.dataset.gtgk);gt.outerHTML=html;}
+  else if(b.dataset.guide){window.EX.openGuide&&window.EX.openGuide(b.dataset.guide);}
 });
+function cellAct(td){const gt=td.closest('.gt');if(!gt)return;if(gt.classList.contains('covered'))td.classList.add('revealed');$('.gcap',gt).innerHTML=cellMeaning(gt,+td.dataset.r,+td.dataset.n);$$('td.sel',gt).forEach(x=>x.classList.remove('sel'));td.classList.add('sel');}
+document.addEventListener('click',e=>{const td=e.target.closest('.gt td');if(td)cellAct(td);});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('.gt td')){e.preventDefault();cellAct(e.target);}});
 
 /* ---------- reusable widgets ---------- */
 function quiz(root,qs,onDone){
@@ -166,6 +245,8 @@ function boot(){
   $('#replay').onclick=()=>speak(SCENES[S.idx].id); $('#stop').onclick=stopAll;
   $('#mute').onclick=e=>{S.muted=!S.muted;e.currentTarget.setAttribute('aria-pressed',S.muted);if(S.muted)stopAll();};
   $('#auto').onclick=e=>{S.auto=!S.auto;e.currentTarget.setAttribute('aria-pressed',S.auto);};
+  $('#devf').onclick=e=>{const on=document.body.classList.toggle('show-dev');e.currentTarget.setAttribute('aria-pressed',on);};
+  $('#guideBtn').onclick=()=>window.EX.openGuide&&window.EX.openGuide('cases');
   $('#fx').onclick=e=>{const off=document.body.classList.toggle('fx-off');e.currentTarget.setAttribute('aria-pressed',off);};
   $('#theme').onclick=()=>{const d=document.documentElement;const dark=d.dataset.theme==='dark'||(d.dataset.theme!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches);d.dataset.theme=dark?'light':'dark';};
   const enter=snd=>{S.sound=snd;$('#intro').style.display='none';if(snd){try{ctx||wire(au);}catch(e){}}document.body.classList.toggle('silent',!snd);if(!snd){$('#mute').disabled=true;}setAccessory();render();};
@@ -173,5 +254,5 @@ function boot(){
   blink(); mouthLoop();
 }
 window.addEventListener('DOMContentLoaded',()=>{boot();});
-window.EX={decodeCard,termCard,quiz,react,setMood,toast,esc,V,T,go,S,SCENES,playVerse,playClip};
+window.EX={gtable,toDev,cellHtml,CN,CASEKEYS,NUMN,G,decodeCard,termCard,quiz,react,setMood,toast,esc,V,T,go,S,SCENES,playVerse,playClip};
 })();
